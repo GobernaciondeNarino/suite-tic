@@ -1,0 +1,36 @@
+{
+  "id": "ondas_presupuesto_entidad",
+  "name": "Ondas - Presupuesto por Entidad (COP)",
+  "description": "Ejecución presupuestal consolidada de Ondas Nariño por entidad aportante (SGR, Gobernación, CESMAG, Minciencias).",
+  "category": "categorical",
+  "dimensions": [
+    "entidad",
+    "tipo"
+  ],
+  "measures": [
+    "valor_cop"
+  ],
+  "data": [
+    {
+      "entidad": "Sistema General de Regalías",
+      "tipo": "Recursos SGR",
+      "valor_cop": 4401960064
+    },
+    {
+      "entidad": "Gobernación de Nariño",
+      "tipo": "Aporte departamental",
+      "valor_cop": 331456156
+    },
+    {
+      "entidad": "Universidad CESMAG",
+      "tipo": "Aporte en especie",
+      "valor_cop": 251047754
+    },
+    {
+      "entidad": "Minciencias",
+      "tipo": "Aporte en especie",
+      "valor_cop": 688486125
+    }
+  ],
+  "tipo_grafico_sugerido": "donut"
+}

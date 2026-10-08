@@ -1,0 +1,457 @@
+{
+  "vista": "ondas_grupos_municipio",
+  "titulo": "Ondas - Grupos de Investigación por Municipio",
+  "descripcion": "Grupos Ondas por municipio de Nariño, desglosados por vigencia 2024, 2025, 2026.",
+  "tipo_grafico_sugerido": "bar_stacked",
+  "total_municipios": 64,
+  "municipios": [
+    {
+      "municipio": "ALBÁN",
+      "grupos_2024": 0,
+      "grupos_2025": 6,
+      "grupos_2026": 0,
+      "total": 6
+    },
+    {
+      "municipio": "ALDANA",
+      "grupos_2024": 6,
+      "grupos_2025": 0,
+      "grupos_2026": 0,
+      "total": 6
+    },
+    {
+      "municipio": "ANCUYA",
+      "grupos_2024": 0,
+      "grupos_2025": 0,
+      "grupos_2026": 12,
+      "total": 12
+    },
+    {
+      "municipio": "ARBOLEDA",
+      "grupos_2024": 0,
+      "grupos_2025": 6,
+      "grupos_2026": 0,
+      "total": 6
+    },
+    {
+      "municipio": "BARBACOAS",
+      "grupos_2024": 0,
+      "grupos_2025": 6,
+      "grupos_2026": 0,
+      "total": 6
+    },
+    {
+      "municipio": "BELÉN",
+      "grupos_2024": 0,
+      "grupos_2025": 0,
+      "grupos_2026": 9,
+      "total": 9
+    },
+    {
+      "municipio": "BUESACO",
+      "grupos_2024": 0,
+      "grupos_2025": 0,
+      "grupos_2026": 8,
+      "total": 8
+    },
+    {
+      "municipio": "CHACHAGÜÍ",
+      "grupos_2024": 0,
+      "grupos_2025": 0,
+      "grupos_2026": 8,
+      "total": 8
+    },
+    {
+      "municipio": "COLÓN",
+      "grupos_2024": 0,
+      "grupos_2025": 10,
+      "grupos_2026": 0,
+      "total": 10
+    },
+    {
+      "municipio": "CONSACÁ",
+      "grupos_2024": 0,
+      "grupos_2025": 0,
+      "grupos_2026": 10,
+      "total": 10
+    },
+    {
+      "municipio": "CONTADERO",
+      "grupos_2024": 0,
+      "grupos_2025": 5,
+      "grupos_2026": 0,
+      "total": 5
+    },
+    {
+      "municipio": "CÓRDOBA",
+      "grupos_2024": 6,
+      "grupos_2025": 0,
+      "grupos_2026": 0,
+      "total": 6
+    },
+    {
+      "municipio": "CUASPUD",
+      "grupos_2024": 0,
+      "grupos_2025": 7,
+      "grupos_2026": 0,
+      "total": 7
+    },
+    {
+      "municipio": "CUMBAL",
+      "grupos_2024": 0,
+      "grupos_2025": 9,
+      "grupos_2026": 0,
+      "total": 9
+    },
+    {
+      "municipio": "CUMBITARA",
+      "grupos_2024": 4,
+      "grupos_2025": 0,
+      "grupos_2026": 0,
+      "total": 4
+    },
+    {
+      "municipio": "EL CHARCO",
+      "grupos_2024": 0,
+      "grupos_2025": 0,
+      "grupos_2026": 3,
+      "total": 3
+    },
+    {
+      "municipio": "EL PEÑOL",
+      "grupos_2024": 0,
+      "grupos_2025": 6,
+      "grupos_2026": 0,
+      "total": 6
+    },
+    {
+      "municipio": "EL ROSARIO",
+      "grupos_2024": 0,
+      "grupos_2025": 0,
+      "grupos_2026": 8,
+      "total": 8
+    },
+    {
+      "municipio": "EL TABLÓN DE GÓMEZ",
+      "grupos_2024": 0,
+      "grupos_2025": 0,
+      "grupos_2026": 6,
+      "total": 6
+    },
+    {
+      "municipio": "EL TAMBO",
+      "grupos_2024": 0,
+      "grupos_2025": 6,
+      "grupos_2026": 0,
+      "total": 6
+    },
+    {
+      "municipio": "FRANCISCO PIZARRO",
+      "grupos_2024": 0,
+      "grupos_2025": 0,
+      "grupos_2026": 3,
+      "total": 3
+    },
+    {
+      "municipio": "FUNES",
+      "grupos_2024": 0,
+      "grupos_2025": 10,
+      "grupos_2026": 0,
+      "total": 10
+    },
+    {
+      "municipio": "GUACHUCAL",
+      "grupos_2024": 8,
+      "grupos_2025": 0,
+      "grupos_2026": 0,
+      "total": 8
+    },
+    {
+      "municipio": "GUAITARILLA",
+      "grupos_2024": 0,
+      "grupos_2025": 0,
+      "grupos_2026": 12,
+      "total": 12
+    },
+    {
+      "municipio": "GUALMATÁN",
+      "grupos_2024": 4,
+      "grupos_2025": 0,
+      "grupos_2026": 0,
+      "total": 4
+    },
+    {
+      "municipio": "ILES",
+      "grupos_2024": 2,
+      "grupos_2025": 0,
+      "grupos_2026": 0,
+      "total": 2
+    },
+    {
+      "municipio": "IMUÉS",
+      "grupos_2024": 0,
+      "grupos_2025": 0,
+      "grupos_2026": 11,
+      "total": 11
+    },
+    {
+      "municipio": "IPIALES",
+      "grupos_2024": 14,
+      "grupos_2025": 0,
+      "grupos_2026": 0,
+      "total": 14
+    },
+    {
+      "municipio": "LA CRUZ",
+      "grupos_2024": 0,
+      "grupos_2025": 0,
+      "grupos_2026": 13,
+      "total": 13
+    },
+    {
+      "municipio": "LA FLORIDA",
+      "grupos_2024": 0,
+      "grupos_2025": 0,
+      "grupos_2026": 8,
+      "total": 8
+    },
+    {
+      "municipio": "LA LLANADA",
+      "grupos_2024": 2,
+      "grupos_2025": 0,
+      "grupos_2026": 0,
+      "total": 2
+    },
+    {
+      "municipio": "LA TOLA",
+      "grupos_2024": 0,
+      "grupos_2025": 0,
+      "grupos_2026": 3,
+      "total": 3
+    },
+    {
+      "municipio": "LA UNIÓN",
+      "grupos_2024": 0,
+      "grupos_2025": 13,
+      "grupos_2026": 0,
+      "total": 13
+    },
+    {
+      "municipio": "LEIVA",
+      "grupos_2024": 0,
+      "grupos_2025": 0,
+      "grupos_2026": 6,
+      "total": 6
+    },
+    {
+      "municipio": "LINARES",
+      "grupos_2024": 0,
+      "grupos_2025": 10,
+      "grupos_2026": 0,
+      "total": 10
+    },
+    {
+      "municipio": "LOS ANDES - SOTOMAYOR",
+      "grupos_2024": 5,
+      "grupos_2025": 0,
+      "grupos_2026": 0,
+      "total": 5
+    },
+    {
+      "municipio": "MAGÜÍ PAYÁN",
+      "grupos_2024": 0,
+      "grupos_2025": 0,
+      "grupos_2026": 3,
+      "total": 3
+    },
+    {
+      "municipio": "MALLAMA",
+      "grupos_2024": 0,
+      "grupos_2025": 10,
+      "grupos_2026": 0,
+      "total": 10
+    },
+    {
+      "municipio": "MOSQUERA",
+      "grupos_2024": 0,
+      "grupos_2025": 0,
+      "grupos_2026": 3,
+      "total": 3
+    },
+    {
+      "municipio": "NARIÑO",
+      "grupos_2024": 0,
+      "grupos_2025": 0,
+      "grupos_2026": 5,
+      "total": 5
+    },
+    {
+      "municipio": "OLAYA HERRERA",
+      "grupos_2024": 0,
+      "grupos_2025": 0,
+      "grupos_2026": 2,
+      "total": 2
+    },
+    {
+      "municipio": "OSPINA",
+      "grupos_2024": 5,
+      "grupos_2025": 0,
+      "grupos_2026": 0,
+      "total": 5
+    },
+    {
+      "municipio": "PASTO",
+      "grupos_2024": 16,
+      "grupos_2025": 21,
+      "grupos_2026": 17,
+      "total": 54
+    },
+    {
+      "municipio": "POLICARPA",
+      "grupos_2024": 4,
+      "grupos_2025": 0,
+      "grupos_2026": 0,
+      "total": 4
+    },
+    {
+      "municipio": "POTOSI",
+      "grupos_2024": 7,
+      "grupos_2025": 0,
+      "grupos_2026": 0,
+      "total": 7
+    },
+    {
+      "municipio": "PROVIDENCIA",
+      "grupos_2024": 0,
+      "grupos_2025": 0,
+      "grupos_2026": 7,
+      "total": 7
+    },
+    {
+      "municipio": "PUERRES",
+      "grupos_2024": 0,
+      "grupos_2025": 10,
+      "grupos_2026": 0,
+      "total": 10
+    },
+    {
+      "municipio": "PUPIALES",
+      "grupos_2024": 6,
+      "grupos_2025": 0,
+      "grupos_2026": 0,
+      "total": 6
+    },
+    {
+      "municipio": "RICAURTE",
+      "grupos_2024": 0,
+      "grupos_2025": 10,
+      "grupos_2026": 0,
+      "total": 10
+    },
+    {
+      "municipio": "ROBERTO PAYÁN",
+      "grupos_2024": 0,
+      "grupos_2025": 4,
+      "grupos_2026": 0,
+      "total": 4
+    },
+    {
+      "municipio": "SAMANIEGO",
+      "grupos_2024": 0,
+      "grupos_2025": 8,
+      "grupos_2026": 0,
+      "total": 8
+    },
+    {
+      "municipio": "SAN BERNARDO",
+      "grupos_2024": 0,
+      "grupos_2025": 0,
+      "grupos_2026": 7,
+      "total": 7
+    },
+    {
+      "municipio": "SAN LORENZO",
+      "grupos_2024": 0,
+      "grupos_2025": 9,
+      "grupos_2026": 0,
+      "total": 9
+    },
+    {
+      "municipio": "SAN PABLO",
+      "grupos_2024": 0,
+      "grupos_2025": 12,
+      "grupos_2026": 0,
+      "total": 12
+    },
+    {
+      "municipio": "SAN PEDRO DE CARTAGO",
+      "grupos_2024": 0,
+      "grupos_2025": 5,
+      "grupos_2026": 0,
+      "total": 5
+    },
+    {
+      "municipio": "SANDONÁ",
+      "grupos_2024": 0,
+      "grupos_2025": 0,
+      "grupos_2026": 8,
+      "total": 8
+    },
+    {
+      "municipio": "SANTA BARBARA ISCUANDÉ",
+      "grupos_2024": 0,
+      "grupos_2025": 0,
+      "grupos_2026": 3,
+      "total": 3
+    },
+    {
+      "municipio": "SANTACRUZ",
+      "grupos_2024": 2,
+      "grupos_2025": 0,
+      "grupos_2026": 0,
+      "total": 2
+    },
+    {
+      "municipio": "SAPUYES",
+      "grupos_2024": 4,
+      "grupos_2025": 0,
+      "grupos_2026": 0,
+      "total": 4
+    },
+    {
+      "municipio": "TAMINANGO",
+      "grupos_2024": 0,
+      "grupos_2025": 0,
+      "grupos_2026": 8,
+      "total": 8
+    },
+    {
+      "municipio": "TANGUA",
+      "grupos_2024": 0,
+      "grupos_2025": 0,
+      "grupos_2026": 8,
+      "total": 8
+    },
+    {
+      "municipio": "TUMACO",
+      "grupos_2024": 0,
+      "grupos_2025": 12,
+      "grupos_2026": 0,
+      "total": 12
+    },
+    {
+      "municipio": "TUQUERRES",
+      "grupos_2024": 10,
+      "grupos_2025": 0,
+      "grupos_2026": 0,
+      "total": 10
+    },
+    {
+      "municipio": "YACUANQUER",
+      "grupos_2024": 0,
+      "grupos_2025": 0,
+      "grupos_2026": 9,
+      "total": 9
+    }
+  ]
+}

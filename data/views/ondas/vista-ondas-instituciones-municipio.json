@@ -1,237 +1,329 @@
 {
   "vista": "ondas_instituciones_municipio",
   "titulo": "Ondas - Instituciones Educativas por Municipio",
-  "descripcion": "Instituciones Educativas únicas con proyectos Ondas por municipio de Nariño.",
+  "descripcion": "Instituciones Educativas con proyectos Ondas por municipio de Nariño (250 IE, 230 georreferenciadas).",
   "tipo_grafico_sugerido": "bar",
-  "total_municipios": 38,
+  "total_municipios": 64,
   "municipios": [
     {
-      "municipio": "PASTO",
-      "ie_2024": 16,
-      "ie_2025": 19,
-      "ie_unicas_combinadas": 32
-    },
-    {
-      "municipio": "CUMBAL",
-      "ie_2024": 0,
-      "ie_2025": 5,
-      "ie_unicas_combinadas": 5
-    },
-    {
-      "municipio": "SAN PABLO",
-      "ie_2024": 0,
-      "ie_2025": 5,
-      "ie_unicas_combinadas": 5
-    },
-    {
-      "municipio": "LA UNIÓN",
-      "ie_2024": 0,
-      "ie_2025": 4,
-      "ie_unicas_combinadas": 4
-    },
-    {
-      "municipio": "SAN ANDRÉS DE TUMACO",
-      "ie_2024": 0,
-      "ie_2025": 12,
-      "ie_unicas_combinadas": 12
-    },
-    {
-      "municipio": "SAN LORENZO",
-      "ie_2024": 0,
-      "ie_2025": 5,
-      "ie_unicas_combinadas": 5
-    },
-    {
-      "municipio": "MALLAMA",
-      "ie_2024": 0,
-      "ie_2025": 4,
-      "ie_unicas_combinadas": 4
-    },
-    {
-      "municipio": "RICAURTE",
-      "ie_2024": 0,
-      "ie_2025": 3,
-      "ie_unicas_combinadas": 3
-    },
-    {
-      "municipio": "LINARES",
-      "ie_2024": 0,
-      "ie_2025": 3,
-      "ie_unicas_combinadas": 3
-    },
-    {
-      "municipio": "PUERRES",
-      "ie_2024": 0,
-      "ie_2025": 5,
-      "ie_unicas_combinadas": 5
-    },
-    {
-      "municipio": "CUASPUD CARLOSAMA",
-      "ie_2024": 0,
-      "ie_2025": 2,
-      "ie_unicas_combinadas": 2
-    },
-    {
-      "municipio": "FUNES",
-      "ie_2024": 0,
-      "ie_2025": 3,
-      "ie_unicas_combinadas": 3
-    },
-    {
-      "municipio": "EL PEÑOL",
-      "ie_2024": 0,
-      "ie_2025": 2,
-      "ie_unicas_combinadas": 2
-    },
-    {
-      "municipio": "SAMANIEGO",
-      "ie_2024": 0,
-      "ie_2025": 2,
-      "ie_unicas_combinadas": 2
-    },
-    {
-      "municipio": "ARBOLEDA",
-      "ie_2024": 0,
-      "ie_2025": 1,
-      "ie_unicas_combinadas": 1
-    },
-    {
-      "municipio": "CUMBITARA",
-      "ie_2024": 3,
-      "ie_2025": 0,
-      "ie_unicas_combinadas": 3
-    },
-    {
       "municipio": "ALBÁN",
-      "ie_2024": 0,
-      "ie_2025": 3,
-      "ie_unicas_combinadas": 3
-    },
-    {
-      "municipio": "SAN PEDRO DE CARTAGO",
-      "ie_2024": 0,
-      "ie_2025": 2,
-      "ie_unicas_combinadas": 2
-    },
-    {
-      "municipio": "ROBERTO PAYÁN",
-      "ie_2024": 0,
-      "ie_2025": 1,
-      "ie_unicas_combinadas": 1
-    },
-    {
-      "municipio": "CONTADERO",
-      "ie_2024": 0,
-      "ie_2025": 2,
-      "ie_unicas_combinadas": 2
-    },
-    {
-      "municipio": "EL TAMBO",
-      "ie_2024": 0,
-      "ie_2025": 4,
-      "ie_unicas_combinadas": 4
-    },
-    {
-      "municipio": "BARBACOAS",
-      "ie_2024": 0,
-      "ie_2025": 2,
-      "ie_unicas_combinadas": 2
-    },
-    {
-      "municipio": "COLÓN",
-      "ie_2024": 0,
-      "ie_2025": 3,
-      "ie_unicas_combinadas": 3
+      "instituciones": 3,
+      "georreferenciadas": 3
     },
     {
       "municipio": "ALDANA",
-      "ie_2024": 4,
-      "ie_2025": 0,
-      "ie_unicas_combinadas": 4
+      "instituciones": 3,
+      "georreferenciadas": 2
+    },
+    {
+      "municipio": "ANCUYA",
+      "instituciones": 5,
+      "georreferenciadas": 4
+    },
+    {
+      "municipio": "ARBOLEDA",
+      "instituciones": 1,
+      "georreferenciadas": 1
+    },
+    {
+      "municipio": "BARBACOAS",
+      "instituciones": 2,
+      "georreferenciadas": 2
+    },
+    {
+      "municipio": "BELÉN",
+      "instituciones": 3,
+      "georreferenciadas": 3
+    },
+    {
+      "municipio": "BUESACO",
+      "instituciones": 5,
+      "georreferenciadas": 5
+    },
+    {
+      "municipio": "CHACHAGÜÍ",
+      "instituciones": 2,
+      "georreferenciadas": 2
+    },
+    {
+      "municipio": "COLÓN",
+      "instituciones": 3,
+      "georreferenciadas": 3
+    },
+    {
+      "municipio": "CONSACÁ",
+      "instituciones": 5,
+      "georreferenciadas": 5
+    },
+    {
+      "municipio": "CONTADERO",
+      "instituciones": 2,
+      "georreferenciadas": 2
     },
     {
       "municipio": "CÓRDOBA",
-      "ie_2024": 5,
-      "ie_2025": 0,
-      "ie_unicas_combinadas": 5
+      "instituciones": 5,
+      "georreferenciadas": 5
+    },
+    {
+      "municipio": "CUASPUD",
+      "instituciones": 2,
+      "georreferenciadas": 2
+    },
+    {
+      "municipio": "CUMBAL",
+      "instituciones": 5,
+      "georreferenciadas": 4
+    },
+    {
+      "municipio": "CUMBITARA",
+      "instituciones": 2,
+      "georreferenciadas": 2
+    },
+    {
+      "municipio": "EL CHARCO",
+      "instituciones": 1,
+      "georreferenciadas": 1
+    },
+    {
+      "municipio": "EL PEÑOL",
+      "instituciones": 2,
+      "georreferenciadas": 2
+    },
+    {
+      "municipio": "EL ROSARIO",
+      "instituciones": 3,
+      "georreferenciadas": 3
+    },
+    {
+      "municipio": "EL TABLÓN DE GÓMEZ",
+      "instituciones": 4,
+      "georreferenciadas": 4
+    },
+    {
+      "municipio": "EL TAMBO",
+      "instituciones": 4,
+      "georreferenciadas": 4
+    },
+    {
+      "municipio": "FRANCISCO PIZARRO",
+      "instituciones": 1,
+      "georreferenciadas": 1
+    },
+    {
+      "municipio": "FUNES",
+      "instituciones": 3,
+      "georreferenciadas": 3
     },
     {
       "municipio": "GUACHUCAL",
-      "ie_2024": 5,
-      "ie_2025": 0,
-      "ie_unicas_combinadas": 5
+      "instituciones": 5,
+      "georreferenciadas": 5
+    },
+    {
+      "municipio": "GUAITARILLA",
+      "instituciones": 2,
+      "georreferenciadas": 2
     },
     {
       "municipio": "GUALMATÁN",
-      "ie_2024": 2,
-      "ie_2025": 0,
-      "ie_unicas_combinadas": 2
+      "instituciones": 2,
+      "georreferenciadas": 2
     },
     {
       "municipio": "ILES",
-      "ie_2024": 2,
-      "ie_2025": 0,
-      "ie_unicas_combinadas": 2
+      "instituciones": 2,
+      "georreferenciadas": 1
+    },
+    {
+      "municipio": "IMUÉS",
+      "instituciones": 4,
+      "georreferenciadas": 4
     },
     {
       "municipio": "IPIALES",
-      "ie_2024": 13,
-      "ie_2025": 0,
-      "ie_unicas_combinadas": 13
+      "instituciones": 11,
+      "georreferenciadas": 11
+    },
+    {
+      "municipio": "LA CRUZ",
+      "instituciones": 6,
+      "georreferenciadas": 6
+    },
+    {
+      "municipio": "LA FLORIDA",
+      "instituciones": 4,
+      "georreferenciadas": 3
     },
     {
       "municipio": "LA LLANADA",
-      "ie_2024": 2,
-      "ie_2025": 0,
-      "ie_unicas_combinadas": 2
+      "instituciones": 2,
+      "georreferenciadas": 1
     },
     {
-      "municipio": "LOS ANDES",
-      "ie_2024": 5,
-      "ie_2025": 0,
-      "ie_unicas_combinadas": 5
+      "municipio": "LA TOLA",
+      "instituciones": 1,
+      "georreferenciadas": 1
+    },
+    {
+      "municipio": "LA UNIÓN",
+      "instituciones": 4,
+      "georreferenciadas": 4
+    },
+    {
+      "municipio": "LEIVA",
+      "instituciones": 2,
+      "georreferenciadas": 1
+    },
+    {
+      "municipio": "LINARES",
+      "instituciones": 3,
+      "georreferenciadas": 2
+    },
+    {
+      "municipio": "LOS ANDES - SOTOMAYOR",
+      "instituciones": 5,
+      "georreferenciadas": 4
+    },
+    {
+      "municipio": "MAGÜÍ PAYÁN",
+      "instituciones": 1,
+      "georreferenciadas": 1
+    },
+    {
+      "municipio": "MALLAMA",
+      "instituciones": 4,
+      "georreferenciadas": 3
+    },
+    {
+      "municipio": "MOSQUERA",
+      "instituciones": 1,
+      "georreferenciadas": 0
+    },
+    {
+      "municipio": "NARIÑO",
+      "instituciones": 1,
+      "georreferenciadas": 1
+    },
+    {
+      "municipio": "OLAYA HERRERA",
+      "instituciones": 1,
+      "georreferenciadas": 1
     },
     {
       "municipio": "OSPINA",
-      "ie_2024": 3,
-      "ie_2025": 0,
-      "ie_unicas_combinadas": 3
+      "instituciones": 2,
+      "georreferenciadas": 2
+    },
+    {
+      "municipio": "PASTO",
+      "instituciones": 46,
+      "georreferenciadas": 46
     },
     {
       "municipio": "POLICARPA",
-      "ie_2024": 4,
-      "ie_2025": 0,
-      "ie_unicas_combinadas": 4
+      "instituciones": 3,
+      "georreferenciadas": 3
     },
     {
-      "municipio": "POTOSÍ",
-      "ie_2024": 5,
-      "ie_2025": 0,
-      "ie_unicas_combinadas": 5
+      "municipio": "POTOSI",
+      "instituciones": 5,
+      "georreferenciadas": 3
+    },
+    {
+      "municipio": "PROVIDENCIA",
+      "instituciones": 1,
+      "georreferenciadas": 1
+    },
+    {
+      "municipio": "PUERRES",
+      "instituciones": 5,
+      "georreferenciadas": 5
     },
     {
       "municipio": "PUPIALES",
-      "ie_2024": 2,
-      "ie_2025": 0,
-      "ie_unicas_combinadas": 2
+      "instituciones": 2,
+      "georreferenciadas": 2
+    },
+    {
+      "municipio": "RICAURTE",
+      "instituciones": 2,
+      "georreferenciadas": 2
+    },
+    {
+      "municipio": "ROBERTO PAYÁN",
+      "instituciones": 1,
+      "georreferenciadas": 1
+    },
+    {
+      "municipio": "SAMANIEGO",
+      "instituciones": 2,
+      "georreferenciadas": 2
+    },
+    {
+      "municipio": "SAN BERNARDO",
+      "instituciones": 2,
+      "georreferenciadas": 1
+    },
+    {
+      "municipio": "SAN LORENZO",
+      "instituciones": 5,
+      "georreferenciadas": 4
+    },
+    {
+      "municipio": "SAN PABLO",
+      "instituciones": 5,
+      "georreferenciadas": 5
+    },
+    {
+      "municipio": "SAN PEDRO DE CARTAGO",
+      "instituciones": 2,
+      "georreferenciadas": 2
+    },
+    {
+      "municipio": "SANDONÁ",
+      "instituciones": 3,
+      "georreferenciadas": 3
+    },
+    {
+      "municipio": "SANTA BARBARA ISCUANDÉ",
+      "instituciones": 1,
+      "georreferenciadas": 1
     },
     {
       "municipio": "SANTACRUZ",
-      "ie_2024": 2,
-      "ie_2025": 0,
-      "ie_unicas_combinadas": 2
+      "instituciones": 2,
+      "georreferenciadas": 2
     },
     {
       "municipio": "SAPUYES",
-      "ie_2024": 3,
-      "ie_2025": 0,
-      "ie_unicas_combinadas": 3
+      "instituciones": 3,
+      "georreferenciadas": 3
     },
     {
-      "municipio": "TÚQUERRES",
-      "ie_2024": 10,
-      "ie_2025": 0,
-      "ie_unicas_combinadas": 10
+      "municipio": "TAMINANGO",
+      "instituciones": 5,
+      "georreferenciadas": 5
+    },
+    {
+      "municipio": "TANGUA",
+      "instituciones": 4,
+      "georreferenciadas": 3
+    },
+    {
+      "municipio": "TUMACO",
+      "instituciones": 11,
+      "georreferenciadas": 9
+    },
+    {
+      "municipio": "TUQUERRES",
+      "instituciones": 8,
+      "georreferenciadas": 6
+    },
+    {
+      "municipio": "YACUANQUER",
+      "instituciones": 3,
+      "georreferenciadas": 3
     }
   ]
 }

@@ -1,0 +1,50 @@
+{
+  "id": "ondas_presupuesto_entidad_anio",
+  "name": "Ondas - Presupuesto por Entidad × Vigencia (COP)",
+  "description": "Ejecución presupuestal por entidad aportante y vigencia (2024-2026).",
+  "category": "categorical",
+  "dimensions": [
+    "entidad"
+  ],
+  "measures": [
+    "presupuesto_2024",
+    "presupuesto_2025",
+    "presupuesto_2026",
+    "total"
+  ],
+  "data": [
+    {
+      "entidad": "Sistema General de Regalías",
+      "tipo": "Recursos SGR",
+      "presupuesto_2024": 1352561829,
+      "presupuesto_2025": 1653503133,
+      "presupuesto_2026": 1395895101,
+      "total": 4401960064
+    },
+    {
+      "entidad": "Gobernación de Nariño",
+      "tipo": "Aporte departamental",
+      "presupuesto_2024": 28840476,
+      "presupuesto_2025": 115225125,
+      "presupuesto_2026": 187390555,
+      "total": 331456156
+    },
+    {
+      "entidad": "Universidad CESMAG",
+      "tipo": "Aporte en especie",
+      "presupuesto_2024": 102238164,
+      "presupuesto_2025": 74404906,
+      "presupuesto_2026": 74404683,
+      "total": 251047754
+    },
+    {
+      "entidad": "Minciencias",
+      "tipo": "Aporte en especie",
+      "presupuesto_2024": 275580862,
+      "presupuesto_2025": 290384830,
+      "presupuesto_2026": 122520432,
+      "total": 688486125
+    }
+  ],
+  "tipo_grafico_sugerido": "bar_stacked"
+}

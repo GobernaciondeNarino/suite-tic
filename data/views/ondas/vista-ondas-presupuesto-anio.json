@@ -1,0 +1,27 @@
+{
+  "id": "ondas_presupuesto_anio",
+  "name": "Ondas - Presupuesto Ejecutado por Año (COP)",
+  "description": "Presupuesto consolidado ejecutado por vigencia 2024-2026.",
+  "category": "categorical",
+  "dimensions": [
+    "anio"
+  ],
+  "measures": [
+    "presupuesto_cop"
+  ],
+  "data": [
+    {
+      "anio": "2024",
+      "presupuesto_cop": 1759221332
+    },
+    {
+      "anio": "2025",
+      "presupuesto_cop": 2133517995
+    },
+    {
+      "anio": "2026",
+      "presupuesto_cop": 1780210772
+    }
+  ],
+  "tipo_grafico_sugerido": "bar"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "ondas_grupos_linea",
+  "name": "Ondas - Grupos por Línea de Investigación",
+  "description": "Distribución de grupos Ondas por línea de investigación (normalizada).",
+  "category": "categorical",
+  "dimensions": [
+    "linea"
+  ],
+  "measures": [
+    "grupos"
+  ],
+  "data": [
+    {
+      "linea": "Ciencias Naturales",
+      "grupos": 138
+    },
+    {
+      "linea": "Ciencias Sociales y Humanas",
+      "grupos": 133
+    },
+    {
+      "linea": "Sin clasificar",
+      "grupos": 129
+    },
+    {
+      "linea": "Ingenierías y Tecnologías",
+      "grupos": 46
+    },
+    {
+      "linea": "Ciencias Agrícolas",
+      "grupos": 33
+    },
+    {
+      "linea": "Preestructurado (Nacho Derecho / Ondas Bio / JCC)",
+      "grupos": 13
+    },
+    {
+      "linea": "Ciencias Médicas y de la Salud",
+      "grupos": 8
+    }
+  ],
+  "tipo_grafico_sugerido": "donut"
+}

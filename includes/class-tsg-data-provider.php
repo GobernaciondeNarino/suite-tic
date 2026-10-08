@@ -130,6 +130,11 @@ class TSG_Data_Provider {
 		if ( ! is_array( $files ) ) {
 			return $out;
 		}
+		// Skip source/master files prefixed with underscore (e.g.
+		// _proyecto-ondas.json, _ondas-narino-detalle.json). They stay
+		// in the folder for the regen scripts to read but don't appear
+		// as views.
+		$files = array_filter( $files, static fn( $p ) => strpos( basename( $p ), '_' ) !== 0 );
 		foreach ( $files as $file ) {
 			$view = $this->load_view_file( $file );
 			if ( empty( $view ) ) {
@@ -178,6 +183,7 @@ class TSG_Data_Provider {
 		if ( ! is_array( $files ) ) {
 			return [];
 		}
+		$files = array_filter( $files, static fn( $p ) => strpos( basename( $p ), '_' ) !== 0 );
 		foreach ( $files as $file ) {
 			$view = $this->load_view_file( $file );
 			if ( empty( $view ) ) {

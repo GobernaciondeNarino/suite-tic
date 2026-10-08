@@ -1,0 +1,67 @@
+{
+  "id": "ondas_grupos_linea_anio",
+  "name": "Ondas - Grupos por Línea × Vigencia",
+  "description": "Grupos Ondas desglosados por línea de investigación y vigencia (2024-2026).",
+  "category": "categorical",
+  "dimensions": [
+    "linea"
+  ],
+  "measures": [
+    "grupos_2024",
+    "grupos_2025",
+    "grupos_2026",
+    "total"
+  ],
+  "data": [
+    {
+      "linea": "Ciencias Naturales",
+      "grupos_2024": 0,
+      "grupos_2025": 76,
+      "grupos_2026": 62,
+      "total": 138
+    },
+    {
+      "linea": "Ciencias Sociales y Humanas",
+      "grupos_2024": 0,
+      "grupos_2025": 65,
+      "grupos_2026": 68,
+      "total": 133
+    },
+    {
+      "linea": "Sin clasificar",
+      "grupos_2024": 105,
+      "grupos_2025": 21,
+      "grupos_2026": 3,
+      "total": 129
+    },
+    {
+      "linea": "Ingenierías y Tecnologías",
+      "grupos_2024": 0,
+      "grupos_2025": 12,
+      "grupos_2026": 34,
+      "total": 46
+    },
+    {
+      "linea": "Ciencias Agrícolas",
+      "grupos_2024": 0,
+      "grupos_2025": 12,
+      "grupos_2026": 21,
+      "total": 33
+    },
+    {
+      "linea": "Preestructurado (Nacho Derecho / Ondas Bio / JCC)",
+      "grupos_2024": 0,
+      "grupos_2025": 9,
+      "grupos_2026": 4,
+      "total": 13
+    },
+    {
+      "linea": "Ciencias Médicas y de la Salud",
+      "grupos_2024": 0,
+      "grupos_2025": 0,
+      "grupos_2026": 8,
+      "total": 8
+    }
+  ],
+  "tipo_grafico_sugerido": "bar_stacked"
+}
