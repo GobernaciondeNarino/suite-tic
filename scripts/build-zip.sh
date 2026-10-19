@@ -3,7 +3,7 @@
 # WordPress "Subir plugin" offers "Reemplazar la versión actual" instead of
 # installing a second copy. Usage: scripts/build-zip.sh [folder-name]
 set -euo pipefail
-FOLDER="${1:-tic-suite}"
+FOLDER="${1:-suite-tic}"
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 STAGE="$(mktemp -d)"
 trap 'rm -rf "$STAGE"' EXIT
