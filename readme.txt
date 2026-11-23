@@ -4,7 +4,7 @@ Tags: charts, d3plus, shortcode, dataviz, tic-suite
 Requires at least: 6.0
 Tested up to: 6.5
 Requires PHP: 7.4
-Stable tag: 1.8.1
+Stable tag: 1.9.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -38,6 +38,11 @@ TIC Suite · Gráficos convierte cualquier vista JSON registrada en un gráfico 
 * `uninstall.php` limpia las opciones al desinstalar.
 
 == Changelog ==
+
+= 1.9.0 =
+* d3plus actualizado de 3.0.x a 4.13.0 (bundle `d3plus-core.full.min.js`). Se desactivan las barras propias de v4 (guardar, buscar, tabla y zoom salvo en mapas) para no duplicar la barra del plugin, y la leyenda se oculta cuando tendría más de 12 elementos.
+* Nuevo módulo Dashboard: shortcode `[tsg_dashboard id="tic-narino" height="820" theme="dark"]`, endpoint REST `GET /tic-suite/v1/dashboard/{id}` y pantalla "TIC Suite → Dashboard" con vista previa y shortcode copiable.
+* Dashboard TIC Nariño: mapa municipal (d3plus Geomap), indicadores, hallazgos, 8 gráficos d3plus (concentración, tipología, subregiones, brecha PDET, distribución, Centros Digitales, inversión y perfil municipal), ranking, ficha municipal, exportación CSV y tema claro/oscuro.
 
 = 1.6.1 =
 * Hotfix de producción: la condición de enqueue de assets admin todavía buscaba el slug viejo `tic-suite-graficos` en `$hook` — después de renombrar el menú a `tic-suite` ningún CSS/JS admin se cargaba y las páginas se veían sin estilos ni interactividad. Ahora la condición chequea `tic-suite` como substring, cubriendo todos los slugs del menú (`toplevel_page_tic-suite`, `tic-suite_page_tic-suite-nacion`, `…-ondas`, `…-shortcodes`, `…-datos`).

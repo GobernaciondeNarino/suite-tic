@@ -1,0 +1,195 @@
+/* TIC Suite · Dashboard TIC Nariño (port of dashboard-tic-narino-v2 to d3plus).
+   Everything is scoped under .tsg-dash so the WordPress theme is untouched. */
+.tsg-dash{
+  color-scheme:dark;
+  --bg:#0c1210;--surface:#121a17;--surface-2:#18221e;--surface-3:#202c27;
+  --border:rgba(255,255,255,.10);--border-2:rgba(255,255,255,.20);
+  --text:#eef3ef;--text-2:#c2cdc6;--muted:#8f9c94;
+  --brand:#10a13b;--brand-hi:#2fbf5f;--brand-text:#5fd68a;--brand-soft:rgba(16,161,59,.18);
+  --accent:#ffd500;--accent-soft:rgba(255,213,0,.12);--tab-line:#ffd500;--focus:#ffd500;--sel:#ffd500;
+  --deemph:#5f6a64;--grid:#25302b;--axis:#3a4741;
+  --map-bg:#0c1210;--poly-line:#0c1210;--zero:#1f2a25;
+  --seq-1:#235e2d;--seq-2:#2b833c;--seq-3:#38a94d;--seq-4:#53cf68;--seq-5:#87f094;
+  --t-a:#199e70;--t-b:#3987e5;--t-c:#d95926;--t-d:#33403a;
+  --tip-bg:#202c27;--tip-text:#eef3ef;
+  --logo-plate:#ffffff;--logo-pad:4px 8px;
+  --shadow:0 2px 12px rgba(0,0,0,.5);
+  --font:"Hind Madurai",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --sb:440px;
+}
+/* ══════════ TOKENS · MODO CLARO ══════════ */
+.tsg-dash[data-theme="light"]{
+  color-scheme:light;
+  --bg:#f4f7f5;--surface:#ffffff;--surface-2:#f6f9f7;--surface-3:#edf2ee;
+  --border:rgba(15,26,20,.12);--border-2:rgba(15,26,20,.26);
+  --text:#0f1a14;--text-2:#45524a;--muted:#5f6e65;
+  --brand:#10a13b;--brand-hi:#0a7a2c;--brand-text:#0a7a2c;--brand-soft:rgba(16,161,59,.10);
+  --accent:#ffd500;--accent-soft:#fff6c9;--tab-line:#10a13b;--focus:#0a7a2c;--sel:#0f1a14;
+  --deemph:#9aa39d;--grid:#e3e8e4;--axis:#c4ccc7;
+  --map-bg:#eef2ef;--poly-line:#ffffff;--zero:#d5dbd7;
+  --seq-1:#56b764;--seq-2:#299e43;--seq-3:#07822d;--seq-4:#026621;--seq-5:#014b16;
+  --t-a:#1baf7a;--t-b:#2a78d6;--t-c:#eb6834;--t-d:#c4ccc7;
+  --tip-bg:#ffffff;--tip-text:#0f1a14;
+  --logo-plate:transparent;--logo-pad:0;
+  --shadow:0 2px 12px rgba(15,26,20,.14);
+}
+
+.tsg-dash,.tsg-dash *{box-sizing:border-box}
+.tsg-dash *{margin:0;padding:0}
+.tsg-dash [hidden]{display:none!important}
+.tsg-dash{display:flex;flex-direction:column;height:var(--dash-h,820px);overflow:hidden;position:relative;
+  border:1px solid var(--border);border-radius:12px;font-family:var(--font);font-size:13px;line-height:1.45;
+  color:var(--text);background:var(--bg);text-align:left}
+.tsg-dash button,.tsg-dash select,.tsg-dash input{font:inherit;color:inherit;letter-spacing:normal;text-transform:none}
+.tsg-dash button{cursor:pointer}
+.tsg-dash :focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:4px}
+.tsg-dash h1,.tsg-dash h2{color:var(--text);font-family:var(--font);letter-spacing:normal;text-transform:none}
+
+.tsg-dash .app{flex:1;min-height:0;display:flex}
+.tsg-dash .map-wrap{flex:1;position:relative;min-width:0;background:var(--map-bg)}
+.tsg-dash .tsg-dash-map{width:100%;height:100%;background:var(--map-bg)}
+.tsg-dash .sidebar{width:var(--sb);flex-shrink:0;display:flex;flex-direction:column;min-height:0;
+  background:var(--surface);border-left:1px solid var(--border)}
+.tsg-dash .tsg-dash-chart{width:100%;height:100%}
+
+/* ── Franja institucional (bandera de Nariño) ── */
+.tsg-dash .flag{height:3px;flex-shrink:0;background:linear-gradient(90deg,#ffd500 0 50%,#10a13b 50% 100%)}
+/* ── Barra superior ── */
+.tsg-dash .topbar{flex-shrink:0;display:flex;align-items:center;gap:10px 14px;flex-wrap:wrap;
+  padding:8px 14px;background:var(--surface);border-bottom:1px solid var(--border);z-index:900}
+.tsg-dash .brand{display:flex;align-items:center;gap:10px;min-width:0}
+.tsg-dash .logo-plate{display:flex;align-items:center;background:var(--logo-plate);padding:var(--logo-pad);border-radius:8px}
+.tsg-dash .logo-plate img{height:30px;display:block}
+.tsg-dash .brand-title{display:flex;flex-direction:column;line-height:1.2}
+.tsg-dash .brand-title b{font-size:13.5px;font-weight:600}
+.tsg-dash .brand-title span{font-size:11.5px;color:var(--muted)}
+.tsg-dash .controls{display:flex;align-items:center;gap:8px;flex:1;justify-content:flex-end;flex-wrap:wrap}
+.tsg-dash .field{display:flex;align-items:center;gap:6px;padding:0 10px;height:34px;border-radius:8px;
+  background:var(--surface-2);border:1px solid var(--border)}
+.tsg-dash .field:focus-within{border-color:var(--brand)}
+.tsg-dash .field>span{font-size:11.5px;color:var(--muted);white-space:nowrap}
+.tsg-dash .field select,.tsg-dash .field input{border:0;outline:0;background:transparent;font-size:12.5px;min-width:0;height:100%}
+.tsg-dash .field select{max-width:230px}
+.tsg-dash .field select option,.tsg-dash .field select optgroup{background:var(--surface);color:var(--text)}
+.tsg-dash .field input{width:170px}
+.tsg-dash .btn{display:inline-flex;align-items:center;gap:6px;height:34px;padding:0 12px;border-radius:8px;
+  border:1px solid var(--border);background:var(--surface-2);font-size:12.5px;font-weight:500;
+  text-decoration:none;color:var(--text);white-space:nowrap;transition:border-color .15s,background .15s}
+.tsg-dash .btn:hover{border-color:var(--brand);background:var(--brand-soft)}
+.tsg-dash .btn svg{flex-shrink:0}
+/* ── Estructura ── */
+.tsg-dash .app{flex:1;min-height:0;display:flex}
+.tsg-dash .map-wrap{flex:1;position:relative;min-width:0;background:var(--map-bg)}
+.tsg-dash .tsg-dash-map{width:100%;height:100%;background:var(--map-bg)}
+.tsg-dash .sidebar{width:var(--sb);flex-shrink:0;display:flex;flex-direction:column;min-height:0;
+  background:var(--surface);border-left:1px solid var(--border)}
+/* ── Paneles flotantes del mapa ── */
+.tsg-dash .map-panel,.tsg-dash .legend{position:absolute;z-index:500;background:var(--surface);border:1px solid var(--border);
+  border-radius:10px;box-shadow:var(--shadow)}
+.tsg-dash .map-panel{top:10px;left:10px;display:flex;align-items:center;gap:10px;padding:5px 10px 5px 5px;max-width:calc(100% - 70px)}
+.tsg-dash .seg{display:flex;background:var(--surface-3);border-radius:7px;padding:2px}
+.tsg-dash .seg button{border:0;background:transparent;padding:4px 10px;border-radius:5px;font-size:12px;font-weight:500;color:var(--muted)}
+.tsg-dash .seg button[aria-pressed="true"]{background:var(--surface);color:var(--text);box-shadow:0 0 0 1px var(--border-2)}
+.tsg-dash #mapLabel{font-size:12px;color:var(--text-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tsg-dash .legend{left:10px;bottom:10px;padding:9px 11px;font-size:11.5px;color:var(--text-2);max-width:250px}
+.tsg-dash .leg-t{font-weight:600;color:var(--text);margin-bottom:6px;font-size:12px}
+.tsg-dash .leg-r{display:flex;align-items:center;gap:7px;margin-bottom:3px;font-variant-numeric:tabular-nums}
+.tsg-dash .leg-r i{width:16px;height:11px;border-radius:3px;flex-shrink:0;box-shadow:inset 0 0 0 1px var(--border)}
+.tsg-dash .leg-r em{font-style:normal;color:var(--muted);margin-left:auto;padding-left:10px}
+.tsg-dash .leg-n{margin-top:6px;color:var(--muted);font-size:10.5px;line-height:1.35}
+/* ── Cabecera del panel ── */
+.tsg-dash .sb-head{flex-shrink:0;padding:12px 12px 10px;border-bottom:1px solid var(--border)}
+.tsg-dash .scope{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:8px}
+.tsg-dash .scope h1{font-size:15px;font-weight:600;line-height:1.25}
+.tsg-dash .scope-chips{display:flex;flex-wrap:wrap;gap:4px;margin-top:4px}
+.tsg-dash .chip{display:inline-flex;align-items:center;gap:4px;font-size:10.5px;font-weight:500;padding:1px 7px;border-radius:999px;
+  border:1px solid var(--border-2);color:var(--text-2);white-space:nowrap}
+.tsg-dash .chip i{width:8px;height:8px;border-radius:2px}
+.tsg-dash .btn-sm{height:26px;padding:0 9px;font-size:11.5px;flex-shrink:0}
+.tsg-dash .tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.tsg-dash .tile{background:var(--surface-2);border:1px solid var(--border);border-radius:8px;padding:7px 9px;min-width:0}
+.tsg-dash .tile .tl{font-size:10.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tsg-dash .tile .tv{font-size:17px;font-weight:600;line-height:1.25;color:var(--text)}
+.tsg-dash .tile .ts{font-size:10.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* ── Pestañas ── */
+.tsg-dash .tabs{flex-shrink:0;display:flex;padding:0 8px;border-bottom:1px solid var(--border)}
+.tsg-dash .tab{flex:1;padding:9px 4px 8px;border:0;background:transparent;color:var(--muted);font-weight:600;font-size:12.5px;
+  border-bottom:2px solid transparent;margin-bottom:-1px}
+.tsg-dash .tab:hover{color:var(--text-2)}
+.tsg-dash .tab[aria-selected="true"]{color:var(--text);border-bottom-color:var(--tab-line)}
+.tsg-dash .panels{flex:1;min-height:0;overflow-y:auto;overflow-x:hidden;scrollbar-width:thin;scrollbar-color:var(--axis) transparent}
+.tsg-dash .panel{padding:12px;display:flex;flex-direction:column;gap:12px}
+/* ── Tarjetas ── */
+.tsg-dash .card{background:var(--surface-2);border:1px solid var(--border);border-radius:10px;padding:12px}
+.tsg-dash .card-h{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:8px}
+.tsg-dash .card h2{font-size:13px;font-weight:600;line-height:1.3}
+.tsg-dash .card-sub{font-size:11.5px;color:var(--muted);margin-top:2px}
+.tsg-dash .tbl-btn{flex-shrink:0;height:24px;padding:0 8px;border-radius:6px;border:1px solid var(--border);
+  background:transparent;font-size:11px;color:var(--text-2)}
+.tsg-dash .tbl-btn:hover{border-color:var(--brand)}
+.tsg-dash .chart-wrap{position:relative}
+.tsg-dash .lg{display:flex;flex-wrap:wrap;gap:4px 12px;margin-top:8px;font-size:11px;color:var(--text-2)}
+.tsg-dash .lg span{display:inline-flex;align-items:center;gap:5px}
+.tsg-dash .lg i{width:10px;height:10px;border-radius:2px;flex-shrink:0}
+.tsg-dash .lg i.ln{height:2px;width:14px;border-radius:1px}
+.tsg-dash .lg i.ci{border-radius:50%}
+.tsg-dash .lg i.tr{width:0;height:0;border-radius:0;background:transparent!important;border-left:5px solid transparent;border-right:5px solid transparent;border-bottom:9px solid var(--text-2)}
+.tsg-dash .tbl-wrap{max-height:280px;overflow:auto;scrollbar-width:thin}
+.tsg-dash table.tv{width:100%;border-collapse:collapse;font-size:11.5px;font-variant-numeric:tabular-nums}
+.tsg-dash table.tv th{position:sticky;top:0;background:var(--surface-2);text-align:left;font-weight:600;color:var(--text-2);
+  padding:5px 6px;border-bottom:1px solid var(--border-2)}
+.tsg-dash table.tv td{padding:4px 6px;border-bottom:1px solid var(--border);color:var(--text-2)}
+.tsg-dash table.tv td:first-child{color:var(--text)}
+.tsg-dash table.tv th:not(:first-child),.tsg-dash table.tv td:not(:first-child){text-align:right}
+.tsg-dash table.tv.txt th:nth-child(2),.tsg-dash table.tv.txt td:nth-child(2){text-align:left}
+/* ── Lectura y hallazgos ── */
+.tsg-dash .tiles-4{grid-template-columns:repeat(2,1fr)}
+.tsg-dash .read{margin-top:10px;font-size:12px;color:var(--text-2)}
+.tsg-dash .read p+p{margin-top:4px}
+.tsg-dash .read b,.tsg-dash .finds b{color:var(--text);font-weight:600}
+.tsg-dash .desc{font-size:11.5px;color:var(--muted);margin-bottom:10px}
+.tsg-dash .finds{list-style:none;display:flex;flex-direction:column;gap:9px}
+.tsg-dash .finds li{display:grid;grid-template-columns:3px 1fr;gap:10px;font-size:12px;color:var(--text-2)}
+.tsg-dash .finds li::before{content:"";background:var(--brand);border-radius:2px}
+.tsg-dash .finds li b{display:block;margin-bottom:1px}
+.tsg-dash .note{font-size:11px;color:var(--muted);line-height:1.5}
+/* ── Ranking ── */
+.tsg-dash .rank-bar{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:11.5px;color:var(--muted)}
+.tsg-dash .switch{display:inline-flex;align-items:center;gap:7px;cursor:pointer;color:var(--text-2)}
+.tsg-dash .switch input{position:absolute;opacity:0;width:0;height:0}
+.tsg-dash .tog{width:32px;height:18px;border-radius:999px;background:var(--surface-3);border:1px solid var(--border-2);position:relative;transition:background .2s}
+.tsg-dash .tog::before{content:"";position:absolute;top:2px;left:2px;width:12px;height:12px;border-radius:50%;background:var(--muted);transition:left .2s,background .2s}
+.tsg-dash .switch input:checked+.tog{background:var(--brand-soft);border-color:var(--brand)}
+.tsg-dash .switch input:checked+.tog::before{left:16px;background:var(--brand)}
+.tsg-dash .switch input:focus-visible+.tog{outline:2px solid var(--focus);outline-offset:2px}
+.tsg-dash .rank-list{display:flex;flex-direction:column;gap:4px}
+.tsg-dash .rank-row{display:grid;grid-template-columns:26px 1fr auto;gap:2px 6px;align-items:center;width:100%;text-align:left;
+  padding:6px 9px;border-radius:8px;background:transparent;border:1px solid transparent;border-left:3px solid transparent}
+.tsg-dash .rank-row:hover{background:var(--surface-2);border-color:var(--border);border-left-color:var(--border)}
+.tsg-dash .rank-row.sel{background:var(--accent-soft);border-color:var(--border-2);border-left-color:var(--accent)}
+.tsg-dash .rank-row .rp{font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}
+.tsg-dash .rank-row .rn{font-size:12.5px;font-weight:500;display:flex;align-items:center;gap:6px;min-width:0}
+.tsg-dash .rank-row.sel .rn{font-weight:600}
+.tsg-dash .rank-row .rv{font-size:12.5px;font-weight:600;font-variant-numeric:tabular-nums}
+.tsg-dash .rank-row .rb{grid-column:2/-1;height:3px;border-radius:2px;background:var(--surface-3);overflow:hidden}
+.tsg-dash .rank-row .rb i{display:block;height:100%;background:var(--brand);border-radius:2px}
+.tsg-dash .empty{padding:28px 16px;text-align:center;color:var(--muted);font-size:12.5px}
+
+/* d3plus tooltip (rendered in <body>, outside .tsg-dash) */
+.tsg-dash-tt .tt-t{font-weight:600;font-size:13px;display:flex;align-items:center;gap:6px}
+.tsg-dash-tt .tt-s{opacity:.7;margin-bottom:5px}
+.tsg-dash-tt .tt-r{display:flex;justify-content:space-between;gap:14px}
+.tsg-dash-tt .tt-r span{opacity:.7}
+.tsg-dash-tt .tt-r b{font-weight:600;font-variant-numeric:tabular-nums}
+
+/* ── Adaptable ── */
+@media(max-width:1180px){.tsg-dash{--sb:390px}.tsg-dash .field input{width:120px}}
+@media(max-width:860px){
+  .tsg-dash{height:auto;overflow:visible}
+  .tsg-dash .app{flex-direction:column}
+  .tsg-dash .map-wrap{height:56vh;flex:none}
+  .tsg-dash .sidebar{width:100%;border-left:0;border-top:1px solid var(--border)}
+  .tsg-dash .panels{overflow:visible}
+  .tsg-dash .controls{justify-content:flex-start}
+}
+@media(prefers-reduced-motion:reduce){.tsg-dash *{transition:none!important}}

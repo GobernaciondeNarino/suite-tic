@@ -110,6 +110,12 @@ Estos skills aportan guías de diseño que se aplican cuando Claude escribe CSS/
 
 ## Changelog
 
+### 1.9.0
+- **d3plus 4.13.0** (antes 3.0.x), cargado desde el bundle `full` de `@d3plus/core`.
+- **Módulo Dashboard**: `[tsg_dashboard id="tic-narino" height="820"]`, REST `GET /tic-suite/v1/dashboard/{id}` y submenú *TIC Suite → Dashboard*.
+  - Dashboard TIC Nariño 2024 rehecho con d3plus (antes Chart.js + Leaflet): mapa, KPIs, 8 gráficos, ranking, ficha municipal, CSV y tema claro/oscuro.
+  - Datos en `data/dashboards/tic-narino.json`; plantilla en `templates/dashboard/tic-narino.html`.
+
 ### 1.6.0
 - **Plugin renombrado a "TIC Suite"** — así aparece en el menú lateral de WordPress.
 - **Arquitectura multi-proyecto** de Proyectos Nación:

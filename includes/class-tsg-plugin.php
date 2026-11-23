@@ -41,6 +41,7 @@ final class TSG_Plugin {
 	public TSG_Shortcode $shortcode;
 	public TSG_Admin $admin;
 	public TSG_Rest_Api $rest_api;
+	public TSG_Dashboard $dashboard;
 
 	/**
 	 * Data providers keyed by project slug.
@@ -73,6 +74,7 @@ final class TSG_Plugin {
 		$this->shortcode = new TSG_Shortcode( $this, $this->chart_types, $this->security );
 		$this->admin     = new TSG_Admin( $this, $this->chart_types, $this->security );
 		$this->rest_api  = new TSG_Rest_Api( $this, $this->chart_types, $this->security );
+		$this->dashboard = new TSG_Dashboard( $this->security );
 	}
 
 	/**
@@ -114,6 +116,9 @@ final class TSG_Plugin {
 		if ( is_admin() ) {
 			$this->admin->register();
 		}
+
+		// Dashboards (shortcode, REST route, admin screen).
+		$this->dashboard->register();
 
 		// REST API.
 		add_action( 'rest_api_init', [ $this->rest_api, 'register_routes' ] );
