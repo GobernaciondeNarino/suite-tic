@@ -1,6 +1,6 @@
 # TIC Suite
 
-**v1.6.0** — Plugin WordPress para **TIC Suite** (Gobernación de Nariño)
+**v1.11.0** — Plugin WordPress para **TIC Suite** (Gobernación de Nariño)
 que permite generar **15 tipos de gráficos interactivos con
 [@d3plus/core v3.1.4](https://d3plus.org/)** e insertarlos en cualquier
 página o entrada mediante **shortcode**.
@@ -16,14 +16,32 @@ página o entrada mediante **shortcode**.
 - **Arquitectura segura**: sanitización profunda, escapado sistemático, path traversal protegido, permisos por capability, sin `eval` ni JSON inyectado en el HTML.
 - **Experiencia minimalista** en admin y frontend con Dashicons y paleta contenida.
 
-## Instalación
+## Instalación y actualizaciones
 
-```bash
-# Clonar en wp-content/plugins/
-git clone https://github.com/GobernaciondeNarino/tic-suite.git tic-suite-graficos
-```
+> **Importante:** no uses «Code → Download ZIP» de GitHub para instalar ni actualizar.
+> Ese zip trae la carpeta `suite-tic-<rama>` y WordPress lo instala como un plugin **nuevo**.
+> El plugin debe vivir siempre en `wp-content/plugins/suite-tic/`.
 
-Activa **TIC Suite · Gráficos** en Plugins → Instalados.
+**Primera instalación (o migración desde una versión anterior sin actualizador):**
+descarga `suite-tic.zip` de la última [Release](https://github.com/GobernaciondeNarino/suite-tic/releases/latest)
+y súbelo en *Plugins → Añadir nuevo → Subir plugin*. Si ya existe, WordPress mostrará
+**«Reemplazar la versión actual»**.
+
+**Desde la 1.11.0:** WordPress consulta las releases de este repositorio y muestra el
+aviso de actualización en *Plugins*; se actualiza con un clic, en la misma carpeta.
+
+**Publicar una versión nueva (mantenedores):**
+
+1. Sube el número en `tic-suite-graficos.php` (`Version` y `TSG_VERSION`) y en `readme.txt` (`Stable tag`).
+2. Integra el cambio en la rama por defecto.
+3. Crea y sube la etiqueta: `git tag v1.11.1 && git push origin v1.11.1`.
+4. El workflow `Release` verifica que etiqueta, encabezado, constante y `Stable tag` coincidan, arma `suite-tic.zip` y crea la release. WordPress la detecta en menos de 12 horas (o en *Escritorio → Actualizaciones → Comprobar de nuevo*).
+
+Para armar el zip a mano: `bash scripts/build-zip.sh suite-tic` (genera `dist/suite-tic.zip`).
+
+**Seguridad:** quien pueda crear etiquetas en este repositorio puede publicar código que
+llegará a los sitios. Protege la rama por defecto y las etiquetas `v*`, exige 2FA a los
+colaboradores y limita quién tiene acceso de escritura.
 
 ## Uso
 
@@ -109,6 +127,10 @@ npx skills add https://github.com/nextlevelbuilder/ui-ux-pro-max-skill --skill u
 Estos skills aportan guías de diseño que se aplican cuando Claude escribe CSS/HTML, manteniendo la experiencia minimalista y accesible.
 
 ## Changelog
+
+### 1.11.0
+- **Actualización desde GitHub Releases** (Plugin Update Checker 6.0): WordPress avisa y actualiza en la misma carpeta `suite-tic`, sin instalar copias nuevas.
+- Workflow `.github/workflows/release.yml`: una etiqueta `vX.Y.Z` arma `suite-tic.zip` y crea la release.
 
 ### 1.10.0
 - **Datos actualizados** con los oficios MinTIC de enero y octubre de 2026 (corte septiembre 2026). Base `data/views/proyectos-tic.json` v2: fuente y corte por proyecto, históricos conservados.

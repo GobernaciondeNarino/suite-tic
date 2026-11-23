@@ -4,7 +4,7 @@ Tags: charts, d3plus, shortcode, dataviz, tic-suite
 Requires at least: 6.0
 Tested up to: 6.5
 Requires PHP: 7.4
-Stable tag: 1.10.0
+Stable tag: 1.11.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -38,6 +38,11 @@ TIC Suite · Gráficos convierte cualquier vista JSON registrada en un gráfico 
 * `uninstall.php` limpia las opciones al desinstalar.
 
 == Changelog ==
+
+= 1.11.0 =
+* Actualización desde GitHub: WordPress avisa de las nuevas versiones en Plugins y actualiza en la misma carpeta `suite-tic`, sin instalar una copia nueva. Usa Plugin Update Checker 6.0 (MIT) y solo considera releases que adjunten `suite-tic.zip`.
+* Workflow `release.yml`: al publicar una etiqueta `vX.Y.Z` arma el zip con carpeta fija y crea la release.
+* `Plugin URI` corregido a `GobernaciondeNarino/suite-tic`.
 
 = 1.10.0 =
 * Datos de Py Nación actualizados con los oficios MinTIC Rad. 262030528 (ene-2026) y Rad. 262178074 (oct-2026, corte sep-2026). La base `data/views/proyectos-tic.json` pasa a la versión 2, con fuente y corte por proyecto e histórico de lo reemplazado.
