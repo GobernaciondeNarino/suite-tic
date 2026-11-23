@@ -1,0 +1,51 @@
+name: Release
+
+# Al publicar una etiqueta vX.Y.Z se arma suite-tic.zip (carpeta fija
+# "suite-tic/") y se adjunta a una Release de GitHub. WordPress detecta esa
+# release y ofrece "Actualizar" dentro de Plugins, en la misma carpeta.
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verificar que la etiqueta coincide con la versión del plugin
+        run: |
+          TAG="${GITHUB_REF_NAME#v}"
+          HEADER="$(grep -m1 -E '^[[:space:]]*\*[[:space:]]*Version:' tic-suite-graficos.php | sed -E 's/.*Version:[[:space:]]*//' | tr -d '[:space:]')"
+          CONST="$(grep -m1 "define( 'TSG_VERSION'" tic-suite-graficos.php | sed -E "s/.*'([0-9][^']*)' \).*/\1/")"
+          STABLE="$(grep -m1 -E '^Stable tag:' readme.txt | sed -E 's/Stable tag:[[:space:]]*//' | tr -d '[:space:]')"
+          echo "tag=$TAG header=$HEADER const=$CONST stable=$STABLE"
+          if [ "$TAG" != "$HEADER" ] || [ "$TAG" != "$CONST" ] || [ "$TAG" != "$STABLE" ]; then
+            echo "::error::La etiqueta ($TAG) debe coincidir con Version del encabezado ($HEADER), TSG_VERSION ($CONST) y Stable tag ($STABLE)."
+            exit 1
+          fi
+
+      - name: Construir suite-tic.zip (carpeta fija suite-tic/)
+        run: bash scripts/build-zip.sh suite-tic
+
+      - name: Comprobar contenido del zip
+        run: |
+          unzip -Z1 dist/suite-tic.zip > /tmp/zip-names.txt
+          grep -qx 'suite-tic/tic-suite-graficos.php' /tmp/zip-names.txt
+          grep -qx 'suite-tic/includes/lib/plugin-update-checker/plugin-update-checker.php' /tmp/zip-names.txt
+          if grep -v '^suite-tic/' /tmp/zip-names.txt | grep -q .; then
+            echo "::error::El zip tiene archivos fuera de suite-tic/"
+            exit 1
+          fi
+
+      - name: Publicar Release con el zip
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" dist/suite-tic.zip \
+            --title "TIC Suite ${GITHUB_REF_NAME#v}" \
+            --generate-notes
