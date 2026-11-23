@@ -1,7 +1,7 @@
 {
   "vista": "despliegue_5g",
   "titulo": "Despliegue 5G",
-  "descripcion": "Puntos de despliegue de infraestructura 5G en los 64 municipios de Nariño.",
+  "descripcion": "Antenas 5G proyectadas por municipio (informe MinTIC 2024; meta departamental de 78 antenas a 2030).",
   "tipo_grafico_sugerido": "bar",
   "total_municipios": 64,
   "municipios": [

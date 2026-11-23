@@ -1,16 +1,16 @@
 {
   "vista": "centros_digitales_estado",
   "titulo": "Centros Digitales - Estado de Implementación",
-  "descripcion": "Centros Digitales asignados vs en operación vs en instalación por los 64 municipios de Nariño.",
+  "descripcion": "Centros Digitales asignados y en operación en los 64 municipios de Nariño (MinTIC, corte 2026-01). El oficio de octubre de 2026 reporta 925 en total sin detalle municipal.",
   "tipo_grafico_sugerido": "bar_stacked",
   "total_municipios": 64,
   "municipios": [
     {
       "municipio": "ALBÁN",
-      "en_operacion": 16,
+      "en_operacion": 15,
       "en_instalacion": 0,
       "en_planeacion": 0,
-      "total": 16,
+      "total": 15,
       "pct_operacion": 100.0
     },
     {
@@ -23,11 +23,11 @@
     },
     {
       "municipio": "ANCUYA",
-      "en_operacion": 9,
-      "en_instalacion": 1,
+      "en_operacion": 10,
+      "en_instalacion": 0,
       "en_planeacion": 0,
       "total": 10,
-      "pct_operacion": 90.0
+      "pct_operacion": 100.0
     },
     {
       "municipio": "ARBOLEDA",
@@ -39,11 +39,11 @@
     },
     {
       "municipio": "BARBACOAS",
-      "en_operacion": 25,
-      "en_instalacion": 3,
-      "en_planeacion": 1,
-      "total": 29,
-      "pct_operacion": 86.2
+      "en_operacion": 30,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
+      "total": 30,
+      "pct_operacion": 100.0
     },
     {
       "municipio": "BELÉN",
@@ -55,11 +55,11 @@
     },
     {
       "municipio": "BUESACO",
-      "en_operacion": 23,
-      "en_instalacion": 3,
+      "en_operacion": 37,
+      "en_instalacion": 0,
       "en_planeacion": 0,
-      "total": 26,
-      "pct_operacion": 88.5
+      "total": 37,
+      "pct_operacion": 100.0
     },
     {
       "municipio": "CHACHAGÜÍ",
@@ -71,11 +71,11 @@
     },
     {
       "municipio": "COLÓN",
-      "en_operacion": 6,
-      "en_instalacion": 1,
+      "en_operacion": 7,
+      "en_instalacion": 0,
       "en_planeacion": 0,
       "total": 7,
-      "pct_operacion": 85.7
+      "pct_operacion": 100.0
     },
     {
       "municipio": "CONSACÁ",
@@ -87,11 +87,11 @@
     },
     {
       "municipio": "CONTADERO",
-      "en_operacion": 8,
-      "en_instalacion": 1,
+      "en_operacion": 9,
+      "en_instalacion": 0,
       "en_planeacion": 0,
       "total": 9,
-      "pct_operacion": 88.9
+      "pct_operacion": 100.0
     },
     {
       "municipio": "CÓRDOBA",
@@ -103,35 +103,35 @@
     },
     {
       "municipio": "CUASPUD CARLOSAMA",
-      "en_operacion": 8,
+      "en_operacion": 7,
       "en_instalacion": 0,
       "en_planeacion": 0,
-      "total": 8,
+      "total": 7,
       "pct_operacion": 100.0
     },
     {
       "municipio": "CUMBAL",
-      "en_operacion": 17,
-      "en_instalacion": 4,
+      "en_operacion": 21,
+      "en_instalacion": 0,
       "en_planeacion": 0,
       "total": 21,
-      "pct_operacion": 81.0
+      "pct_operacion": 100.0
     },
     {
       "municipio": "CUMBITARA",
-      "en_operacion": 6,
-      "en_instalacion": 11,
+      "en_operacion": 18,
+      "en_instalacion": 0,
       "en_planeacion": 0,
-      "total": 17,
-      "pct_operacion": 35.3
+      "total": 18,
+      "pct_operacion": 100.0
     },
     {
       "municipio": "EL CHARCO",
-      "en_operacion": 0,
-      "en_instalacion": 2,
+      "en_operacion": 2,
+      "en_instalacion": 0,
       "en_planeacion": 0,
       "total": 2,
-      "pct_operacion": 0.0
+      "pct_operacion": 100.0
     },
     {
       "municipio": "EL PEÑOL",
@@ -143,43 +143,43 @@
     },
     {
       "municipio": "EL ROSARIO",
-      "en_operacion": 11,
-      "en_instalacion": 1,
+      "en_operacion": 12,
+      "en_instalacion": 0,
       "en_planeacion": 0,
       "total": 12,
-      "pct_operacion": 91.7
+      "pct_operacion": 100.0
     },
     {
       "municipio": "EL TABLÓN DE GÓMEZ",
-      "en_operacion": 8,
-      "en_instalacion": 1,
+      "en_operacion": 9,
+      "en_instalacion": 0,
       "en_planeacion": 0,
       "total": 9,
-      "pct_operacion": 88.9
+      "pct_operacion": 100.0
     },
     {
       "municipio": "EL TAMBO",
-      "en_operacion": 10,
-      "en_instalacion": 1,
+      "en_operacion": 11,
+      "en_instalacion": 0,
       "en_planeacion": 0,
       "total": 11,
-      "pct_operacion": 90.9
+      "pct_operacion": 100.0
     },
     {
       "municipio": "FRANCISCO PIZARRO",
-      "en_operacion": 2,
-      "en_instalacion": 2,
+      "en_operacion": 4,
+      "en_instalacion": 0,
       "en_planeacion": 0,
       "total": 4,
-      "pct_operacion": 50.0
+      "pct_operacion": 100.0
     },
     {
       "municipio": "FUNES",
-      "en_operacion": 5,
-      "en_instalacion": 1,
+      "en_operacion": 7,
+      "en_instalacion": 0,
       "en_planeacion": 0,
-      "total": 6,
-      "pct_operacion": 83.3
+      "total": 7,
+      "pct_operacion": 100.0
     },
     {
       "municipio": "GUACHUCAL",
@@ -199,19 +199,19 @@
     },
     {
       "municipio": "GUALMATÁN",
-      "en_operacion": 2,
+      "en_operacion": 3,
       "en_instalacion": 0,
       "en_planeacion": 0,
-      "total": 2,
+      "total": 3,
       "pct_operacion": 100.0
     },
     {
       "municipio": "ILES",
-      "en_operacion": 5,
-      "en_instalacion": 1,
+      "en_operacion": 6,
+      "en_instalacion": 0,
       "en_planeacion": 0,
       "total": 6,
-      "pct_operacion": 83.3
+      "pct_operacion": 100.0
     },
     {
       "municipio": "IMUÉS",
@@ -223,11 +223,11 @@
     },
     {
       "municipio": "IPIALES",
-      "en_operacion": 20,
-      "en_instalacion": 2,
+      "en_operacion": 22,
+      "en_instalacion": 0,
       "en_planeacion": 0,
       "total": 22,
-      "pct_operacion": 90.9
+      "pct_operacion": 100.0
     },
     {
       "municipio": "LA CRUZ",
@@ -239,11 +239,11 @@
     },
     {
       "municipio": "LA FLORIDA",
-      "en_operacion": 7,
-      "en_instalacion": 1,
+      "en_operacion": 8,
+      "en_instalacion": 0,
       "en_planeacion": 0,
       "total": 8,
-      "pct_operacion": 87.5
+      "pct_operacion": 100.0
     },
     {
       "municipio": "LA LLANADA",
@@ -255,11 +255,11 @@
     },
     {
       "municipio": "LA TOLA",
-      "en_operacion": 4,
-      "en_instalacion": 3,
+      "en_operacion": 7,
+      "en_instalacion": 0,
       "en_planeacion": 0,
       "total": 7,
-      "pct_operacion": 57.1
+      "pct_operacion": 100.0
     },
     {
       "municipio": "LA UNIÓN",
@@ -271,11 +271,11 @@
     },
     {
       "municipio": "LEIVA",
-      "en_operacion": 9,
-      "en_instalacion": 1,
+      "en_operacion": 10,
+      "en_instalacion": 0,
       "en_planeacion": 0,
       "total": 10,
-      "pct_operacion": 90.0
+      "pct_operacion": 100.0
     },
     {
       "municipio": "LINARES",
@@ -287,82 +287,82 @@
     },
     {
       "municipio": "LOS ANDES",
-      "en_operacion": 20,
-      "en_instalacion": 3,
+      "en_operacion": 23,
+      "en_instalacion": 0,
       "en_planeacion": 0,
       "total": 23,
-      "pct_operacion": 87.0
+      "pct_operacion": 100.0
     },
     {
       "municipio": "MAGÜÍ",
-      "en_operacion": 1,
-      "en_instalacion": 1,
+      "en_operacion": 2,
+      "en_instalacion": 0,
       "en_planeacion": 0,
       "total": 2,
-      "pct_operacion": 50.0
+      "pct_operacion": 100.0
     },
     {
       "municipio": "MALLAMA",
-      "en_operacion": 11,
-      "en_instalacion": 1,
+      "en_operacion": 13,
+      "en_instalacion": 0,
       "en_planeacion": 0,
-      "total": 12,
-      "pct_operacion": 91.7
+      "total": 13,
+      "pct_operacion": 100.0
     },
     {
       "municipio": "MOSQUERA",
-      "en_operacion": 6,
-      "en_instalacion": 1,
+      "en_operacion": 7,
+      "en_instalacion": 0,
       "en_planeacion": 0,
       "total": 7,
-      "pct_operacion": 85.7
+      "pct_operacion": 100.0
     },
     {
       "municipio": "NARIÑO",
-      "en_operacion": 0,
-      "en_instalacion": 1,
+      "en_operacion": 1,
+      "en_instalacion": 0,
       "en_planeacion": 0,
       "total": 1,
-      "pct_operacion": 0.0
+      "pct_operacion": 100.0
     },
     {
       "municipio": "OLAYA HERRERA",
-      "en_operacion": 3,
-      "en_instalacion": 2,
+      "en_operacion": 5,
+      "en_instalacion": 0,
       "en_planeacion": 0,
       "total": 5,
-      "pct_operacion": 60.0
+      "pct_operacion": 100.0
     },
     {
       "municipio": "OSPINA",
-      "en_operacion": 8,
+      "en_operacion": 11,
       "en_instalacion": 0,
       "en_planeacion": 0,
-      "total": 8,
+      "total": 11,
       "pct_operacion": 100.0
     },
     {
       "municipio": "PASTO",
       "en_operacion": 66,
-      "en_instalacion": 2,
+      "en_instalacion": 0,
       "en_planeacion": 0,
-      "total": 68,
-      "pct_operacion": 97.1
+      "total": 66,
+      "pct_operacion": 100.0
     },
     {
       "municipio": "POLICARPA",
-      "en_operacion": 35,
-      "en_instalacion": 2,
+      "en_operacion": 37,
+      "en_instalacion": 0,
       "en_planeacion": 0,
       "total": 37,
-      "pct_operacion": 94.6
+      "pct_operacion": 100.0
     },
     {
       "municipio": "POTOSÍ",
-      "en_operacion": 14,
+      "en_operacion": 15,
       "en_instalacion": 0,
       "en_planeacion": 0,
-      "total": 14,
+      "total": 15,
       "pct_operacion": 100.0
     },
     {
@@ -375,35 +375,35 @@
     },
     {
       "municipio": "PUERRES",
-      "en_operacion": 9,
-      "en_instalacion": 1,
+      "en_operacion": 10,
+      "en_instalacion": 0,
       "en_planeacion": 0,
       "total": 10,
-      "pct_operacion": 90.0
+      "pct_operacion": 100.0
     },
     {
       "municipio": "PUPIALES",
-      "en_operacion": 16,
-      "en_instalacion": 1,
+      "en_operacion": 19,
+      "en_instalacion": 0,
       "en_planeacion": 0,
-      "total": 17,
-      "pct_operacion": 94.1
+      "total": 19,
+      "pct_operacion": 100.0
     },
     {
       "municipio": "RICAURTE",
-      "en_operacion": 12,
-      "en_instalacion": 4,
+      "en_operacion": 16,
+      "en_instalacion": 0,
       "en_planeacion": 0,
       "total": 16,
-      "pct_operacion": 75.0
+      "pct_operacion": 100.0
     },
     {
       "municipio": "ROBERTO PAYÁN",
-      "en_operacion": 3,
-      "en_instalacion": 1,
+      "en_operacion": 4,
+      "en_instalacion": 0,
       "en_planeacion": 0,
       "total": 4,
-      "pct_operacion": 75.0
+      "pct_operacion": 100.0
     },
     {
       "municipio": "SAMANIEGO",
@@ -415,11 +415,11 @@
     },
     {
       "municipio": "SAN ANDRÉS DE TUMACO",
-      "en_operacion": 106,
-      "en_instalacion": 16,
+      "en_operacion": 125,
+      "en_instalacion": 0,
       "en_planeacion": 0,
-      "total": 122,
-      "pct_operacion": 86.9
+      "total": 125,
+      "pct_operacion": 100.0
     },
     {
       "municipio": "SAN BERNARDO",
@@ -431,11 +431,11 @@
     },
     {
       "municipio": "SAN LORENZO",
-      "en_operacion": 27,
-      "en_instalacion": 1,
+      "en_operacion": 28,
+      "en_instalacion": 0,
       "en_planeacion": 0,
       "total": 28,
-      "pct_operacion": 96.4
+      "pct_operacion": 100.0
     },
     {
       "municipio": "SAN PABLO",
@@ -455,19 +455,19 @@
     },
     {
       "municipio": "SANDONÁ",
-      "en_operacion": 11,
-      "en_instalacion": 2,
+      "en_operacion": 13,
+      "en_instalacion": 0,
       "en_planeacion": 0,
       "total": 13,
-      "pct_operacion": 84.6
+      "pct_operacion": 100.0
     },
     {
       "municipio": "SANTA BÁRBARA",
-      "en_operacion": 2,
-      "en_instalacion": 1,
-      "en_planeacion": 1,
+      "en_operacion": 4,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "total": 4,
-      "pct_operacion": 50.0
+      "pct_operacion": 100.0
     },
     {
       "municipio": "SANTACRUZ",
@@ -495,33 +495,34 @@
     },
     {
       "municipio": "TANGUA",
-      "en_operacion": 13,
+      "en_operacion": 12,
       "en_instalacion": 0,
       "en_planeacion": 0,
-      "total": 13,
+      "total": 12,
       "pct_operacion": 100.0
     },
     {
       "municipio": "TÚQUERRES",
-      "en_operacion": 23,
-      "en_instalacion": 2,
+      "en_operacion": 24,
+      "en_instalacion": 0,
       "en_planeacion": 0,
-      "total": 25,
-      "pct_operacion": 92.0
+      "total": 24,
+      "pct_operacion": 100.0
     },
     {
       "municipio": "YACUANQUER",
       "en_operacion": 12,
-      "en_instalacion": 1,
+      "en_instalacion": 0,
       "en_planeacion": 0,
-      "total": 13,
-      "pct_operacion": 92.3
+      "total": 12,
+      "pct_operacion": 100.0
     }
   ],
   "totales": {
-    "cd_asignados": 905,
-    "en_operacion": 820,
-    "en_instalacion": 83,
-    "en_planeacion": 2
+    "cd_asignados": 923,
+    "en_operacion": 923,
+    "en_instalacion": 0,
+    "en_planeacion": 0,
+    "cd_reportados_oct_2026": 925
   }
 }

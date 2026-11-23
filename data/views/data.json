@@ -1,15 +1,1712 @@
 {
   "metadata": {
-    "titulo": "Informe Gestión TIC en las Regiones - Nariño 2024",
-    "fuente": "Ministerio de Tecnologías de la Información y las Comunicaciones - MinTIC",
-    "destinatario": "Luis Alfonso Escobar Jaramillo, Gobernador de Nariño",
-    "fecha_documento": "2024-12-09",
-    "radicacion": "6965",
+    "titulo": "Base de proyectos MinTIC en Nariño",
+    "version": 2,
+    "actualizado": "2026-11-23",
+    "corte_mas_reciente": "2026-09",
     "departamento": "NARIÑO",
     "total_municipios": 64,
-    "pilares": ["Conectividad", "Educación Digital", "Ecosistemas de Innovación"]
+    "pilares": [
+      "Conectividad",
+      "Educación Digital",
+      "Ecosistemas de Innovación"
+    ],
+    "criterio": "Para cada proyecto prevalece la fuente más reciente que trae detalle por municipio; los datos reemplazados se conservan en claves historico_*.",
+    "fuentes": {
+      "informe-2024": {
+        "documento": "Informe Gestión TIC en las Regiones - Nariño 2024",
+        "entidad": "MinTIC",
+        "radicado": "6965",
+        "fecha": "2024-12-09",
+        "corte": "2024-12"
+      },
+      "mintic-2026-01": {
+        "documento": "Respuesta MinTIC a derecho de petición (Rad. 261002674)",
+        "entidad": "MinTIC - Dirección de Infraestructura",
+        "radicado": "262030528",
+        "fecha": "2026-01-30",
+        "corte": "2026-01"
+      },
+      "mintic-2026-10": {
+        "documento": "Respuesta MinTIC a comunicado (Rad. 261111891)",
+        "entidad": "MinTIC - Dirección de Infraestructura",
+        "radicado": "262178074",
+        "fecha": "2026-10-28",
+        "corte": "2026-09"
+      }
+    },
+    "observaciones": [
+      "Centros Digitales: el oficio de octubre de 2026 reporta 925 centros pero publica la tabla sin filas; se usa el detalle por municipio de enero de 2026 (923, todos en operación). La diferencia de 2 centros no se puede asignar a ningún municipio.",
+      "Centros Digitales: el oficio de enero de 2026 habla de \"67 municipios\" porque repite Ospina, Roberto Payán y San Andrés de Tumaco; aquí se suman sus filas (64 municipios).",
+      "ZCP: el oficio de octubre de 2026 anuncia 225 ZCP, pero la tabla que publica lista 11 municipios no PDET con 2 unidades cada uno (los mismos del Acuerdo Específico No. 2 de ConectiVIDAd). Se mantiene el detalle de enero de 2026 (211 ZCP en 16 municipios PDET, todas en operación) y la tabla de octubre se guarda aparte, sin usarla en indicadores.",
+      "ConectiVIDAd AE2: el oficio de octubre de 2026 anuncia una meta de 9.219 accesos, pero su tabla suma 4.117. En enero de 2026 se reportaban 9.179 accesos contratados, incluidos 5.000 en Ipiales y 810 en Pupiales, que en octubre aparecen con 128 y 580.",
+      "Escuelas PotencIA 5G: el oficio habla de 16 municipios, pero la tabla trae 13 municipios distintos (16 filas por asignatario).",
+      "Juntas de Internet: el PBS de Santacruz y Santa Bárbara difiere entre los dos oficios; se usa el de octubre de 2026.",
+      "Computadores para Educar: se usa la tabla municipal del proyecto, que suma 5.998 equipos como el resumen oficial; la versión anterior del análisis atribuía además 20 equipos a San Lorenzo y 1 a San Pablo (6.019).",
+      "Índice de presencia: Juntas de Internet (prerregistro y diseño, 2024) se reemplaza por las 23 juntas del Acuerdo Específico No. 5 y se suma Centros PotencIA, de modo que el índice sigue midiendo 12 programas. Como las juntas de 2024 cubrían casi todos los municipios y las de 2026 solo 15, el índice promedio baja aunque la oferta no haya disminuido.",
+      "Talento Tech, SENATIC, Colombia Programa, AvanzaTEC, Computadores para Educar, Despliegue 5G y convenios no aparecen en los oficios de 2026: conservan los datos del informe de 2024."
+    ],
+    "metadata_2024": {
+      "titulo": "Informe Gestión TIC en las Regiones - Nariño 2024",
+      "fuente": "Ministerio de Tecnologías de la Información y las Comunicaciones - MinTIC",
+      "destinatario": "Luis Alfonso Escobar Jaramillo, Gobernador de Nariño",
+      "fecha_documento": "2024-12-09",
+      "radicacion": "6965",
+      "departamento": "NARIÑO",
+      "total_municipios": 64,
+      "pilares": [
+        "Conectividad",
+        "Educación Digital",
+        "Ecosistemas de Innovación"
+      ]
+    }
   },
+  "municipios": [
+    {
+      "municipio": "ALBÁN",
+      "pdet": false,
+      "subregion": "Río Mayo"
+    },
+    {
+      "municipio": "ALDANA",
+      "pdet": false,
+      "subregion": "Exprovincia de Obando"
+    },
+    {
+      "municipio": "ANCUYA",
+      "pdet": false,
+      "subregion": "Occidente"
+    },
+    {
+      "municipio": "ARBOLEDA",
+      "pdet": false,
+      "subregion": "Juanambú"
+    },
+    {
+      "municipio": "BARBACOAS",
+      "pdet": true,
+      "subregion": "Telembí"
+    },
+    {
+      "municipio": "BELÉN",
+      "pdet": false,
+      "subregion": "Río Mayo"
+    },
+    {
+      "municipio": "BUESACO",
+      "pdet": false,
+      "subregion": "Juanambú"
+    },
+    {
+      "municipio": "CHACHAGÜÍ",
+      "pdet": false,
+      "subregion": "Centro"
+    },
+    {
+      "municipio": "COLÓN",
+      "pdet": false,
+      "subregion": "Río Mayo"
+    },
+    {
+      "municipio": "CONSACÁ",
+      "pdet": false,
+      "subregion": "Occidente"
+    },
+    {
+      "municipio": "CONTADERO",
+      "pdet": false,
+      "subregion": "Exprovincia de Obando"
+    },
+    {
+      "municipio": "CÓRDOBA",
+      "pdet": false,
+      "subregion": "Exprovincia de Obando"
+    },
+    {
+      "municipio": "CUASPUD CARLOSAMA",
+      "pdet": false,
+      "subregion": "Exprovincia de Obando"
+    },
+    {
+      "municipio": "CUMBAL",
+      "pdet": false,
+      "subregion": "Exprovincia de Obando"
+    },
+    {
+      "municipio": "CUMBITARA",
+      "pdet": true,
+      "subregion": "Cordillera"
+    },
+    {
+      "municipio": "EL CHARCO",
+      "pdet": true,
+      "subregion": "Sanquianga"
+    },
+    {
+      "municipio": "EL PEÑOL",
+      "pdet": false,
+      "subregion": "Guambuyaco"
+    },
+    {
+      "municipio": "EL ROSARIO",
+      "pdet": true,
+      "subregion": "Cordillera"
+    },
+    {
+      "municipio": "EL TABLÓN DE GÓMEZ",
+      "pdet": false,
+      "subregion": "Río Mayo"
+    },
+    {
+      "municipio": "EL TAMBO",
+      "pdet": false,
+      "subregion": "Guambuyaco"
+    },
+    {
+      "municipio": "FRANCISCO PIZARRO",
+      "pdet": true,
+      "subregion": "Pacífico Sur"
+    },
+    {
+      "municipio": "FUNES",
+      "pdet": false,
+      "subregion": "Exprovincia de Obando"
+    },
+    {
+      "municipio": "GUACHUCAL",
+      "pdet": false,
+      "subregion": "Exprovincia de Obando"
+    },
+    {
+      "municipio": "GUAITARILLA",
+      "pdet": false,
+      "subregion": "Sabana"
+    },
+    {
+      "municipio": "GUALMATÁN",
+      "pdet": false,
+      "subregion": "Exprovincia de Obando"
+    },
+    {
+      "municipio": "ILES",
+      "pdet": false,
+      "subregion": "Exprovincia de Obando"
+    },
+    {
+      "municipio": "IMUÉS",
+      "pdet": false,
+      "subregion": "Sabana"
+    },
+    {
+      "municipio": "IPIALES",
+      "pdet": false,
+      "subregion": "Exprovincia de Obando"
+    },
+    {
+      "municipio": "LA CRUZ",
+      "pdet": false,
+      "subregion": "Río Mayo"
+    },
+    {
+      "municipio": "LA FLORIDA",
+      "pdet": false,
+      "subregion": "Centro"
+    },
+    {
+      "municipio": "LA LLANADA",
+      "pdet": false,
+      "subregion": "Guambuyaco"
+    },
+    {
+      "municipio": "LA TOLA",
+      "pdet": true,
+      "subregion": "Sanquianga"
+    },
+    {
+      "municipio": "LA UNIÓN",
+      "pdet": false,
+      "subregion": "Juanambú"
+    },
+    {
+      "municipio": "LEIVA",
+      "pdet": true,
+      "subregion": "Cordillera"
+    },
+    {
+      "municipio": "LINARES",
+      "pdet": false,
+      "subregion": "Occidente"
+    },
+    {
+      "municipio": "LOS ANDES",
+      "pdet": true,
+      "subregion": "Guambuyaco"
+    },
+    {
+      "municipio": "MAGÜÍ",
+      "pdet": true,
+      "subregion": "Telembí"
+    },
+    {
+      "municipio": "MALLAMA",
+      "pdet": false,
+      "subregion": "Pie de Monte Costero"
+    },
+    {
+      "municipio": "MOSQUERA",
+      "pdet": true,
+      "subregion": "Sanquianga"
+    },
+    {
+      "municipio": "NARIÑO",
+      "pdet": false,
+      "subregion": "Centro"
+    },
+    {
+      "municipio": "OLAYA HERRERA",
+      "pdet": true,
+      "subregion": "Sanquianga"
+    },
+    {
+      "municipio": "OSPINA",
+      "pdet": false,
+      "subregion": "Sabana"
+    },
+    {
+      "municipio": "PASTO",
+      "pdet": false,
+      "subregion": "Centro"
+    },
+    {
+      "municipio": "POLICARPA",
+      "pdet": true,
+      "subregion": "Cordillera"
+    },
+    {
+      "municipio": "POTOSÍ",
+      "pdet": false,
+      "subregion": "Exprovincia de Obando"
+    },
+    {
+      "municipio": "PROVIDENCIA",
+      "pdet": false,
+      "subregion": "Abades"
+    },
+    {
+      "municipio": "PUERRES",
+      "pdet": false,
+      "subregion": "Exprovincia de Obando"
+    },
+    {
+      "municipio": "PUPIALES",
+      "pdet": false,
+      "subregion": "Exprovincia de Obando"
+    },
+    {
+      "municipio": "RICAURTE",
+      "pdet": true,
+      "subregion": "Pie de Monte Costero"
+    },
+    {
+      "municipio": "ROBERTO PAYÁN",
+      "pdet": true,
+      "subregion": "Telembí"
+    },
+    {
+      "municipio": "SAMANIEGO",
+      "pdet": false,
+      "subregion": "Abades"
+    },
+    {
+      "municipio": "SAN ANDRÉS DE TUMACO",
+      "pdet": true,
+      "subregion": "Pacífico Sur"
+    },
+    {
+      "municipio": "SAN BERNARDO",
+      "pdet": false,
+      "subregion": "Río Mayo"
+    },
+    {
+      "municipio": "SAN LORENZO",
+      "pdet": false,
+      "subregion": "Juanambú"
+    },
+    {
+      "municipio": "SAN PABLO",
+      "pdet": false,
+      "subregion": "Río Mayo"
+    },
+    {
+      "municipio": "SAN PEDRO DE CARTAGO",
+      "pdet": false,
+      "subregion": "Juanambú"
+    },
+    {
+      "municipio": "SANDONÁ",
+      "pdet": false,
+      "subregion": "Occidente"
+    },
+    {
+      "municipio": "SANTA BÁRBARA",
+      "pdet": true,
+      "subregion": "Sanquianga"
+    },
+    {
+      "municipio": "SANTACRUZ",
+      "pdet": false,
+      "subregion": "Abades"
+    },
+    {
+      "municipio": "SAPUYES",
+      "pdet": false,
+      "subregion": "Sabana"
+    },
+    {
+      "municipio": "TAMINANGO",
+      "pdet": false,
+      "subregion": "Cordillera"
+    },
+    {
+      "municipio": "TANGUA",
+      "pdet": false,
+      "subregion": "Centro"
+    },
+    {
+      "municipio": "TÚQUERRES",
+      "pdet": false,
+      "subregion": "Sabana"
+    },
+    {
+      "municipio": "YACUANQUER",
+      "pdet": false,
+      "subregion": "Centro"
+    }
+  ],
   "proyectos": {
+    "centros_digitales": {
+      "nombre": "Centros Digitales",
+      "programa": "Conectividad",
+      "vigencias": "2022-2029",
+      "descripcion": "Promueve la inclusión digital en zonas rurales mediante acceso público a Internet en centros poblados",
+      "fuente": "mintic-2026-01",
+      "fuente_total": "mintic-2026-10",
+      "operador": "UNIÓN TEMPORAL ETB NET COLOMBIA CONECTADA (Región B, Contrato de Aporte No. 749 de 2022)",
+      "resumen": {
+        "cd_asignados": 923,
+        "cd_en_operacion": 923,
+        "cd_en_instalacion": 0,
+        "cd_reportados_oct_2026": 925,
+        "municipios_cobertura": 64,
+        "inversion_narino_millones_cop": 147315,
+        "nota_inversion": "Inversión estimada del informe 2024; los oficios de 2026 no la detallan."
+      },
+      "municipios": [
+        {
+          "municipio": "ALBÁN",
+          "asignados": 15,
+          "en_operacion": 15,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 2604
+        },
+        {
+          "municipio": "ALDANA",
+          "asignados": 7,
+          "en_operacion": 7,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 1139
+        },
+        {
+          "municipio": "ANCUYA",
+          "asignados": 10,
+          "en_operacion": 10,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 1628
+        },
+        {
+          "municipio": "ARBOLEDA",
+          "asignados": 8,
+          "en_operacion": 8,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 1302
+        },
+        {
+          "municipio": "BARBACOAS",
+          "asignados": 30,
+          "en_operacion": 30,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 4721
+        },
+        {
+          "municipio": "BELÉN",
+          "asignados": 3,
+          "en_operacion": 3,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 488
+        },
+        {
+          "municipio": "BUESACO",
+          "asignados": 37,
+          "en_operacion": 37,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 4232
+        },
+        {
+          "municipio": "CHACHAGÜÍ",
+          "asignados": 9,
+          "en_operacion": 9,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 1465
+        },
+        {
+          "municipio": "COLÓN",
+          "asignados": 7,
+          "en_operacion": 7,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 1139
+        },
+        {
+          "municipio": "CONSACÁ",
+          "asignados": 7,
+          "en_operacion": 7,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 1139
+        },
+        {
+          "municipio": "CONTADERO",
+          "asignados": 9,
+          "en_operacion": 9,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 1465
+        },
+        {
+          "municipio": "CÓRDOBA",
+          "asignados": 17,
+          "en_operacion": 17,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 2767
+        },
+        {
+          "municipio": "CUASPUD CARLOSAMA",
+          "asignados": 7,
+          "en_operacion": 7,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 1302
+        },
+        {
+          "municipio": "CUMBAL",
+          "asignados": 21,
+          "en_operacion": 21,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 3418
+        },
+        {
+          "municipio": "CUMBITARA",
+          "asignados": 18,
+          "en_operacion": 18,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 2767
+        },
+        {
+          "municipio": "EL CHARCO",
+          "asignados": 2,
+          "en_operacion": 2,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 326
+        },
+        {
+          "municipio": "EL PEÑOL",
+          "asignados": 5,
+          "en_operacion": 5,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 814
+        },
+        {
+          "municipio": "EL ROSARIO",
+          "asignados": 12,
+          "en_operacion": 12,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 1953
+        },
+        {
+          "municipio": "EL TABLÓN DE GÓMEZ",
+          "asignados": 9,
+          "en_operacion": 9,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 1465
+        },
+        {
+          "municipio": "EL TAMBO",
+          "asignados": 11,
+          "en_operacion": 11,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 1791
+        },
+        {
+          "municipio": "FRANCISCO PIZARRO",
+          "asignados": 4,
+          "en_operacion": 4,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 651
+        },
+        {
+          "municipio": "FUNES",
+          "asignados": 7,
+          "en_operacion": 7,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 977
+        },
+        {
+          "municipio": "GUACHUCAL",
+          "asignados": 17,
+          "en_operacion": 17,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 2767
+        },
+        {
+          "municipio": "GUAITARILLA",
+          "asignados": 7,
+          "en_operacion": 7,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 1139
+        },
+        {
+          "municipio": "GUALMATÁN",
+          "asignados": 3,
+          "en_operacion": 3,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 326
+        },
+        {
+          "municipio": "ILES",
+          "asignados": 6,
+          "en_operacion": 6,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 977
+        },
+        {
+          "municipio": "IMUÉS",
+          "asignados": 9,
+          "en_operacion": 9,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 1465
+        },
+        {
+          "municipio": "IPIALES",
+          "asignados": 22,
+          "en_operacion": 22,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 3581
+        },
+        {
+          "municipio": "LA CRUZ",
+          "asignados": 7,
+          "en_operacion": 7,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 1139
+        },
+        {
+          "municipio": "LA FLORIDA",
+          "asignados": 8,
+          "en_operacion": 8,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 1302
+        },
+        {
+          "municipio": "LA LLANADA",
+          "asignados": 4,
+          "en_operacion": 4,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 651
+        },
+        {
+          "municipio": "LA TOLA",
+          "asignados": 7,
+          "en_operacion": 7,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 1139
+        },
+        {
+          "municipio": "LA UNIÓN",
+          "asignados": 14,
+          "en_operacion": 14,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 2279
+        },
+        {
+          "municipio": "LEIVA",
+          "asignados": 10,
+          "en_operacion": 10,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 1628
+        },
+        {
+          "municipio": "LINARES",
+          "asignados": 10,
+          "en_operacion": 10,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 1628
+        },
+        {
+          "municipio": "LOS ANDES",
+          "asignados": 23,
+          "en_operacion": 23,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 3744
+        },
+        {
+          "municipio": "MAGÜÍ",
+          "asignados": 2,
+          "en_operacion": 2,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 326
+        },
+        {
+          "municipio": "MALLAMA",
+          "asignados": 13,
+          "en_operacion": 13,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 1953
+        },
+        {
+          "municipio": "MOSQUERA",
+          "asignados": 7,
+          "en_operacion": 7,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 1139
+        },
+        {
+          "municipio": "NARIÑO",
+          "asignados": 1,
+          "en_operacion": 1,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 163
+        },
+        {
+          "municipio": "OLAYA HERRERA",
+          "asignados": 5,
+          "en_operacion": 5,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 814
+        },
+        {
+          "municipio": "OSPINA",
+          "asignados": 11,
+          "en_operacion": 11,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 1302
+        },
+        {
+          "municipio": "PASTO",
+          "asignados": 66,
+          "en_operacion": 66,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 11069
+        },
+        {
+          "municipio": "POLICARPA",
+          "asignados": 37,
+          "en_operacion": 37,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 6023
+        },
+        {
+          "municipio": "POTOSÍ",
+          "asignados": 15,
+          "en_operacion": 15,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 2279
+        },
+        {
+          "municipio": "PROVIDENCIA",
+          "asignados": 9,
+          "en_operacion": 9,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 1465
+        },
+        {
+          "municipio": "PUERRES",
+          "asignados": 10,
+          "en_operacion": 10,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 1628
+        },
+        {
+          "municipio": "PUPIALES",
+          "asignados": 19,
+          "en_operacion": 19,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 2767
+        },
+        {
+          "municipio": "RICAURTE",
+          "asignados": 16,
+          "en_operacion": 16,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 2604
+        },
+        {
+          "municipio": "ROBERTO PAYÁN",
+          "asignados": 4,
+          "en_operacion": 4,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 651
+        },
+        {
+          "municipio": "SAMANIEGO",
+          "asignados": 27,
+          "en_operacion": 27,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 4395
+        },
+        {
+          "municipio": "SAN ANDRÉS DE TUMACO",
+          "asignados": 125,
+          "en_operacion": 125,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 19859
+        },
+        {
+          "municipio": "SAN BERNARDO",
+          "asignados": 13,
+          "en_operacion": 13,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 2116
+        },
+        {
+          "municipio": "SAN LORENZO",
+          "asignados": 28,
+          "en_operacion": 28,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 4558
+        },
+        {
+          "municipio": "SAN PABLO",
+          "asignados": 14,
+          "en_operacion": 14,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 2279
+        },
+        {
+          "municipio": "SAN PEDRO DE CARTAGO",
+          "asignados": 7,
+          "en_operacion": 7,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 1139
+        },
+        {
+          "municipio": "SANDONÁ",
+          "asignados": 13,
+          "en_operacion": 13,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 2116
+        },
+        {
+          "municipio": "SANTA BÁRBARA",
+          "asignados": 4,
+          "en_operacion": 4,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 651
+        },
+        {
+          "municipio": "SANTACRUZ",
+          "asignados": 6,
+          "en_operacion": 6,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 977
+        },
+        {
+          "municipio": "SAPUYES",
+          "asignados": 5,
+          "en_operacion": 5,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 814
+        },
+        {
+          "municipio": "TAMINANGO",
+          "asignados": 16,
+          "en_operacion": 16,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 2604
+        },
+        {
+          "municipio": "TANGUA",
+          "asignados": 12,
+          "en_operacion": 12,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 2116
+        },
+        {
+          "municipio": "TÚQUERRES",
+          "asignados": 24,
+          "en_operacion": 24,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 4069
+        },
+        {
+          "municipio": "YACUANQUER",
+          "asignados": 12,
+          "en_operacion": 12,
+          "en_instalacion": 0,
+          "inversion_millones_cop": 2116
+        }
+      ],
+      "historico_2024": {
+        "fuente": "informe-2024",
+        "resumen": {
+          "cd_asignados_narino": 905,
+          "cd_en_operacion": 820,
+          "cd_en_instalacion": 83,
+          "cd_en_planeacion": 2,
+          "inversion_narino_millones_cop": 147315,
+          "inversion_nacional_billones_cop": 2.1,
+          "centros_poblados_nacionales": 14745,
+          "municipios_nacionales": 1104
+        },
+        "municipios": [
+          {
+            "municipio": "ALBÁN",
+            "asignados": 16,
+            "en_operacion": 16,
+            "en_instalacion": 0,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 2604
+          },
+          {
+            "municipio": "ALDANA",
+            "asignados": 7,
+            "en_operacion": 7,
+            "en_instalacion": 0,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 1139
+          },
+          {
+            "municipio": "ANCUYA",
+            "asignados": 10,
+            "en_operacion": 9,
+            "en_instalacion": 1,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 1628
+          },
+          {
+            "municipio": "ARBOLEDA",
+            "asignados": 8,
+            "en_operacion": 8,
+            "en_instalacion": 0,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 1302
+          },
+          {
+            "municipio": "BARBACOAS",
+            "asignados": 29,
+            "en_operacion": 25,
+            "en_instalacion": 3,
+            "en_planeacion": 1,
+            "inversion_millones_cop": 4721
+          },
+          {
+            "municipio": "BELÉN",
+            "asignados": 3,
+            "en_operacion": 3,
+            "en_instalacion": 0,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 488
+          },
+          {
+            "municipio": "BUESACO",
+            "asignados": 26,
+            "en_operacion": 23,
+            "en_instalacion": 3,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 4232
+          },
+          {
+            "municipio": "CHACHAGÜÍ",
+            "asignados": 9,
+            "en_operacion": 9,
+            "en_instalacion": 0,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 1465
+          },
+          {
+            "municipio": "COLÓN",
+            "asignados": 7,
+            "en_operacion": 6,
+            "en_instalacion": 1,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 1139
+          },
+          {
+            "municipio": "CONSACÁ",
+            "asignados": 7,
+            "en_operacion": 7,
+            "en_instalacion": 0,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 1139
+          },
+          {
+            "municipio": "CONTADERO",
+            "asignados": 9,
+            "en_operacion": 8,
+            "en_instalacion": 1,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 1465
+          },
+          {
+            "municipio": "CÓRDOBA",
+            "asignados": 17,
+            "en_operacion": 17,
+            "en_instalacion": 0,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 2767
+          },
+          {
+            "municipio": "CUASPUD CARLOSAMA",
+            "asignados": 8,
+            "en_operacion": 8,
+            "en_instalacion": 0,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 1302
+          },
+          {
+            "municipio": "CUMBAL",
+            "asignados": 21,
+            "en_operacion": 17,
+            "en_instalacion": 4,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 3418
+          },
+          {
+            "municipio": "CUMBITARA",
+            "asignados": 17,
+            "en_operacion": 6,
+            "en_instalacion": 11,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 2767
+          },
+          {
+            "municipio": "EL CHARCO",
+            "asignados": 2,
+            "en_operacion": 0,
+            "en_instalacion": 2,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 326
+          },
+          {
+            "municipio": "EL PEÑOL",
+            "asignados": 5,
+            "en_operacion": 5,
+            "en_instalacion": 0,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 814
+          },
+          {
+            "municipio": "EL ROSARIO",
+            "asignados": 12,
+            "en_operacion": 11,
+            "en_instalacion": 1,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 1953
+          },
+          {
+            "municipio": "EL TABLÓN DE GÓMEZ",
+            "asignados": 9,
+            "en_operacion": 8,
+            "en_instalacion": 1,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 1465
+          },
+          {
+            "municipio": "EL TAMBO",
+            "asignados": 11,
+            "en_operacion": 10,
+            "en_instalacion": 1,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 1791
+          },
+          {
+            "municipio": "FRANCISCO PIZARRO",
+            "asignados": 4,
+            "en_operacion": 2,
+            "en_instalacion": 2,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 651
+          },
+          {
+            "municipio": "FUNES",
+            "asignados": 6,
+            "en_operacion": 5,
+            "en_instalacion": 1,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 977
+          },
+          {
+            "municipio": "GUACHUCAL",
+            "asignados": 17,
+            "en_operacion": 17,
+            "en_instalacion": 0,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 2767
+          },
+          {
+            "municipio": "GUAITARILLA",
+            "asignados": 7,
+            "en_operacion": 7,
+            "en_instalacion": 0,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 1139
+          },
+          {
+            "municipio": "GUALMATÁN",
+            "asignados": 2,
+            "en_operacion": 2,
+            "en_instalacion": 0,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 326
+          },
+          {
+            "municipio": "ILES",
+            "asignados": 6,
+            "en_operacion": 5,
+            "en_instalacion": 1,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 977
+          },
+          {
+            "municipio": "IMUÉS",
+            "asignados": 9,
+            "en_operacion": 9,
+            "en_instalacion": 0,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 1465
+          },
+          {
+            "municipio": "IPIALES",
+            "asignados": 22,
+            "en_operacion": 20,
+            "en_instalacion": 2,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 3581
+          },
+          {
+            "municipio": "LA CRUZ",
+            "asignados": 7,
+            "en_operacion": 7,
+            "en_instalacion": 0,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 1139
+          },
+          {
+            "municipio": "LA FLORIDA",
+            "asignados": 8,
+            "en_operacion": 7,
+            "en_instalacion": 1,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 1302
+          },
+          {
+            "municipio": "LA LLANADA",
+            "asignados": 4,
+            "en_operacion": 4,
+            "en_instalacion": 0,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 651
+          },
+          {
+            "municipio": "LA TOLA",
+            "asignados": 7,
+            "en_operacion": 4,
+            "en_instalacion": 3,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 1139
+          },
+          {
+            "municipio": "LA UNIÓN",
+            "asignados": 14,
+            "en_operacion": 14,
+            "en_instalacion": 0,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 2279
+          },
+          {
+            "municipio": "LEIVA",
+            "asignados": 10,
+            "en_operacion": 9,
+            "en_instalacion": 1,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 1628
+          },
+          {
+            "municipio": "LINARES",
+            "asignados": 10,
+            "en_operacion": 10,
+            "en_instalacion": 0,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 1628
+          },
+          {
+            "municipio": "LOS ANDES",
+            "asignados": 23,
+            "en_operacion": 20,
+            "en_instalacion": 3,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 3744
+          },
+          {
+            "municipio": "MAGÜÍ",
+            "asignados": 2,
+            "en_operacion": 1,
+            "en_instalacion": 1,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 326
+          },
+          {
+            "municipio": "MALLAMA",
+            "asignados": 12,
+            "en_operacion": 11,
+            "en_instalacion": 1,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 1953
+          },
+          {
+            "municipio": "MOSQUERA",
+            "asignados": 7,
+            "en_operacion": 6,
+            "en_instalacion": 1,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 1139
+          },
+          {
+            "municipio": "NARIÑO",
+            "asignados": 1,
+            "en_operacion": 0,
+            "en_instalacion": 1,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 163
+          },
+          {
+            "municipio": "OLAYA HERRERA",
+            "asignados": 5,
+            "en_operacion": 3,
+            "en_instalacion": 2,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 814
+          },
+          {
+            "municipio": "OSPINA",
+            "asignados": 8,
+            "en_operacion": 8,
+            "en_instalacion": 0,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 1302
+          },
+          {
+            "municipio": "PASTO",
+            "asignados": 68,
+            "en_operacion": 66,
+            "en_instalacion": 2,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 11069
+          },
+          {
+            "municipio": "POLICARPA",
+            "asignados": 37,
+            "en_operacion": 35,
+            "en_instalacion": 2,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 6023
+          },
+          {
+            "municipio": "POTOSÍ",
+            "asignados": 14,
+            "en_operacion": 14,
+            "en_instalacion": 0,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 2279
+          },
+          {
+            "municipio": "PROVIDENCIA",
+            "asignados": 9,
+            "en_operacion": 9,
+            "en_instalacion": 0,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 1465
+          },
+          {
+            "municipio": "PUERRES",
+            "asignados": 10,
+            "en_operacion": 9,
+            "en_instalacion": 1,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 1628
+          },
+          {
+            "municipio": "PUPIALES",
+            "asignados": 17,
+            "en_operacion": 16,
+            "en_instalacion": 1,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 2767
+          },
+          {
+            "municipio": "RICAURTE",
+            "asignados": 16,
+            "en_operacion": 12,
+            "en_instalacion": 4,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 2604
+          },
+          {
+            "municipio": "ROBERTO PAYÁN",
+            "asignados": 4,
+            "en_operacion": 3,
+            "en_instalacion": 1,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 651
+          },
+          {
+            "municipio": "SAMANIEGO",
+            "asignados": 27,
+            "en_operacion": 27,
+            "en_instalacion": 0,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 4395
+          },
+          {
+            "municipio": "SAN ANDRÉS DE TUMACO",
+            "asignados": 122,
+            "en_operacion": 106,
+            "en_instalacion": 16,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 19859
+          },
+          {
+            "municipio": "SAN BERNARDO",
+            "asignados": 13,
+            "en_operacion": 13,
+            "en_instalacion": 0,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 2116
+          },
+          {
+            "municipio": "SAN LORENZO",
+            "asignados": 28,
+            "en_operacion": 27,
+            "en_instalacion": 1,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 4558
+          },
+          {
+            "municipio": "SAN PABLO",
+            "asignados": 14,
+            "en_operacion": 14,
+            "en_instalacion": 0,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 2279
+          },
+          {
+            "municipio": "SAN PEDRO DE CARTAGO",
+            "asignados": 7,
+            "en_operacion": 7,
+            "en_instalacion": 0,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 1139
+          },
+          {
+            "municipio": "SANDONÁ",
+            "asignados": 13,
+            "en_operacion": 11,
+            "en_instalacion": 2,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 2116
+          },
+          {
+            "municipio": "SANTA BÁRBARA",
+            "asignados": 4,
+            "en_operacion": 2,
+            "en_instalacion": 1,
+            "en_planeacion": 1,
+            "inversion_millones_cop": 651
+          },
+          {
+            "municipio": "SANTACRUZ",
+            "asignados": 6,
+            "en_operacion": 6,
+            "en_instalacion": 0,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 977
+          },
+          {
+            "municipio": "SAPUYES",
+            "asignados": 5,
+            "en_operacion": 5,
+            "en_instalacion": 0,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 814
+          },
+          {
+            "municipio": "TAMINANGO",
+            "asignados": 16,
+            "en_operacion": 16,
+            "en_instalacion": 0,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 2604
+          },
+          {
+            "municipio": "TANGUA",
+            "asignados": 13,
+            "en_operacion": 13,
+            "en_instalacion": 0,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 2116
+          },
+          {
+            "municipio": "TÚQUERRES",
+            "asignados": 25,
+            "en_operacion": 23,
+            "en_instalacion": 2,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 4069
+          },
+          {
+            "municipio": "YACUANQUER",
+            "asignados": 13,
+            "en_operacion": 12,
+            "en_instalacion": 1,
+            "en_planeacion": 0,
+            "inversion_millones_cop": 2116
+          }
+        ]
+      }
+    },
+    "conectividad_para_cambiar_vidas": {
+      "nombre": "ConectiVIDAd para Cambiar Vidas",
+      "programa": "Conectividad",
+      "vigencias": "2023-2026",
+      "descripcion": "Internet fijo para hogares de estratos 1 y 2 con Internexa S.A. (Convenio Interadministrativo Marco No. 790 de 2023), mediante ISP locales conectados a la red troncal fortalecida.",
+      "fuente": "mintic-2026-10",
+      "resumen": {
+        "meta_accesos": 11567,
+        "accesos_instalados": 5774,
+        "accesos_operativos": 5774,
+        "municipios": 12,
+        "meta_ae2_reportada_oct_2026": 9219,
+        "inversion_nacional_ae2_millones_cop": 270588
+      },
+      "municipios": [
+        {
+          "municipio": "ALBÁN",
+          "acuerdo": "AE2",
+          "meta_accesos": 305,
+          "accesos_instalados": 305,
+          "accesos_operativos": 305,
+          "isp": "CONETXIA"
+        },
+        {
+          "municipio": "BUESACO",
+          "acuerdo": "AE2",
+          "meta_accesos": 674,
+          "accesos_instalados": 674,
+          "accesos_operativos": 674,
+          "isp": "CONETXIA"
+        },
+        {
+          "municipio": "EL TABLÓN DE GÓMEZ",
+          "acuerdo": "AE2",
+          "meta_accesos": 62,
+          "accesos_instalados": 62,
+          "accesos_operativos": 62,
+          "isp": "CONETXIA"
+        },
+        {
+          "municipio": "EL TAMBO",
+          "acuerdo": "AE2",
+          "meta_accesos": 138,
+          "accesos_instalados": 138,
+          "accesos_operativos": 138,
+          "isp": "ERC EXPLORER"
+        },
+        {
+          "municipio": "IPIALES",
+          "acuerdo": "AE2",
+          "meta_accesos": 128,
+          "accesos_instalados": 128,
+          "accesos_operativos": 128,
+          "isp": "UNIMOS S.A. E.S.P."
+        },
+        {
+          "municipio": "LA FLORIDA",
+          "acuerdo": "AE2",
+          "meta_accesos": 175,
+          "accesos_instalados": 175,
+          "accesos_operativos": 175,
+          "isp": "ERC EXPLORER"
+        },
+        {
+          "municipio": "LA UNIÓN",
+          "acuerdo": "AE2",
+          "meta_accesos": 1400,
+          "accesos_instalados": 1400,
+          "accesos_operativos": 1400,
+          "isp": "SAN MIGUEL TELECOMUNICACIONES, SAN MIGUEL"
+        },
+        {
+          "municipio": "NARIÑO",
+          "acuerdo": "AE2",
+          "meta_accesos": 194,
+          "accesos_instalados": 194,
+          "accesos_operativos": 194,
+          "isp": "ERC EXPLORER"
+        },
+        {
+          "municipio": "PUPIALES",
+          "acuerdo": "AE2",
+          "meta_accesos": 580,
+          "accesos_instalados": 580,
+          "accesos_operativos": 580,
+          "isp": "DIROTRONIX SAS"
+        },
+        {
+          "municipio": "SAN ANDRÉS DE TUMACO",
+          "acuerdo": "AE4",
+          "meta_accesos": 7450,
+          "accesos_instalados": 1657,
+          "accesos_operativos": 1657,
+          "isp": "MEGANET FIBRA SAS - PLUSNET TELECOMUNICACIONES - TECNISOLUCIONES DENAR"
+        },
+        {
+          "municipio": "SAN BERNARDO",
+          "acuerdo": "AE2",
+          "meta_accesos": 231,
+          "accesos_instalados": 231,
+          "accesos_operativos": 231,
+          "isp": "CONETXIA"
+        },
+        {
+          "municipio": "SAN PABLO",
+          "acuerdo": "AE2",
+          "meta_accesos": 230,
+          "accesos_instalados": 230,
+          "accesos_operativos": 230,
+          "isp": "SUNNOVA S.A.S"
+        }
+      ],
+      "tabla_oct_2026_rotulada_zcp": {
+        "nota": "Publicada bajo el título ZCP en el oficio de octubre de 2026; sus municipios coinciden con los del AE2. No se usa en indicadores.",
+        "filas": [
+          {
+            "municipio": "ALBÁN",
+            "cantidad_asignada": 2,
+            "en_operacion": 2,
+            "inversion_estimada_cop": 485230283.58
+          },
+          {
+            "municipio": "BUESACO",
+            "cantidad_asignada": 2,
+            "en_operacion": 2,
+            "inversion_estimada_cop": 1072279380.77
+          },
+          {
+            "municipio": "EL TABLÓN DE GÓMEZ",
+            "cantidad_asignada": 2,
+            "en_operacion": 2,
+            "inversion_estimada_cop": 98636975.68
+          },
+          {
+            "municipio": "EL TAMBO",
+            "cantidad_asignada": 2,
+            "en_operacion": 2,
+            "inversion_estimada_cop": 219546816.83
+          },
+          {
+            "municipio": "IPIALES",
+            "cantidad_asignada": 2,
+            "en_operacion": 2,
+            "inversion_estimada_cop": 9672398170.37
+          },
+          {
+            "municipio": "LA FLORIDA",
+            "cantidad_asignada": 2,
+            "en_operacion": 2,
+            "inversion_estimada_cop": 278410818.45
+          },
+          {
+            "municipio": "LA UNIÓN",
+            "cantidad_asignada": 2,
+            "en_operacion": 2,
+            "inversion_estimada_cop": 2227286547.6
+          },
+          {
+            "municipio": "NARIÑO",
+            "cantidad_asignada": 2,
+            "en_operacion": 2,
+            "inversion_estimada_cop": 308638278.74
+          },
+          {
+            "municipio": "PUPIALES",
+            "cantidad_asignada": 2,
+            "en_operacion": 2,
+            "inversion_estimada_cop": 1566928503.6
+          },
+          {
+            "municipio": "SAN BERNARDO",
+            "cantidad_asignada": 2,
+            "en_operacion": 2,
+            "inversion_estimada_cop": 367502280.35
+          },
+          {
+            "municipio": "SAN PABLO",
+            "cantidad_asignada": 2,
+            "en_operacion": 2,
+            "inversion_estimada_cop": 365911361.39
+          }
+        ]
+      },
+      "historico_ene_2026": {
+        "fuente": "mintic-2026-01",
+        "corte": "2025-01",
+        "ae2_contratados_instalados": [
+          {
+            "municipio": "LA FLORIDA",
+            "isp": "ERC EXPLORER",
+            "accesos_contratados": 175,
+            "accesos_instalados": 175
+          },
+          {
+            "municipio": "NARIÑO",
+            "isp": "ERC EXPLORER",
+            "accesos_contratados": 194,
+            "accesos_instalados": 194
+          },
+          {
+            "municipio": "LA UNIÓN",
+            "isp": "SAN MIGUEL TELECOMUNICACIONES",
+            "accesos_contratados": 1000,
+            "accesos_instalados": 1000
+          },
+          {
+            "municipio": "LA UNIÓN",
+            "isp": "SAN MIGUEL",
+            "accesos_contratados": 400,
+            "accesos_instalados": 400
+          },
+          {
+            "municipio": "BUESACO",
+            "isp": "CONETXIA",
+            "accesos_contratados": 674,
+            "accesos_instalados": 674
+          },
+          {
+            "municipio": "EL TABLÓN DE GÓMEZ",
+            "isp": "CONETXIA",
+            "accesos_contratados": 62,
+            "accesos_instalados": 62
+          },
+          {
+            "municipio": "ALBÁN",
+            "isp": "CONETXIA",
+            "accesos_contratados": 285,
+            "accesos_instalados": 245
+          },
+          {
+            "municipio": "SAN BERNARDO",
+            "isp": "CONETXIA",
+            "accesos_contratados": 251,
+            "accesos_instalados": 191
+          },
+          {
+            "municipio": "SAN PABLO",
+            "isp": "SUNNOVA S.A.S",
+            "accesos_contratados": 190,
+            "accesos_instalados": 190
+          },
+          {
+            "municipio": "EL TAMBO",
+            "isp": "ERC EXPLORER",
+            "accesos_contratados": 138,
+            "accesos_instalados": 52
+          },
+          {
+            "municipio": "PUPIALES",
+            "isp": "DIROTRONIX SAS",
+            "accesos_contratados": 810,
+            "accesos_instalados": 0
+          },
+          {
+            "municipio": "IPIALES",
+            "isp": "UNIMOS S.A. E.S.P.",
+            "accesos_contratados": 5000,
+            "accesos_instalados": 0
+          }
+        ],
+        "ae4_tumaco": {
+          "accesos_contratados": 7450,
+          "accesos_instalados": 293
+        }
+      },
+      "historico_2024": {
+        "fuente": "informe-2024",
+        "campo": "conectividad_hogares",
+        "municipios": [
+          {
+            "municipio": "ALBÁN",
+            "hogares": 340
+          },
+          {
+            "municipio": "BELÉN",
+            "hogares": 693
+          },
+          {
+            "municipio": "BUESACO",
+            "hogares": 674
+          },
+          {
+            "municipio": "COLÓN",
+            "hogares": 109
+          },
+          {
+            "municipio": "EL TABLÓN DE GÓMEZ",
+            "hogares": 62
+          },
+          {
+            "municipio": "EL TAMBO",
+            "hogares": 276
+          },
+          {
+            "municipio": "FRANCISCO PIZARRO",
+            "hogares": 1713
+          },
+          {
+            "municipio": "LA FLORIDA",
+            "hogares": 210
+          },
+          {
+            "municipio": "LA UNIÓN",
+            "hogares": 2716
+          },
+          {
+            "municipio": "NARIÑO",
+            "hogares": 387
+          },
+          {
+            "municipio": "SAN ANDRÉS DE TUMACO",
+            "hogares": 24470
+          },
+          {
+            "municipio": "SAN BERNARDO",
+            "hogares": 279
+          },
+          {
+            "municipio": "SAN PABLO",
+            "hogares": 519
+          },
+          {
+            "municipio": "YACUANQUER",
+            "hogares": 428
+          }
+        ]
+      }
+    },
     "zonas_comunitarias_paz": {
       "nombre": "Zonas Comunitarias para la Paz (ZCP)",
       "descripcion": "Espacios Wi-Fi ubicados en corregimientos y comunidades rurales de municipios PDET para cumplir el acuerdo de paz y la inclusión digital",
@@ -20,26 +1717,109 @@
         "zcp_en_operacion": 211,
         "municipios_pdet_beneficiados": 16,
         "inversion_narino_millones_cop": 29205,
-        "inversion_nacional_millones_cop": 205992
+        "inversion_nacional_millones_cop": 205992,
+        "zcp_reportadas_oct_2026": 225
       },
       "municipios": [
-        { "municipio": "BARBACOAS", "zcp_asignada": 17, "operacion": 17, "inversion_millones_cop": 2353 },
-        { "municipio": "CUMBITARA", "zcp_asignada": 16, "operacion": 16, "inversion_millones_cop": 2215 },
-        { "municipio": "EL CHARCO", "zcp_asignada": 18, "operacion": 18, "inversion_millones_cop": 2491 },
-        { "municipio": "EL ROSARIO", "zcp_asignada": 9, "operacion": 9, "inversion_millones_cop": 1246 },
-        { "municipio": "FRANCISCO PIZARRO", "zcp_asignada": 7, "operacion": 7, "inversion_millones_cop": 969 },
-        { "municipio": "LA TOLA", "zcp_asignada": 7, "operacion": 7, "inversion_millones_cop": 969 },
-        { "municipio": "LEIVA", "zcp_asignada": 12, "operacion": 12, "inversion_millones_cop": 1661 },
-        { "municipio": "LOS ANDES", "zcp_asignada": 1, "operacion": 1, "inversion_millones_cop": 138 },
-        { "municipio": "MAGÜÍ", "zcp_asignada": 16, "operacion": 16, "inversion_millones_cop": 2215 },
-        { "municipio": "MOSQUERA", "zcp_asignada": 14, "operacion": 14, "inversion_millones_cop": 1938 },
-        { "municipio": "OLAYA HERRERA", "zcp_asignada": 18, "operacion": 18, "inversion_millones_cop": 2491 },
-        { "municipio": "POLICARPA", "zcp_asignada": 7, "operacion": 7, "inversion_millones_cop": 969 },
-        { "municipio": "RICAURTE", "zcp_asignada": 14, "operacion": 14, "inversion_millones_cop": 1938 },
-        { "municipio": "ROBERTO PAYÁN", "zcp_asignada": 21, "operacion": 21, "inversion_millones_cop": 2907 },
-        { "municipio": "SAN ANDRÉS DE TUMACO", "zcp_asignada": 15, "operacion": 15, "inversion_millones_cop": 2076 },
-        { "municipio": "SANTA BÁRBARA", "zcp_asignada": 19, "operacion": 19, "inversion_millones_cop": 2630 }
-      ]
+        {
+          "municipio": "BARBACOAS",
+          "zcp_asignada": 17,
+          "operacion": 17,
+          "inversion_millones_cop": 2353
+        },
+        {
+          "municipio": "CUMBITARA",
+          "zcp_asignada": 16,
+          "operacion": 16,
+          "inversion_millones_cop": 2215
+        },
+        {
+          "municipio": "EL CHARCO",
+          "zcp_asignada": 18,
+          "operacion": 18,
+          "inversion_millones_cop": 2491
+        },
+        {
+          "municipio": "EL ROSARIO",
+          "zcp_asignada": 9,
+          "operacion": 9,
+          "inversion_millones_cop": 1246
+        },
+        {
+          "municipio": "FRANCISCO PIZARRO",
+          "zcp_asignada": 7,
+          "operacion": 7,
+          "inversion_millones_cop": 969
+        },
+        {
+          "municipio": "LA TOLA",
+          "zcp_asignada": 7,
+          "operacion": 7,
+          "inversion_millones_cop": 969
+        },
+        {
+          "municipio": "LEIVA",
+          "zcp_asignada": 12,
+          "operacion": 12,
+          "inversion_millones_cop": 1661
+        },
+        {
+          "municipio": "LOS ANDES",
+          "zcp_asignada": 1,
+          "operacion": 1,
+          "inversion_millones_cop": 138
+        },
+        {
+          "municipio": "MAGÜÍ",
+          "zcp_asignada": 16,
+          "operacion": 16,
+          "inversion_millones_cop": 2215
+        },
+        {
+          "municipio": "MOSQUERA",
+          "zcp_asignada": 14,
+          "operacion": 14,
+          "inversion_millones_cop": 1938
+        },
+        {
+          "municipio": "OLAYA HERRERA",
+          "zcp_asignada": 18,
+          "operacion": 18,
+          "inversion_millones_cop": 2491
+        },
+        {
+          "municipio": "POLICARPA",
+          "zcp_asignada": 7,
+          "operacion": 7,
+          "inversion_millones_cop": 969
+        },
+        {
+          "municipio": "RICAURTE",
+          "zcp_asignada": 14,
+          "operacion": 14,
+          "inversion_millones_cop": 1938
+        },
+        {
+          "municipio": "ROBERTO PAYÁN",
+          "zcp_asignada": 21,
+          "operacion": 21,
+          "inversion_millones_cop": 2907
+        },
+        {
+          "municipio": "SAN ANDRÉS DE TUMACO",
+          "zcp_asignada": 15,
+          "operacion": 15,
+          "inversion_millones_cop": 2076
+        },
+        {
+          "municipio": "SANTA BÁRBARA",
+          "zcp_asignada": 19,
+          "operacion": 19,
+          "inversion_millones_cop": 2630
+        }
+      ],
+      "fuente": "mintic-2026-01",
+      "operador": "RED DE INGENIERÍA SAS (Región Sur A)"
     },
     "despliegue_5g": {
       "nombre": "Despliegue 5G",
@@ -48,190 +1828,1008 @@
       "resumen": {
         "antenas_a_desplegar_narino": 78,
         "meta_ano": 2030
-      }
+      },
+      "fuente": "informe-2024",
+      "municipios": [
+        {
+          "municipio": "BARBACOAS",
+          "antenas": 2
+        },
+        {
+          "municipio": "CUMBAL",
+          "antenas": 3
+        },
+        {
+          "municipio": "EL CHARCO",
+          "antenas": 2
+        },
+        {
+          "municipio": "IPIALES",
+          "antenas": 1
+        },
+        {
+          "municipio": "ROBERTO PAYÁN",
+          "antenas": 4
+        },
+        {
+          "municipio": "SAMANIEGO",
+          "antenas": 1
+        },
+        {
+          "municipio": "SAN ANDRÉS DE TUMACO",
+          "antenas": 21
+        }
+      ]
     },
     "escuelas_potencia_5g": {
-      "nombre": "Escuelas Potencia 5G",
-      "descripcion": "Conexión de escuelas rurales como obligación de la subasta 5G, beneficiando instituciones educativas por más de 15 años",
+      "nombre": "Escuelas PotencIA Subasta 5G",
       "programa": "Conectividad",
+      "vigencias": "2024-2042",
+      "descripcion": "Conexión por 18 años de sedes educativas rurales como obligación de hacer de la subasta 5G (operadores COMCEL, TIGO-MOVISTAR, WOM y TELECALL).",
+      "fuente": "mintic-2026-01",
       "resumen": {
-        "sedes_educativas_beneficiadas": 40,
-        "municipios_beneficiados": 10,
-        "inversion_narino_millones_cop": 13894,
-        "instituciones_educativas_nacionales": 1191,
-        "municipios_nacionales": 233,
-        "departamentos_nacionales": 21,
-        "estudiantes_beneficiados_aprox": 73000
+        "sedes_previstas": 40,
+        "en_operacion": 10,
+        "en_instalacion": 2,
+        "en_planeacion": 28,
+        "municipios_con_sedes": 10,
+        "nota": "TELECALL tiene proceso administrativo por presunto incumplimiento; WOM inicia obligaciones el 1 de enero de 2028."
       },
+      "detalle": [
+        {
+          "asignatario": "COMCEL S.A.",
+          "municipio": "ALDANA",
+          "instalacion": 0,
+          "operacion": 2,
+          "planeacion": 0
+        },
+        {
+          "asignatario": "COMCEL S.A.",
+          "municipio": "ARBOLEDA",
+          "instalacion": 0,
+          "operacion": 4,
+          "planeacion": 0
+        },
+        {
+          "asignatario": "COMCEL S.A.",
+          "municipio": "CONSACÁ",
+          "instalacion": 0,
+          "operacion": 3,
+          "planeacion": 0
+        },
+        {
+          "asignatario": "COMCEL S.A.",
+          "municipio": "CUASPUD CARLOSAMA",
+          "instalacion": 0,
+          "operacion": 1,
+          "planeacion": 0
+        },
+        {
+          "asignatario": "TELECALL",
+          "municipio": "EL ROSARIO",
+          "instalacion": 0,
+          "operacion": 0,
+          "planeacion": 1
+        },
+        {
+          "asignatario": "TIGO-MOVISTAR",
+          "municipio": "CÓRDOBA",
+          "instalacion": 1,
+          "operacion": 0,
+          "planeacion": 0
+        },
+        {
+          "asignatario": "TIGO-MOVISTAR",
+          "municipio": "CUMBITARA",
+          "instalacion": 0,
+          "operacion": 0,
+          "planeacion": 0
+        },
+        {
+          "asignatario": "TIGO-MOVISTAR",
+          "municipio": "MOSQUERA",
+          "instalacion": 0,
+          "operacion": 0,
+          "planeacion": 0
+        },
+        {
+          "asignatario": "TIGO-MOVISTAR",
+          "municipio": "PASTO",
+          "instalacion": 0,
+          "operacion": 0,
+          "planeacion": 0
+        },
+        {
+          "asignatario": "TIGO-MOVISTAR",
+          "municipio": "SAN ANDRÉS DE TUMACO",
+          "instalacion": 1,
+          "operacion": 0,
+          "planeacion": 0
+        },
+        {
+          "asignatario": "WOM",
+          "municipio": "ARBOLEDA",
+          "instalacion": 0,
+          "operacion": 0,
+          "planeacion": 4
+        },
+        {
+          "asignatario": "WOM",
+          "municipio": "BUESACO",
+          "instalacion": 0,
+          "operacion": 0,
+          "planeacion": 9
+        },
+        {
+          "asignatario": "WOM",
+          "municipio": "CONSACÁ",
+          "instalacion": 0,
+          "operacion": 0,
+          "planeacion": 1
+        },
+        {
+          "asignatario": "WOM",
+          "municipio": "EL CHARCO",
+          "instalacion": 0,
+          "operacion": 0,
+          "planeacion": 1
+        },
+        {
+          "asignatario": "WOM",
+          "municipio": "MAGÜÍ",
+          "instalacion": 0,
+          "operacion": 0,
+          "planeacion": 1
+        },
+        {
+          "asignatario": "WOM",
+          "municipio": "SAN ANDRÉS DE TUMACO",
+          "instalacion": 0,
+          "operacion": 0,
+          "planeacion": 11
+        }
+      ],
       "municipios": [
-        { "municipio": "ALDANA", "sedes_educativas": 2, "inversion_millones_cop": 843 },
-        { "municipio": "ARBOLEDA", "sedes_educativas": 8, "inversion_millones_cop": 1620 },
-        { "municipio": "BUESACO", "sedes_educativas": 9, "inversion_millones_cop": 3089 },
-        { "municipio": "CONSACÁ", "sedes_educativas": 4, "inversion_millones_cop": 1368 },
-        { "municipio": "CÓRDOBA", "sedes_educativas": 1, "inversion_millones_cop": 222 },
-        { "municipio": "CUASPUD CARLOSAMA", "sedes_educativas": 1, "inversion_millones_cop": 384 },
-        { "municipio": "EL CHARCO", "sedes_educativas": 1, "inversion_millones_cop": 215 },
-        { "municipio": "EL ROSARIO", "sedes_educativas": 1, "inversion_millones_cop": 1120 },
-        { "municipio": "MAGÜÍ", "sedes_educativas": 1, "inversion_millones_cop": 828 },
-        { "municipio": "SAN ANDRÉS DE TUMACO", "sedes_educativas": 12, "inversion_millones_cop": 4206 }
-      ]
+        {
+          "municipio": "ALDANA",
+          "total": 2,
+          "operacion": 2,
+          "instalacion": 0,
+          "planeacion": 0,
+          "asignatarios": "COMCEL S.A."
+        },
+        {
+          "municipio": "ARBOLEDA",
+          "total": 8,
+          "operacion": 4,
+          "instalacion": 0,
+          "planeacion": 4,
+          "asignatarios": "COMCEL S.A., WOM"
+        },
+        {
+          "municipio": "BUESACO",
+          "total": 9,
+          "operacion": 0,
+          "instalacion": 0,
+          "planeacion": 9,
+          "asignatarios": "WOM"
+        },
+        {
+          "municipio": "CONSACÁ",
+          "total": 4,
+          "operacion": 3,
+          "instalacion": 0,
+          "planeacion": 1,
+          "asignatarios": "COMCEL S.A., WOM"
+        },
+        {
+          "municipio": "CUASPUD CARLOSAMA",
+          "total": 1,
+          "operacion": 1,
+          "instalacion": 0,
+          "planeacion": 0,
+          "asignatarios": "COMCEL S.A."
+        },
+        {
+          "municipio": "CUMBITARA",
+          "total": 0,
+          "operacion": 0,
+          "instalacion": 0,
+          "planeacion": 0,
+          "asignatarios": "TIGO-MOVISTAR"
+        },
+        {
+          "municipio": "CÓRDOBA",
+          "total": 1,
+          "operacion": 0,
+          "instalacion": 1,
+          "planeacion": 0,
+          "asignatarios": "TIGO-MOVISTAR"
+        },
+        {
+          "municipio": "EL CHARCO",
+          "total": 1,
+          "operacion": 0,
+          "instalacion": 0,
+          "planeacion": 1,
+          "asignatarios": "WOM"
+        },
+        {
+          "municipio": "EL ROSARIO",
+          "total": 1,
+          "operacion": 0,
+          "instalacion": 0,
+          "planeacion": 1,
+          "asignatarios": "TELECALL"
+        },
+        {
+          "municipio": "MAGÜÍ",
+          "total": 1,
+          "operacion": 0,
+          "instalacion": 0,
+          "planeacion": 1,
+          "asignatarios": "WOM"
+        },
+        {
+          "municipio": "MOSQUERA",
+          "total": 0,
+          "operacion": 0,
+          "instalacion": 0,
+          "planeacion": 0,
+          "asignatarios": "TIGO-MOVISTAR"
+        },
+        {
+          "municipio": "PASTO",
+          "total": 0,
+          "operacion": 0,
+          "instalacion": 0,
+          "planeacion": 0,
+          "asignatarios": "TIGO-MOVISTAR"
+        },
+        {
+          "municipio": "SAN ANDRÉS DE TUMACO",
+          "total": 12,
+          "operacion": 0,
+          "instalacion": 1,
+          "planeacion": 11,
+          "asignatarios": "TIGO-MOVISTAR, WOM"
+        }
+      ],
+      "historico_2024": {
+        "fuente": "informe-2024",
+        "resumen": {
+          "sedes_educativas_beneficiadas": 40,
+          "municipios_beneficiados": 10,
+          "inversion_narino_millones_cop": 13894,
+          "instituciones_educativas_nacionales": 1191,
+          "municipios_nacionales": 233,
+          "departamentos_nacionales": 21,
+          "estudiantes_beneficiados_aprox": 73000
+        },
+        "municipios": [
+          {
+            "municipio": "ALDANA",
+            "sedes_educativas": 2,
+            "inversion_millones_cop": 843
+          },
+          {
+            "municipio": "ARBOLEDA",
+            "sedes_educativas": 8,
+            "inversion_millones_cop": 1620
+          },
+          {
+            "municipio": "BUESACO",
+            "sedes_educativas": 9,
+            "inversion_millones_cop": 3089
+          },
+          {
+            "municipio": "CONSACÁ",
+            "sedes_educativas": 4,
+            "inversion_millones_cop": 1368
+          },
+          {
+            "municipio": "CÓRDOBA",
+            "sedes_educativas": 1,
+            "inversion_millones_cop": 222
+          },
+          {
+            "municipio": "CUASPUD CARLOSAMA",
+            "sedes_educativas": 1,
+            "inversion_millones_cop": 384
+          },
+          {
+            "municipio": "EL CHARCO",
+            "sedes_educativas": 1,
+            "inversion_millones_cop": 215
+          },
+          {
+            "municipio": "EL ROSARIO",
+            "sedes_educativas": 1,
+            "inversion_millones_cop": 1120
+          },
+          {
+            "municipio": "MAGÜÍ",
+            "sedes_educativas": 1,
+            "inversion_millones_cop": 828
+          },
+          {
+            "municipio": "SAN ANDRÉS DE TUMACO",
+            "sedes_educativas": 12,
+            "inversion_millones_cop": 4206
+          }
+        ]
+      }
     },
     "juntas_de_internet": {
-      "nombre": "Juntas de Internet",
-      "descripcion": "Modelo que empodera a las comunidades para gestionar el servicio de internet comunitario, fijar tarifas justas y asegurar su sostenibilidad",
+      "nombre": "Juntas de Internet - Comunidades de Conectividad",
       "programa": "Conectividad",
+      "vigencias": "2024-2026",
+      "descripcion": "Redes comunitarias de Internet fijo construidas, operadas y sostenidas por las propias comunidades rurales (Acuerdo Específico No. 5, ConectiVIDAd).",
+      "fuente": "mintic-2026-10",
+      "fuente_estado": "mintic-2026-01",
       "resumen": {
-        "comunidades_pre_registradas": 1860,
-        "comunidades_diseno_implementacion": 205,
-        "municipios_cobertura": 64
+        "juntas": 23,
+        "hogares_previstos": 1935,
+        "municipios": 15,
+        "accesos_hogares_instalados_ene_2026": 584,
+        "estado_ene_2026": {
+          "nodo_en_planeacion": 4,
+          "en_instalacion": 4,
+          "nodo_habilitado": 8,
+          "sin_instalar": 7
+        }
       },
+      "juntas": [
+        {
+          "municipio": "PASTO",
+          "junta": "SAN JUAN",
+          "hogares_previstos": 85,
+          "pbs": "INRED"
+        },
+        {
+          "municipio": "PASTO",
+          "junta": "EL MOTILÓN",
+          "hogares_previstos": 61,
+          "pbs": "INRED"
+        },
+        {
+          "municipio": "BARBACOAS",
+          "junta": "RENACER TELEMBÍ",
+          "hogares_previstos": 126,
+          "pbs": "TSG"
+        },
+        {
+          "municipio": "EL CHARCO",
+          "junta": "PLAYA BASÁN",
+          "hogares_previstos": 153,
+          "pbs": "TSG"
+        },
+        {
+          "municipio": "EL CHARCO",
+          "junta": "SAN PEDRO BOLÍVAR",
+          "hogares_previstos": 90,
+          "pbs": "TSG"
+        },
+        {
+          "municipio": "EL TAMBO",
+          "junta": "ASOMUJERES",
+          "hogares_previstos": 96,
+          "pbs": "INRED"
+        },
+        {
+          "municipio": "EL TAMBO",
+          "junta": "CHUZA",
+          "hogares_previstos": 65,
+          "pbs": "INRED"
+        },
+        {
+          "municipio": "EL TAMBO",
+          "junta": "RICAURTE",
+          "hogares_previstos": 100,
+          "pbs": "INRED"
+        },
+        {
+          "municipio": "EL TAMBO",
+          "junta": "SAN PEDRO",
+          "hogares_previstos": 153,
+          "pbs": "INRED"
+        },
+        {
+          "municipio": "EL TAMBO",
+          "junta": "EL PLACER",
+          "hogares_previstos": 51,
+          "pbs": "INRED"
+        },
+        {
+          "municipio": "LA UNIÓN",
+          "junta": "CUCHILLAS PEÑAS BLANCAS",
+          "hogares_previstos": 150,
+          "pbs": "INRED"
+        },
+        {
+          "municipio": "LEIVA",
+          "junta": "ASLICASA",
+          "hogares_previstos": 56,
+          "pbs": "INRED"
+        },
+        {
+          "municipio": "LEIVA",
+          "junta": "LIMONAR",
+          "hogares_previstos": 48,
+          "pbs": "INRED"
+        },
+        {
+          "municipio": "MALLAMA",
+          "junta": "LA OSCURANA",
+          "hogares_previstos": 56,
+          "pbs": "INRED"
+        },
+        {
+          "municipio": "PROVIDENCIA",
+          "junta": "SANTA LUCÍA",
+          "hogares_previstos": 100,
+          "pbs": "INRED"
+        },
+        {
+          "municipio": "PUPIALES",
+          "junta": "CASA FRÍA",
+          "hogares_previstos": 71,
+          "pbs": "INRED"
+        },
+        {
+          "municipio": "SAMANIEGO",
+          "junta": "NORTE DE SAMANIEGO",
+          "hogares_previstos": 70,
+          "pbs": "INRED"
+        },
+        {
+          "municipio": "SANTA BÁRBARA",
+          "junta": "SOLEDAD PUEBLITO ASOCIACIÓN ASOPROCAPI",
+          "hogares_previstos": 45,
+          "pbs": "TSG"
+        },
+        {
+          "municipio": "SANTACRUZ",
+          "junta": "SANTA ROSA",
+          "hogares_previstos": 43,
+          "pbs": "INRED"
+        },
+        {
+          "municipio": "TAMINANGO",
+          "junta": "LOMA LARGA",
+          "hogares_previstos": 40,
+          "pbs": "INRED"
+        },
+        {
+          "municipio": "SAN ANDRÉS DE TUMACO",
+          "junta": "PINDALES",
+          "hogares_previstos": 100,
+          "pbs": "INRED"
+        },
+        {
+          "municipio": "SAN ANDRÉS DE TUMACO",
+          "junta": "SENDEROS DE LA CEIBA 1",
+          "hogares_previstos": 100,
+          "pbs": "INRED"
+        },
+        {
+          "municipio": "YACUANQUER",
+          "junta": "INANTAS BAJO",
+          "hogares_previstos": 76,
+          "pbs": "INRED"
+        }
+      ],
       "municipios": [
-        { "municipio": "ALBÁN", "pre_registradas": 7, "diseno_implementacion": 12 },
-        { "municipio": "ALDANA", "pre_registradas": 10, "diseno_implementacion": 5 },
-        { "municipio": "ANCUYA", "pre_registradas": 58, "diseno_implementacion": 2 },
-        { "municipio": "ARBOLEDA", "pre_registradas": 55, "diseno_implementacion": 3 },
-        { "municipio": "BARBACOAS", "pre_registradas": 20, "diseno_implementacion": 0 },
-        { "municipio": "BELÉN", "pre_registradas": 27, "diseno_implementacion": 0 },
-        { "municipio": "BUESACO", "pre_registradas": 2, "diseno_implementacion": 1 },
-        { "municipio": "CHACHAGÜÍ", "pre_registradas": 25, "diseno_implementacion": 1 },
-        { "municipio": "COLÓN", "pre_registradas": 20, "diseno_implementacion": 6 },
-        { "municipio": "CONSACÁ", "pre_registradas": 38, "diseno_implementacion": 4 },
-        { "municipio": "CONTADERO", "pre_registradas": 0, "diseno_implementacion": 2 },
-        { "municipio": "CÓRDOBA", "pre_registradas": 11, "diseno_implementacion": 0 },
-        { "municipio": "CUASPUD CARLOSAMA", "pre_registradas": 2, "diseno_implementacion": 2 },
-        { "municipio": "CUMBAL", "pre_registradas": 28, "diseno_implementacion": 11 },
-        { "municipio": "CUMBITARA", "pre_registradas": 11, "diseno_implementacion": 0 },
-        { "municipio": "EL CHARCO", "pre_registradas": 22, "diseno_implementacion": 3 },
-        { "municipio": "EL PEÑOL", "pre_registradas": 14, "diseno_implementacion": 0 },
-        { "municipio": "EL ROSARIO", "pre_registradas": 4, "diseno_implementacion": 0 },
-        { "municipio": "EL TABLÓN DE GÓMEZ", "pre_registradas": 15, "diseno_implementacion": 1 },
-        { "municipio": "EL TAMBO", "pre_registradas": 3, "diseno_implementacion": 5 },
-        { "municipio": "FRANCISCO PIZARRO", "pre_registradas": 0, "diseno_implementacion": 2 },
-        { "municipio": "FUNES", "pre_registradas": 35, "diseno_implementacion": 3 },
-        { "municipio": "GUACHUCAL", "pre_registradas": 16, "diseno_implementacion": 1 },
-        { "municipio": "GUAITARILLA", "pre_registradas": 15, "diseno_implementacion": 1 },
-        { "municipio": "GUALMATÁN", "pre_registradas": 10, "diseno_implementacion": 0 },
-        { "municipio": "ILES", "pre_registradas": 8, "diseno_implementacion": 0 },
-        { "municipio": "IMUÉS", "pre_registradas": 6, "diseno_implementacion": 0 },
-        { "municipio": "IPIALES", "pre_registradas": 38, "diseno_implementacion": 0 },
-        { "municipio": "LA CRUZ", "pre_registradas": 59, "diseno_implementacion": 0 },
-        { "municipio": "LA FLORIDA", "pre_registradas": 43, "diseno_implementacion": 7 },
-        { "municipio": "LA LLANADA", "pre_registradas": 15, "diseno_implementacion": 2 },
-        { "municipio": "LA TOLA", "pre_registradas": 4, "diseno_implementacion": 1 },
-        { "municipio": "LA UNIÓN", "pre_registradas": 2, "diseno_implementacion": 8 },
-        { "municipio": "LEIVA", "pre_registradas": 2, "diseno_implementacion": 4 },
-        { "municipio": "LINARES", "pre_registradas": 51, "diseno_implementacion": 1 },
-        { "municipio": "LOS ANDES", "pre_registradas": 38, "diseno_implementacion": 0 },
-        { "municipio": "MAGÜÍ", "pre_registradas": 11, "diseno_implementacion": 2 },
-        { "municipio": "MALLAMA", "pre_registradas": 17, "diseno_implementacion": 2 },
-        { "municipio": "MOSQUERA", "pre_registradas": 10, "diseno_implementacion": 1 },
-        { "municipio": "NARIÑO", "pre_registradas": 7, "diseno_implementacion": 1 },
-        { "municipio": "OLAYA HERRERA", "pre_registradas": 3, "diseno_implementacion": 0 },
-        { "municipio": "OSPINA", "pre_registradas": 17, "diseno_implementacion": 0 },
-        { "municipio": "PASTO", "pre_registradas": 401, "diseno_implementacion": 7 },
-        { "municipio": "POLICARPA", "pre_registradas": 90, "diseno_implementacion": 0 },
-        { "municipio": "POTOSÍ", "pre_registradas": 30, "diseno_implementacion": 0 },
-        { "municipio": "PROVIDENCIA", "pre_registradas": 31, "diseno_implementacion": 1 },
-        { "municipio": "PUERRES", "pre_registradas": 72, "diseno_implementacion": 11 },
-        { "municipio": "PUPIALES", "pre_registradas": 6, "diseno_implementacion": 3 },
-        { "municipio": "RICAURTE", "pre_registradas": 7, "diseno_implementacion": 4 },
-        { "municipio": "ROBERTO PAYÁN", "pre_registradas": 33, "diseno_implementacion": 1 },
-        { "municipio": "SAMANIEGO", "pre_registradas": 11, "diseno_implementacion": 3 },
-        { "municipio": "SAN ANDRÉS DE TUMACO", "pre_registradas": 60, "diseno_implementacion": 9 },
-        { "municipio": "SAN BERNARDO", "pre_registradas": 3, "diseno_implementacion": 0 },
-        { "municipio": "SAN LORENZO", "pre_registradas": 48, "diseno_implementacion": 3 },
-        { "municipio": "SAN PABLO", "pre_registradas": 30, "diseno_implementacion": 24 },
-        { "municipio": "SAN PEDRO DE CARTAGO", "pre_registradas": 57, "diseno_implementacion": 3 },
-        { "municipio": "SANDONÁ", "pre_registradas": 7, "diseno_implementacion": 2 },
-        { "municipio": "SANTA BÁRBARA", "pre_registradas": 1, "diseno_implementacion": 3 },
-        { "municipio": "SANTACRUZ", "pre_registradas": 0, "diseno_implementacion": 5 },
-        { "municipio": "SAPUYES", "pre_registradas": 2, "diseno_implementacion": 2 },
-        { "municipio": "TAMINANGO", "pre_registradas": 8, "diseno_implementacion": 9 },
-        { "municipio": "TANGUA", "pre_registradas": 83, "diseno_implementacion": 13 },
-        { "municipio": "TÚQUERRES", "pre_registradas": 83, "diseno_implementacion": 1 },
-        { "municipio": "YACUANQUER", "pre_registradas": 18, "diseno_implementacion": 8 }
-      ]
+        {
+          "municipio": "BARBACOAS",
+          "juntas": 1,
+          "hogares_previstos": 126,
+          "pbs": "TSG",
+          "nodo_en_planeacion": 1,
+          "en_instalacion": 0,
+          "nodo_habilitado": 0,
+          "sin_instalar": 0
+        },
+        {
+          "municipio": "EL CHARCO",
+          "juntas": 2,
+          "hogares_previstos": 243,
+          "pbs": "TSG",
+          "nodo_en_planeacion": 2,
+          "en_instalacion": 0,
+          "nodo_habilitado": 0,
+          "sin_instalar": 0
+        },
+        {
+          "municipio": "EL TAMBO",
+          "juntas": 5,
+          "hogares_previstos": 465,
+          "pbs": "INRED",
+          "nodo_en_planeacion": 0,
+          "en_instalacion": 1,
+          "nodo_habilitado": 4,
+          "sin_instalar": 0
+        },
+        {
+          "municipio": "LA UNIÓN",
+          "juntas": 1,
+          "hogares_previstos": 150,
+          "pbs": "INRED",
+          "nodo_en_planeacion": 0,
+          "en_instalacion": 0,
+          "nodo_habilitado": 0,
+          "sin_instalar": 1
+        },
+        {
+          "municipio": "LEIVA",
+          "juntas": 2,
+          "hogares_previstos": 104,
+          "pbs": "INRED",
+          "nodo_en_planeacion": 0,
+          "en_instalacion": 1,
+          "nodo_habilitado": 1,
+          "sin_instalar": 0
+        },
+        {
+          "municipio": "MALLAMA",
+          "juntas": 1,
+          "hogares_previstos": 56,
+          "pbs": "INRED",
+          "nodo_en_planeacion": 0,
+          "en_instalacion": 1,
+          "nodo_habilitado": 0,
+          "sin_instalar": 0
+        },
+        {
+          "municipio": "PASTO",
+          "juntas": 2,
+          "hogares_previstos": 146,
+          "pbs": "INRED",
+          "nodo_en_planeacion": 0,
+          "en_instalacion": 0,
+          "nodo_habilitado": 1,
+          "sin_instalar": 1
+        },
+        {
+          "municipio": "PROVIDENCIA",
+          "juntas": 1,
+          "hogares_previstos": 100,
+          "pbs": "INRED",
+          "nodo_en_planeacion": 0,
+          "en_instalacion": 0,
+          "nodo_habilitado": 0,
+          "sin_instalar": 1
+        },
+        {
+          "municipio": "PUPIALES",
+          "juntas": 1,
+          "hogares_previstos": 71,
+          "pbs": "INRED",
+          "nodo_en_planeacion": 0,
+          "en_instalacion": 0,
+          "nodo_habilitado": 0,
+          "sin_instalar": 1
+        },
+        {
+          "municipio": "SAMANIEGO",
+          "juntas": 1,
+          "hogares_previstos": 70,
+          "pbs": "INRED",
+          "nodo_en_planeacion": 0,
+          "en_instalacion": 1,
+          "nodo_habilitado": 0,
+          "sin_instalar": 0
+        },
+        {
+          "municipio": "SAN ANDRÉS DE TUMACO",
+          "juntas": 2,
+          "hogares_previstos": 200,
+          "pbs": "INRED",
+          "nodo_en_planeacion": 0,
+          "en_instalacion": 0,
+          "nodo_habilitado": 2,
+          "sin_instalar": 0
+        },
+        {
+          "municipio": "SANTA BÁRBARA",
+          "juntas": 1,
+          "hogares_previstos": 45,
+          "pbs": "TSG",
+          "nodo_en_planeacion": 1,
+          "en_instalacion": 0,
+          "nodo_habilitado": 0,
+          "sin_instalar": 0
+        },
+        {
+          "municipio": "SANTACRUZ",
+          "juntas": 1,
+          "hogares_previstos": 43,
+          "pbs": "INRED",
+          "nodo_en_planeacion": 0,
+          "en_instalacion": 0,
+          "nodo_habilitado": 0,
+          "sin_instalar": 1
+        },
+        {
+          "municipio": "TAMINANGO",
+          "juntas": 1,
+          "hogares_previstos": 40,
+          "pbs": "INRED",
+          "nodo_en_planeacion": 0,
+          "en_instalacion": 0,
+          "nodo_habilitado": 0,
+          "sin_instalar": 1
+        },
+        {
+          "municipio": "YACUANQUER",
+          "juntas": 1,
+          "hogares_previstos": 76,
+          "pbs": "INRED",
+          "nodo_en_planeacion": 0,
+          "en_instalacion": 0,
+          "nodo_habilitado": 0,
+          "sin_instalar": 1
+        }
+      ],
+      "historico_2024": {
+        "fuente": "informe-2024",
+        "resumen": {
+          "comunidades_pre_registradas": 1860,
+          "comunidades_diseno_implementacion": 205,
+          "municipios_cobertura": 64
+        },
+        "municipios": [
+          {
+            "municipio": "ALBÁN",
+            "pre_registradas": 7,
+            "diseno_implementacion": 12
+          },
+          {
+            "municipio": "ALDANA",
+            "pre_registradas": 10,
+            "diseno_implementacion": 5
+          },
+          {
+            "municipio": "ANCUYA",
+            "pre_registradas": 58,
+            "diseno_implementacion": 2
+          },
+          {
+            "municipio": "ARBOLEDA",
+            "pre_registradas": 55,
+            "diseno_implementacion": 3
+          },
+          {
+            "municipio": "BARBACOAS",
+            "pre_registradas": 20,
+            "diseno_implementacion": 0
+          },
+          {
+            "municipio": "BELÉN",
+            "pre_registradas": 27,
+            "diseno_implementacion": 0
+          },
+          {
+            "municipio": "BUESACO",
+            "pre_registradas": 2,
+            "diseno_implementacion": 1
+          },
+          {
+            "municipio": "CHACHAGÜÍ",
+            "pre_registradas": 25,
+            "diseno_implementacion": 1
+          },
+          {
+            "municipio": "COLÓN",
+            "pre_registradas": 20,
+            "diseno_implementacion": 6
+          },
+          {
+            "municipio": "CONSACÁ",
+            "pre_registradas": 38,
+            "diseno_implementacion": 4
+          },
+          {
+            "municipio": "CONTADERO",
+            "pre_registradas": 0,
+            "diseno_implementacion": 2
+          },
+          {
+            "municipio": "CÓRDOBA",
+            "pre_registradas": 11,
+            "diseno_implementacion": 0
+          },
+          {
+            "municipio": "CUASPUD CARLOSAMA",
+            "pre_registradas": 2,
+            "diseno_implementacion": 2
+          },
+          {
+            "municipio": "CUMBAL",
+            "pre_registradas": 28,
+            "diseno_implementacion": 11
+          },
+          {
+            "municipio": "CUMBITARA",
+            "pre_registradas": 11,
+            "diseno_implementacion": 0
+          },
+          {
+            "municipio": "EL CHARCO",
+            "pre_registradas": 22,
+            "diseno_implementacion": 3
+          },
+          {
+            "municipio": "EL PEÑOL",
+            "pre_registradas": 14,
+            "diseno_implementacion": 0
+          },
+          {
+            "municipio": "EL ROSARIO",
+            "pre_registradas": 4,
+            "diseno_implementacion": 0
+          },
+          {
+            "municipio": "EL TABLÓN DE GÓMEZ",
+            "pre_registradas": 15,
+            "diseno_implementacion": 1
+          },
+          {
+            "municipio": "EL TAMBO",
+            "pre_registradas": 3,
+            "diseno_implementacion": 5
+          },
+          {
+            "municipio": "FRANCISCO PIZARRO",
+            "pre_registradas": 0,
+            "diseno_implementacion": 2
+          },
+          {
+            "municipio": "FUNES",
+            "pre_registradas": 35,
+            "diseno_implementacion": 3
+          },
+          {
+            "municipio": "GUACHUCAL",
+            "pre_registradas": 16,
+            "diseno_implementacion": 1
+          },
+          {
+            "municipio": "GUAITARILLA",
+            "pre_registradas": 15,
+            "diseno_implementacion": 1
+          },
+          {
+            "municipio": "GUALMATÁN",
+            "pre_registradas": 10,
+            "diseno_implementacion": 0
+          },
+          {
+            "municipio": "ILES",
+            "pre_registradas": 8,
+            "diseno_implementacion": 0
+          },
+          {
+            "municipio": "IMUÉS",
+            "pre_registradas": 6,
+            "diseno_implementacion": 0
+          },
+          {
+            "municipio": "IPIALES",
+            "pre_registradas": 38,
+            "diseno_implementacion": 0
+          },
+          {
+            "municipio": "LA CRUZ",
+            "pre_registradas": 59,
+            "diseno_implementacion": 0
+          },
+          {
+            "municipio": "LA FLORIDA",
+            "pre_registradas": 43,
+            "diseno_implementacion": 7
+          },
+          {
+            "municipio": "LA LLANADA",
+            "pre_registradas": 15,
+            "diseno_implementacion": 2
+          },
+          {
+            "municipio": "LA TOLA",
+            "pre_registradas": 4,
+            "diseno_implementacion": 1
+          },
+          {
+            "municipio": "LA UNIÓN",
+            "pre_registradas": 2,
+            "diseno_implementacion": 8
+          },
+          {
+            "municipio": "LEIVA",
+            "pre_registradas": 2,
+            "diseno_implementacion": 4
+          },
+          {
+            "municipio": "LINARES",
+            "pre_registradas": 51,
+            "diseno_implementacion": 1
+          },
+          {
+            "municipio": "LOS ANDES",
+            "pre_registradas": 38,
+            "diseno_implementacion": 0
+          },
+          {
+            "municipio": "MAGÜÍ",
+            "pre_registradas": 11,
+            "diseno_implementacion": 2
+          },
+          {
+            "municipio": "MALLAMA",
+            "pre_registradas": 17,
+            "diseno_implementacion": 2
+          },
+          {
+            "municipio": "MOSQUERA",
+            "pre_registradas": 10,
+            "diseno_implementacion": 1
+          },
+          {
+            "municipio": "NARIÑO",
+            "pre_registradas": 7,
+            "diseno_implementacion": 1
+          },
+          {
+            "municipio": "OLAYA HERRERA",
+            "pre_registradas": 3,
+            "diseno_implementacion": 0
+          },
+          {
+            "municipio": "OSPINA",
+            "pre_registradas": 17,
+            "diseno_implementacion": 0
+          },
+          {
+            "municipio": "PASTO",
+            "pre_registradas": 401,
+            "diseno_implementacion": 7
+          },
+          {
+            "municipio": "POLICARPA",
+            "pre_registradas": 90,
+            "diseno_implementacion": 0
+          },
+          {
+            "municipio": "POTOSÍ",
+            "pre_registradas": 30,
+            "diseno_implementacion": 0
+          },
+          {
+            "municipio": "PROVIDENCIA",
+            "pre_registradas": 31,
+            "diseno_implementacion": 1
+          },
+          {
+            "municipio": "PUERRES",
+            "pre_registradas": 72,
+            "diseno_implementacion": 11
+          },
+          {
+            "municipio": "PUPIALES",
+            "pre_registradas": 6,
+            "diseno_implementacion": 3
+          },
+          {
+            "municipio": "RICAURTE",
+            "pre_registradas": 7,
+            "diseno_implementacion": 4
+          },
+          {
+            "municipio": "ROBERTO PAYÁN",
+            "pre_registradas": 33,
+            "diseno_implementacion": 1
+          },
+          {
+            "municipio": "SAMANIEGO",
+            "pre_registradas": 11,
+            "diseno_implementacion": 3
+          },
+          {
+            "municipio": "SAN ANDRÉS DE TUMACO",
+            "pre_registradas": 60,
+            "diseno_implementacion": 9
+          },
+          {
+            "municipio": "SAN BERNARDO",
+            "pre_registradas": 3,
+            "diseno_implementacion": 0
+          },
+          {
+            "municipio": "SAN LORENZO",
+            "pre_registradas": 48,
+            "diseno_implementacion": 3
+          },
+          {
+            "municipio": "SAN PABLO",
+            "pre_registradas": 30,
+            "diseno_implementacion": 24
+          },
+          {
+            "municipio": "SAN PEDRO DE CARTAGO",
+            "pre_registradas": 57,
+            "diseno_implementacion": 3
+          },
+          {
+            "municipio": "SANDONÁ",
+            "pre_registradas": 7,
+            "diseno_implementacion": 2
+          },
+          {
+            "municipio": "SANTA BÁRBARA",
+            "pre_registradas": 1,
+            "diseno_implementacion": 3
+          },
+          {
+            "municipio": "SANTACRUZ",
+            "pre_registradas": 0,
+            "diseno_implementacion": 5
+          },
+          {
+            "municipio": "SAPUYES",
+            "pre_registradas": 2,
+            "diseno_implementacion": 2
+          },
+          {
+            "municipio": "TAMINANGO",
+            "pre_registradas": 8,
+            "diseno_implementacion": 9
+          },
+          {
+            "municipio": "TANGUA",
+            "pre_registradas": 83,
+            "diseno_implementacion": 13
+          },
+          {
+            "municipio": "TÚQUERRES",
+            "pre_registradas": 83,
+            "diseno_implementacion": 1
+          },
+          {
+            "municipio": "YACUANQUER",
+            "pre_registradas": 18,
+            "diseno_implementacion": 8
+          }
+        ]
+      }
     },
-    "centros_digitales": {
-      "nombre": "Centros Digitales",
-      "descripcion": "Promueve la inclusión digital en zonas rurales mediante acceso público a Internet en centros poblados",
+    "centros_potencia": {
+      "nombre": "Centros PotencIA",
       "programa": "Conectividad",
-      "vigencias": "2020-2031",
+      "vigencias": "2024-",
+      "descripcion": "Microcentros de inteligencia artificial con acceso gratuito a Internet, capacitación y servicios TIC (Contrato Interadministrativo No. 1872 de 2024 con Findeter).",
+      "fuente": "mintic-2026-10",
+      "fuente_detalle": "mintic-2026-01",
       "resumen": {
-        "cd_asignados_narino": 905,
-        "cd_en_operacion": 820,
-        "cd_en_instalacion": 83,
-        "cd_en_planeacion": 2,
-        "inversion_narino_millones_cop": 147315,
-        "inversion_nacional_billones_cop": 2.1,
-        "centros_poblados_nacionales": 14745,
-        "municipios_nacionales": 1104
+        "centros_previstos": 2,
+        "municipios": 2,
+        "estado": "Pendiente (estudios y diseños)"
       },
       "municipios": [
-        { "municipio": "ALBÁN", "asignados": 16, "en_operacion": 16, "en_instalacion": 0, "en_planeacion": 0, "inversion_millones_cop": 2604 },
-        { "municipio": "ALDANA", "asignados": 7, "en_operacion": 7, "en_instalacion": 0, "en_planeacion": 0, "inversion_millones_cop": 1139 },
-        { "municipio": "ANCUYA", "asignados": 10, "en_operacion": 9, "en_instalacion": 1, "en_planeacion": 0, "inversion_millones_cop": 1628 },
-        { "municipio": "ARBOLEDA", "asignados": 8, "en_operacion": 8, "en_instalacion": 0, "en_planeacion": 0, "inversion_millones_cop": 1302 },
-        { "municipio": "BARBACOAS", "asignados": 29, "en_operacion": 25, "en_instalacion": 3, "en_planeacion": 1, "inversion_millones_cop": 4721 },
-        { "municipio": "BELÉN", "asignados": 3, "en_operacion": 3, "en_instalacion": 0, "en_planeacion": 0, "inversion_millones_cop": 488 },
-        { "municipio": "BUESACO", "asignados": 26, "en_operacion": 23, "en_instalacion": 3, "en_planeacion": 0, "inversion_millones_cop": 4232 },
-        { "municipio": "CHACHAGÜÍ", "asignados": 9, "en_operacion": 9, "en_instalacion": 0, "en_planeacion": 0, "inversion_millones_cop": 1465 },
-        { "municipio": "COLÓN", "asignados": 7, "en_operacion": 6, "en_instalacion": 1, "en_planeacion": 0, "inversion_millones_cop": 1139 },
-        { "municipio": "CONSACÁ", "asignados": 7, "en_operacion": 7, "en_instalacion": 0, "en_planeacion": 0, "inversion_millones_cop": 1139 },
-        { "municipio": "CONTADERO", "asignados": 9, "en_operacion": 8, "en_instalacion": 1, "en_planeacion": 0, "inversion_millones_cop": 1465 },
-        { "municipio": "CÓRDOBA", "asignados": 17, "en_operacion": 17, "en_instalacion": 0, "en_planeacion": 0, "inversion_millones_cop": 2767 },
-        { "municipio": "CUASPUD CARLOSAMA", "asignados": 8, "en_operacion": 8, "en_instalacion": 0, "en_planeacion": 0, "inversion_millones_cop": 1302 },
-        { "municipio": "CUMBAL", "asignados": 21, "en_operacion": 17, "en_instalacion": 4, "en_planeacion": 0, "inversion_millones_cop": 3418 },
-        { "municipio": "CUMBITARA", "asignados": 17, "en_operacion": 6, "en_instalacion": 11, "en_planeacion": 0, "inversion_millones_cop": 2767 },
-        { "municipio": "EL CHARCO", "asignados": 2, "en_operacion": 0, "en_instalacion": 2, "en_planeacion": 0, "inversion_millones_cop": 326 },
-        { "municipio": "EL PEÑOL", "asignados": 5, "en_operacion": 5, "en_instalacion": 0, "en_planeacion": 0, "inversion_millones_cop": 814 },
-        { "municipio": "EL ROSARIO", "asignados": 12, "en_operacion": 11, "en_instalacion": 1, "en_planeacion": 0, "inversion_millones_cop": 1953 },
-        { "municipio": "EL TABLÓN DE GÓMEZ", "asignados": 9, "en_operacion": 8, "en_instalacion": 1, "en_planeacion": 0, "inversion_millones_cop": 1465 },
-        { "municipio": "EL TAMBO", "asignados": 11, "en_operacion": 10, "en_instalacion": 1, "en_planeacion": 0, "inversion_millones_cop": 1791 },
-        { "municipio": "FRANCISCO PIZARRO", "asignados": 4, "en_operacion": 2, "en_instalacion": 2, "en_planeacion": 0, "inversion_millones_cop": 651 },
-        { "municipio": "FUNES", "asignados": 6, "en_operacion": 5, "en_instalacion": 1, "en_planeacion": 0, "inversion_millones_cop": 977 },
-        { "municipio": "GUACHUCAL", "asignados": 17, "en_operacion": 17, "en_instalacion": 0, "en_planeacion": 0, "inversion_millones_cop": 2767 },
-        { "municipio": "GUAITARILLA", "asignados": 7, "en_operacion": 7, "en_instalacion": 0, "en_planeacion": 0, "inversion_millones_cop": 1139 },
-        { "municipio": "GUALMATÁN", "asignados": 2, "en_operacion": 2, "en_instalacion": 0, "en_planeacion": 0, "inversion_millones_cop": 326 },
-        { "municipio": "ILES", "asignados": 6, "en_operacion": 5, "en_instalacion": 1, "en_planeacion": 0, "inversion_millones_cop": 977 },
-        { "municipio": "IMUÉS", "asignados": 9, "en_operacion": 9, "en_instalacion": 0, "en_planeacion": 0, "inversion_millones_cop": 1465 },
-        { "municipio": "IPIALES", "asignados": 22, "en_operacion": 20, "en_instalacion": 2, "en_planeacion": 0, "inversion_millones_cop": 3581 },
-        { "municipio": "LA CRUZ", "asignados": 7, "en_operacion": 7, "en_instalacion": 0, "en_planeacion": 0, "inversion_millones_cop": 1139 },
-        { "municipio": "LA FLORIDA", "asignados": 8, "en_operacion": 7, "en_instalacion": 1, "en_planeacion": 0, "inversion_millones_cop": 1302 },
-        { "municipio": "LA LLANADA", "asignados": 4, "en_operacion": 4, "en_instalacion": 0, "en_planeacion": 0, "inversion_millones_cop": 651 },
-        { "municipio": "LA TOLA", "asignados": 7, "en_operacion": 4, "en_instalacion": 3, "en_planeacion": 0, "inversion_millones_cop": 1139 },
-        { "municipio": "LA UNIÓN", "asignados": 14, "en_operacion": 14, "en_instalacion": 0, "en_planeacion": 0, "inversion_millones_cop": 2279 },
-        { "municipio": "LEIVA", "asignados": 10, "en_operacion": 9, "en_instalacion": 1, "en_planeacion": 0, "inversion_millones_cop": 1628 },
-        { "municipio": "LINARES", "asignados": 10, "en_operacion": 10, "en_instalacion": 0, "en_planeacion": 0, "inversion_millones_cop": 1628 },
-        { "municipio": "LOS ANDES", "asignados": 23, "en_operacion": 20, "en_instalacion": 3, "en_planeacion": 0, "inversion_millones_cop": 3744 },
-        { "municipio": "MAGÜÍ", "asignados": 2, "en_operacion": 1, "en_instalacion": 1, "en_planeacion": 0, "inversion_millones_cop": 326 },
-        { "municipio": "MALLAMA", "asignados": 12, "en_operacion": 11, "en_instalacion": 1, "en_planeacion": 0, "inversion_millones_cop": 1953 },
-        { "municipio": "MOSQUERA", "asignados": 7, "en_operacion": 6, "en_instalacion": 1, "en_planeacion": 0, "inversion_millones_cop": 1139 },
-        { "municipio": "NARIÑO", "asignados": 1, "en_operacion": 0, "en_instalacion": 1, "en_planeacion": 0, "inversion_millones_cop": 163 },
-        { "municipio": "OLAYA HERRERA", "asignados": 5, "en_operacion": 3, "en_instalacion": 2, "en_planeacion": 0, "inversion_millones_cop": 814 },
-        { "municipio": "OSPINA", "asignados": 8, "en_operacion": 8, "en_instalacion": 0, "en_planeacion": 0, "inversion_millones_cop": 1302 },
-        { "municipio": "PASTO", "asignados": 68, "en_operacion": 66, "en_instalacion": 2, "en_planeacion": 0, "inversion_millones_cop": 11069 },
-        { "municipio": "POLICARPA", "asignados": 37, "en_operacion": 35, "en_instalacion": 2, "en_planeacion": 0, "inversion_millones_cop": 6023 },
-        { "municipio": "POTOSÍ", "asignados": 14, "en_operacion": 14, "en_instalacion": 0, "en_planeacion": 0, "inversion_millones_cop": 2279 },
-        { "municipio": "PROVIDENCIA", "asignados": 9, "en_operacion": 9, "en_instalacion": 0, "en_planeacion": 0, "inversion_millones_cop": 1465 },
-        { "municipio": "PUERRES", "asignados": 10, "en_operacion": 9, "en_instalacion": 1, "en_planeacion": 0, "inversion_millones_cop": 1628 },
-        { "municipio": "PUPIALES", "asignados": 17, "en_operacion": 16, "en_instalacion": 1, "en_planeacion": 0, "inversion_millones_cop": 2767 },
-        { "municipio": "RICAURTE", "asignados": 16, "en_operacion": 12, "en_instalacion": 4, "en_planeacion": 0, "inversion_millones_cop": 2604 },
-        { "municipio": "ROBERTO PAYÁN", "asignados": 4, "en_operacion": 3, "en_instalacion": 1, "en_planeacion": 0, "inversion_millones_cop": 651 },
-        { "municipio": "SAMANIEGO", "asignados": 27, "en_operacion": 27, "en_instalacion": 0, "en_planeacion": 0, "inversion_millones_cop": 4395 },
-        { "municipio": "SAN ANDRÉS DE TUMACO", "asignados": 122, "en_operacion": 106, "en_instalacion": 16, "en_planeacion": 0, "inversion_millones_cop": 19859 },
-        { "municipio": "SAN BERNARDO", "asignados": 13, "en_operacion": 13, "en_instalacion": 0, "en_planeacion": 0, "inversion_millones_cop": 2116 },
-        { "municipio": "SAN LORENZO", "asignados": 28, "en_operacion": 27, "en_instalacion": 1, "en_planeacion": 0, "inversion_millones_cop": 4558 },
-        { "municipio": "SAN PABLO", "asignados": 14, "en_operacion": 14, "en_instalacion": 0, "en_planeacion": 0, "inversion_millones_cop": 2279 },
-        { "municipio": "SAN PEDRO DE CARTAGO", "asignados": 7, "en_operacion": 7, "en_instalacion": 0, "en_planeacion": 0, "inversion_millones_cop": 1139 },
-        { "municipio": "SANDONÁ", "asignados": 13, "en_operacion": 11, "en_instalacion": 2, "en_planeacion": 0, "inversion_millones_cop": 2116 },
-        { "municipio": "SANTA BÁRBARA", "asignados": 4, "en_operacion": 2, "en_instalacion": 1, "en_planeacion": 1, "inversion_millones_cop": 651 },
-        { "municipio": "SANTACRUZ", "asignados": 6, "en_operacion": 6, "en_instalacion": 0, "en_planeacion": 0, "inversion_millones_cop": 977 },
-        { "municipio": "SAPUYES", "asignados": 5, "en_operacion": 5, "en_instalacion": 0, "en_planeacion": 0, "inversion_millones_cop": 814 },
-        { "municipio": "TAMINANGO", "asignados": 16, "en_operacion": 16, "en_instalacion": 0, "en_planeacion": 0, "inversion_millones_cop": 2604 },
-        { "municipio": "TANGUA", "asignados": 13, "en_operacion": 13, "en_instalacion": 0, "en_planeacion": 0, "inversion_millones_cop": 2116 },
-        { "municipio": "TÚQUERRES", "asignados": 25, "en_operacion": 23, "en_instalacion": 2, "en_planeacion": 0, "inversion_millones_cop": 4069 },
-        { "municipio": "YACUANQUER", "asignados": 13, "en_operacion": 12, "en_instalacion": 1, "en_planeacion": 0, "inversion_millones_cop": 2116 }
+        {
+          "municipio": "PASTO",
+          "centros": 1,
+          "estado": "PENDIENTE",
+          "viabilidad_predio": "Técnica y jurídica viable",
+          "convenio": "321 de 8 de octubre de 2025"
+        },
+        {
+          "municipio": "SAN ANDRÉS DE TUMACO",
+          "centros": 1,
+          "estado": "PENDIENTE",
+          "viabilidad_predio": "Técnica y jurídica viable",
+          "convenio": "0378 del 19/12/24",
+          "avance": "Etapa I Estudios y Diseños (CONSORCIO TECLA 156)"
+        }
       ]
     },
     "talento_tech": {
@@ -246,71 +2844,264 @@
         "enlace": "www.talentotech.gov.co"
       },
       "municipios": [
-        { "municipio": "ALBÁN", "inscritos": 68 },
-        { "municipio": "ALDANA", "inscritos": 13 },
-        { "municipio": "ANCUYA", "inscritos": 16 },
-        { "municipio": "ARBOLEDA", "inscritos": 15 },
-        { "municipio": "BARBACOAS", "inscritos": 28 },
-        { "municipio": "BELÉN", "inscritos": 29 },
-        { "municipio": "BUESACO", "inscritos": 46 },
-        { "municipio": "CHACHAGÜÍ", "inscritos": 50 },
-        { "municipio": "COLÓN", "inscritos": 21 },
-        { "municipio": "CONSACÁ", "inscritos": 21 },
-        { "municipio": "CONTADERO", "inscritos": 12 },
-        { "municipio": "CÓRDOBA", "inscritos": 61 },
-        { "municipio": "CUASPUD CARLOSAMA", "inscritos": 19 },
-        { "municipio": "CUMBAL", "inscritos": 83 },
-        { "municipio": "CUMBITARA", "inscritos": 7 },
-        { "municipio": "EL CHARCO", "inscritos": 17 },
-        { "municipio": "EL PEÑOL", "inscritos": 21 },
-        { "municipio": "EL ROSARIO", "inscritos": 13 },
-        { "municipio": "EL TABLÓN DE GÓMEZ", "inscritos": 35 },
-        { "municipio": "EL TAMBO", "inscritos": 32 },
-        { "municipio": "FRANCISCO PIZARRO", "inscritos": 11 },
-        { "municipio": "FUNES", "inscritos": 19 },
-        { "municipio": "GUACHUCAL", "inscritos": 55 },
-        { "municipio": "GUAITARILLA", "inscritos": 18 },
-        { "municipio": "GUALMATÁN", "inscritos": 13 },
-        { "municipio": "ILES", "inscritos": 8 },
-        { "municipio": "IMUÉS", "inscritos": 12 },
-        { "municipio": "IPIALES", "inscritos": 488 },
-        { "municipio": "LA CRUZ", "inscritos": 32 },
-        { "municipio": "LA FLORIDA", "inscritos": 19 },
-        { "municipio": "LA LLANADA", "inscritos": 9 },
-        { "municipio": "LA TOLA", "inscritos": 10 },
-        { "municipio": "LA UNIÓN", "inscritos": 62 },
-        { "municipio": "LEIVA", "inscritos": 7 },
-        { "municipio": "LINARES", "inscritos": 19 },
-        { "municipio": "LOS ANDES", "inscritos": 13 },
-        { "municipio": "MAGÜÍ", "inscritos": 5 },
-        { "municipio": "MALLAMA", "inscritos": 18 },
-        { "municipio": "MOSQUERA", "inscritos": 17 },
-        { "municipio": "NARIÑO", "inscritos": 83 },
-        { "municipio": "OLAYA HERRERA", "inscritos": 15 },
-        { "municipio": "OSPINA", "inscritos": 8 },
-        { "municipio": "PASTO", "inscritos": 3387 },
-        { "municipio": "POLICARPA", "inscritos": 24 },
-        { "municipio": "POTOSÍ", "inscritos": 25 },
-        { "municipio": "PROVIDENCIA", "inscritos": 5 },
-        { "municipio": "PUERRES", "inscritos": 20 },
-        { "municipio": "PUPIALES", "inscritos": 33 },
-        { "municipio": "RICAURTE", "inscritos": 29 },
-        { "municipio": "ROBERTO PAYÁN", "inscritos": 1 },
-        { "municipio": "SAMANIEGO", "inscritos": 42 },
-        { "municipio": "SAN ANDRÉS DE TUMACO", "inscritos": 307 },
-        { "municipio": "SAN BERNARDO", "inscritos": 16 },
-        { "municipio": "SAN LORENZO", "inscritos": 36 },
-        { "municipio": "SAN PABLO", "inscritos": 38 },
-        { "municipio": "SAN PEDRO DE CARTAGO", "inscritos": 22 },
-        { "municipio": "SANDONÁ", "inscritos": 70 },
-        { "municipio": "SANTA BÁRBARA", "inscritos": 2 },
-        { "municipio": "SANTACRUZ", "inscritos": 17 },
-        { "municipio": "SAPUYES", "inscritos": 18 },
-        { "municipio": "TAMINANGO", "inscritos": 31 },
-        { "municipio": "TANGUA", "inscritos": 32 },
-        { "municipio": "TÚQUERRES", "inscritos": 150 },
-        { "municipio": "YACUANQUER", "inscritos": 46 }
-      ]
+        {
+          "municipio": "ALBÁN",
+          "inscritos": 68
+        },
+        {
+          "municipio": "ALDANA",
+          "inscritos": 13
+        },
+        {
+          "municipio": "ANCUYA",
+          "inscritos": 16
+        },
+        {
+          "municipio": "ARBOLEDA",
+          "inscritos": 15
+        },
+        {
+          "municipio": "BARBACOAS",
+          "inscritos": 28
+        },
+        {
+          "municipio": "BELÉN",
+          "inscritos": 29
+        },
+        {
+          "municipio": "BUESACO",
+          "inscritos": 46
+        },
+        {
+          "municipio": "CHACHAGÜÍ",
+          "inscritos": 50
+        },
+        {
+          "municipio": "COLÓN",
+          "inscritos": 21
+        },
+        {
+          "municipio": "CONSACÁ",
+          "inscritos": 21
+        },
+        {
+          "municipio": "CONTADERO",
+          "inscritos": 12
+        },
+        {
+          "municipio": "CÓRDOBA",
+          "inscritos": 61
+        },
+        {
+          "municipio": "CUASPUD CARLOSAMA",
+          "inscritos": 19
+        },
+        {
+          "municipio": "CUMBAL",
+          "inscritos": 83
+        },
+        {
+          "municipio": "CUMBITARA",
+          "inscritos": 7
+        },
+        {
+          "municipio": "EL CHARCO",
+          "inscritos": 17
+        },
+        {
+          "municipio": "EL PEÑOL",
+          "inscritos": 21
+        },
+        {
+          "municipio": "EL ROSARIO",
+          "inscritos": 13
+        },
+        {
+          "municipio": "EL TABLÓN DE GÓMEZ",
+          "inscritos": 35
+        },
+        {
+          "municipio": "EL TAMBO",
+          "inscritos": 32
+        },
+        {
+          "municipio": "FRANCISCO PIZARRO",
+          "inscritos": 11
+        },
+        {
+          "municipio": "FUNES",
+          "inscritos": 19
+        },
+        {
+          "municipio": "GUACHUCAL",
+          "inscritos": 55
+        },
+        {
+          "municipio": "GUAITARILLA",
+          "inscritos": 18
+        },
+        {
+          "municipio": "GUALMATÁN",
+          "inscritos": 13
+        },
+        {
+          "municipio": "ILES",
+          "inscritos": 8
+        },
+        {
+          "municipio": "IMUÉS",
+          "inscritos": 12
+        },
+        {
+          "municipio": "IPIALES",
+          "inscritos": 488
+        },
+        {
+          "municipio": "LA CRUZ",
+          "inscritos": 32
+        },
+        {
+          "municipio": "LA FLORIDA",
+          "inscritos": 19
+        },
+        {
+          "municipio": "LA LLANADA",
+          "inscritos": 9
+        },
+        {
+          "municipio": "LA TOLA",
+          "inscritos": 10
+        },
+        {
+          "municipio": "LA UNIÓN",
+          "inscritos": 62
+        },
+        {
+          "municipio": "LEIVA",
+          "inscritos": 7
+        },
+        {
+          "municipio": "LINARES",
+          "inscritos": 19
+        },
+        {
+          "municipio": "LOS ANDES",
+          "inscritos": 13
+        },
+        {
+          "municipio": "MAGÜÍ",
+          "inscritos": 5
+        },
+        {
+          "municipio": "MALLAMA",
+          "inscritos": 18
+        },
+        {
+          "municipio": "MOSQUERA",
+          "inscritos": 17
+        },
+        {
+          "municipio": "NARIÑO",
+          "inscritos": 83
+        },
+        {
+          "municipio": "OLAYA HERRERA",
+          "inscritos": 15
+        },
+        {
+          "municipio": "OSPINA",
+          "inscritos": 8
+        },
+        {
+          "municipio": "PASTO",
+          "inscritos": 3387
+        },
+        {
+          "municipio": "POLICARPA",
+          "inscritos": 24
+        },
+        {
+          "municipio": "POTOSÍ",
+          "inscritos": 25
+        },
+        {
+          "municipio": "PROVIDENCIA",
+          "inscritos": 5
+        },
+        {
+          "municipio": "PUERRES",
+          "inscritos": 20
+        },
+        {
+          "municipio": "PUPIALES",
+          "inscritos": 33
+        },
+        {
+          "municipio": "RICAURTE",
+          "inscritos": 29
+        },
+        {
+          "municipio": "ROBERTO PAYÁN",
+          "inscritos": 1
+        },
+        {
+          "municipio": "SAMANIEGO",
+          "inscritos": 42
+        },
+        {
+          "municipio": "SAN ANDRÉS DE TUMACO",
+          "inscritos": 307
+        },
+        {
+          "municipio": "SAN BERNARDO",
+          "inscritos": 16
+        },
+        {
+          "municipio": "SAN LORENZO",
+          "inscritos": 36
+        },
+        {
+          "municipio": "SAN PABLO",
+          "inscritos": 38
+        },
+        {
+          "municipio": "SAN PEDRO DE CARTAGO",
+          "inscritos": 22
+        },
+        {
+          "municipio": "SANDONÁ",
+          "inscritos": 70
+        },
+        {
+          "municipio": "SANTA BÁRBARA",
+          "inscritos": 2
+        },
+        {
+          "municipio": "SANTACRUZ",
+          "inscritos": 17
+        },
+        {
+          "municipio": "SAPUYES",
+          "inscritos": 18
+        },
+        {
+          "municipio": "TAMINANGO",
+          "inscritos": 31
+        },
+        {
+          "municipio": "TANGUA",
+          "inscritos": 32
+        },
+        {
+          "municipio": "TÚQUERRES",
+          "inscritos": 150
+        },
+        {
+          "municipio": "YACUANQUER",
+          "inscritos": 46
+        }
+      ],
+      "fuente": "informe-2024"
     },
     "senatic": {
       "nombre": "SENATIC",
@@ -324,32 +3115,235 @@
         "inversion_nacional_millones_cop": 196000,
         "enlace": "www.mintic.gov.co/senatec"
       },
-      "municipios_parcial": [
-        { "municipio": "ALDANA", "ie_inscritas": 1, "estudiantes": 30 },
-        { "municipio": "BELÉN", "ie_inscritas": 1, "estudiantes": 34 },
-        { "municipio": "BUESACO", "ie_inscritas": 5, "estudiantes": 159 },
-        { "municipio": "CHACHAGÜÍ", "ie_inscritas": 1, "estudiantes": 21 },
-        { "municipio": "COLÓN", "ie_inscritas": 1, "estudiantes": 38 },
-        { "municipio": "CONSACÁ", "ie_inscritas": 2, "estudiantes": 55 },
-        { "municipio": "CÓRDOBA", "ie_inscritas": 3, "estudiantes": 85 },
-        { "municipio": "CUASPUD CARLOSAMA", "ie_inscritas": 1, "estudiantes": 66 },
-        { "municipio": "CUMBAL", "ie_inscritas": 4, "estudiantes": 154 },
-        { "municipio": "EL PEÑOL", "ie_inscritas": 1, "estudiantes": 18 },
-        { "municipio": "EL TAMBO", "ie_inscritas": 3, "estudiantes": 52 },
-        { "municipio": "FUNES", "ie_inscritas": 1, "estudiantes": 16 },
-        { "municipio": "GUAITARILLA", "ie_inscritas": 3, "estudiantes": 48 },
-        { "municipio": "GUALMATÁN", "ie_inscritas": 2, "estudiantes": 36 },
-        { "municipio": "ILES", "ie_inscritas": 2, "estudiantes": 66 },
-        { "municipio": "IMUÉS", "ie_inscritas": 2, "estudiantes": 45 },
-        { "municipio": "IPIALES", "ie_inscritas": 6, "estudiantes": 211 },
-        { "municipio": "LA CRUZ", "ie_inscritas": 1, "estudiantes": 11 },
-        { "municipio": "LA FLORIDA", "ie_inscritas": 4, "estudiantes": 57 },
-        { "municipio": "LA UNIÓN", "ie_inscritas": 3, "estudiantes": 97 },
-        { "municipio": "LEIVA", "ie_inscritas": 2, "estudiantes": 96 },
-        { "municipio": "LOS ANDES", "ie_inscritas": 1, "estudiantes": 64 },
-        { "municipio": "PASTO", "ie_inscritas": 17, "estudiantes": 570 },
-        { "municipio": "POLICARPA", "ie_inscritas": 2, "estudiantes": 50 },
-        { "municipio": "POTOSÍ", "ie_inscritas": 2, "estudiantes": 60 }
+      "fuente": "informe-2024",
+      "municipios": [
+        {
+          "municipio": "ALDANA",
+          "ie_inscritas": 1
+        },
+        {
+          "municipio": "BELÉN",
+          "ie_inscritas": 1
+        },
+        {
+          "municipio": "BUESACO",
+          "ie_inscritas": 5
+        },
+        {
+          "municipio": "CHACHAGÜÍ",
+          "ie_inscritas": 1
+        },
+        {
+          "municipio": "COLÓN",
+          "ie_inscritas": 1
+        },
+        {
+          "municipio": "CONSACÁ",
+          "ie_inscritas": 2
+        },
+        {
+          "municipio": "CÓRDOBA",
+          "ie_inscritas": 3
+        },
+        {
+          "municipio": "CUASPUD CARLOSAMA",
+          "ie_inscritas": 1
+        },
+        {
+          "municipio": "CUMBAL",
+          "ie_inscritas": 4
+        },
+        {
+          "municipio": "EL PEÑOL",
+          "ie_inscritas": 1
+        },
+        {
+          "municipio": "EL TAMBO",
+          "ie_inscritas": 3
+        },
+        {
+          "municipio": "FUNES",
+          "ie_inscritas": 1
+        },
+        {
+          "municipio": "GUAITARILLA",
+          "ie_inscritas": 3
+        },
+        {
+          "municipio": "GUALMATÁN",
+          "ie_inscritas": 2
+        },
+        {
+          "municipio": "ILES",
+          "ie_inscritas": 2
+        },
+        {
+          "municipio": "IMUÉS",
+          "ie_inscritas": 2
+        },
+        {
+          "municipio": "IPIALES",
+          "ie_inscritas": 6
+        },
+        {
+          "municipio": "LA CRUZ",
+          "ie_inscritas": 1
+        },
+        {
+          "municipio": "LA FLORIDA",
+          "ie_inscritas": 4
+        },
+        {
+          "municipio": "LA UNIÓN",
+          "ie_inscritas": 3
+        },
+        {
+          "municipio": "LEIVA",
+          "ie_inscritas": 2
+        },
+        {
+          "municipio": "LOS ANDES",
+          "ie_inscritas": 1
+        },
+        {
+          "municipio": "PASTO",
+          "ie_inscritas": 17
+        },
+        {
+          "municipio": "POLICARPA",
+          "ie_inscritas": 2
+        },
+        {
+          "municipio": "POTOSÍ",
+          "ie_inscritas": 2
+        }
+      ],
+      "detalle_parcial_2024": [
+        {
+          "municipio": "ALDANA",
+          "ie_inscritas": 1,
+          "estudiantes": 30
+        },
+        {
+          "municipio": "BELÉN",
+          "ie_inscritas": 1,
+          "estudiantes": 34
+        },
+        {
+          "municipio": "BUESACO",
+          "ie_inscritas": 5,
+          "estudiantes": 159
+        },
+        {
+          "municipio": "CHACHAGÜÍ",
+          "ie_inscritas": 1,
+          "estudiantes": 21
+        },
+        {
+          "municipio": "COLÓN",
+          "ie_inscritas": 1,
+          "estudiantes": 38
+        },
+        {
+          "municipio": "CONSACÁ",
+          "ie_inscritas": 2,
+          "estudiantes": 55
+        },
+        {
+          "municipio": "CÓRDOBA",
+          "ie_inscritas": 3,
+          "estudiantes": 85
+        },
+        {
+          "municipio": "CUASPUD CARLOSAMA",
+          "ie_inscritas": 1,
+          "estudiantes": 66
+        },
+        {
+          "municipio": "CUMBAL",
+          "ie_inscritas": 4,
+          "estudiantes": 154
+        },
+        {
+          "municipio": "EL PEÑOL",
+          "ie_inscritas": 1,
+          "estudiantes": 18
+        },
+        {
+          "municipio": "EL TAMBO",
+          "ie_inscritas": 3,
+          "estudiantes": 52
+        },
+        {
+          "municipio": "FUNES",
+          "ie_inscritas": 1,
+          "estudiantes": 16
+        },
+        {
+          "municipio": "GUAITARILLA",
+          "ie_inscritas": 3,
+          "estudiantes": 48
+        },
+        {
+          "municipio": "GUALMATÁN",
+          "ie_inscritas": 2,
+          "estudiantes": 36
+        },
+        {
+          "municipio": "ILES",
+          "ie_inscritas": 2,
+          "estudiantes": 66
+        },
+        {
+          "municipio": "IMUÉS",
+          "ie_inscritas": 2,
+          "estudiantes": 45
+        },
+        {
+          "municipio": "IPIALES",
+          "ie_inscritas": 6,
+          "estudiantes": 211
+        },
+        {
+          "municipio": "LA CRUZ",
+          "ie_inscritas": 1,
+          "estudiantes": 11
+        },
+        {
+          "municipio": "LA FLORIDA",
+          "ie_inscritas": 4,
+          "estudiantes": 57
+        },
+        {
+          "municipio": "LA UNIÓN",
+          "ie_inscritas": 3,
+          "estudiantes": 97
+        },
+        {
+          "municipio": "LEIVA",
+          "ie_inscritas": 2,
+          "estudiantes": 96
+        },
+        {
+          "municipio": "LOS ANDES",
+          "ie_inscritas": 1,
+          "estudiantes": 64
+        },
+        {
+          "municipio": "PASTO",
+          "ie_inscritas": 17,
+          "estudiantes": 570
+        },
+        {
+          "municipio": "POLICARPA",
+          "ie_inscritas": 2,
+          "estudiantes": 50
+        },
+        {
+          "municipio": "POTOSÍ",
+          "ie_inscritas": 2,
+          "estudiantes": 60
+        }
       ]
     },
     "colombia_programa": {
@@ -363,10 +3357,20 @@
         "vigencia": 2024
       },
       "municipios": [
-        { "municipio": "IPIALES", "ie_seleccionadas": 1 },
-        { "municipio": "PASTO", "ie_seleccionadas": 6 },
-        { "municipio": "SAN ANDRÉS DE TUMACO", "ie_seleccionadas": 3 }
-      ]
+        {
+          "municipio": "IPIALES",
+          "ie_seleccionadas": 1
+        },
+        {
+          "municipio": "PASTO",
+          "ie_seleccionadas": 6
+        },
+        {
+          "municipio": "SAN ANDRÉS DE TUMACO",
+          "ie_seleccionadas": 3
+        }
+      ],
+      "fuente": "informe-2024"
     },
     "avanzatec": {
       "nombre": "AvanzaTEC",
@@ -377,36 +3381,124 @@
         "municipios_cobertura": 29
       },
       "municipios": [
-        { "municipio": "ANCUYA", "certificados": 2 },
-        { "municipio": "BARBACOAS", "certificados": 5 },
-        { "municipio": "BUESACO", "certificados": 1 },
-        { "municipio": "CHACHAGÜÍ", "certificados": 1 },
-        { "municipio": "COLÓN", "certificados": 1 },
-        { "municipio": "CONSACÁ", "certificados": 1 },
-        { "municipio": "CÓRDOBA", "certificados": 1 },
-        { "municipio": "CUMBAL", "certificados": 5 },
-        { "municipio": "EL PEÑOL", "certificados": 1 },
-        { "municipio": "FRANCISCO PIZARRO", "certificados": 1 },
-        { "municipio": "GUACHUCAL", "certificados": 3 },
-        { "municipio": "GUAITARILLA", "certificados": 3 },
-        { "municipio": "IPIALES", "certificados": 29 },
-        { "municipio": "LA LLANADA", "certificados": 1 },
-        { "municipio": "LA UNIÓN", "certificados": 5 },
-        { "municipio": "LOS ANDES", "certificados": 2 },
-        { "municipio": "MOSQUERA", "certificados": 2 },
-        { "municipio": "NARIÑO", "certificados": 3 },
-        { "municipio": "PASTO", "certificados": 241 },
-        { "municipio": "PUPIALES", "certificados": 1 },
-        { "municipio": "SAMANIEGO", "certificados": 2 },
-        { "municipio": "SAN ANDRÉS DE TUMACO", "certificados": 20 },
-        { "municipio": "SAN PABLO", "certificados": 1 },
-        { "municipio": "SAN PEDRO DE CARTAGO", "certificados": 1 },
-        { "municipio": "SANDONÁ", "certificados": 3 },
-        { "municipio": "TAMINANGO", "certificados": 1 },
-        { "municipio": "TANGUA", "certificados": 2 },
-        { "municipio": "TÚQUERRES", "certificados": 5 },
-        { "municipio": "YACUANQUER", "certificados": 1 }
-      ]
+        {
+          "municipio": "ANCUYA",
+          "certificados": 2
+        },
+        {
+          "municipio": "BARBACOAS",
+          "certificados": 5
+        },
+        {
+          "municipio": "BUESACO",
+          "certificados": 1
+        },
+        {
+          "municipio": "CHACHAGÜÍ",
+          "certificados": 1
+        },
+        {
+          "municipio": "COLÓN",
+          "certificados": 1
+        },
+        {
+          "municipio": "CONSACÁ",
+          "certificados": 1
+        },
+        {
+          "municipio": "CÓRDOBA",
+          "certificados": 1
+        },
+        {
+          "municipio": "CUMBAL",
+          "certificados": 5
+        },
+        {
+          "municipio": "EL PEÑOL",
+          "certificados": 1
+        },
+        {
+          "municipio": "FRANCISCO PIZARRO",
+          "certificados": 1
+        },
+        {
+          "municipio": "GUACHUCAL",
+          "certificados": 3
+        },
+        {
+          "municipio": "GUAITARILLA",
+          "certificados": 3
+        },
+        {
+          "municipio": "IPIALES",
+          "certificados": 29
+        },
+        {
+          "municipio": "LA LLANADA",
+          "certificados": 1
+        },
+        {
+          "municipio": "LA UNIÓN",
+          "certificados": 5
+        },
+        {
+          "municipio": "LOS ANDES",
+          "certificados": 2
+        },
+        {
+          "municipio": "MOSQUERA",
+          "certificados": 2
+        },
+        {
+          "municipio": "NARIÑO",
+          "certificados": 3
+        },
+        {
+          "municipio": "PASTO",
+          "certificados": 241
+        },
+        {
+          "municipio": "PUPIALES",
+          "certificados": 1
+        },
+        {
+          "municipio": "SAMANIEGO",
+          "certificados": 2
+        },
+        {
+          "municipio": "SAN ANDRÉS DE TUMACO",
+          "certificados": 20
+        },
+        {
+          "municipio": "SAN PABLO",
+          "certificados": 1
+        },
+        {
+          "municipio": "SAN PEDRO DE CARTAGO",
+          "certificados": 1
+        },
+        {
+          "municipio": "SANDONÁ",
+          "certificados": 3
+        },
+        {
+          "municipio": "TAMINANGO",
+          "certificados": 1
+        },
+        {
+          "municipio": "TANGUA",
+          "certificados": 2
+        },
+        {
+          "municipio": "TÚQUERRES",
+          "certificados": 5
+        },
+        {
+          "municipio": "YACUANQUER",
+          "certificados": 1
+        }
+      ],
+      "fuente": "informe-2024"
     },
     "computadores_para_educar": {
       "nombre": "Computadores para Educar",
@@ -420,60 +3512,432 @@
         "inversion_narino_millones_cop": 11830
       },
       "municipios": [
-        { "municipio": "ALBÁN", "sedes": 2, "matricula": 364, "computadores": 1, "labs": 1, "inversion_millones_cop": 36 },
-        { "municipio": "ALDANA", "sedes": 2, "matricula": 484, "computadores": 0, "labs": 2, "inversion_millones_cop": 79 },
-        { "municipio": "ANCUYA", "sedes": 1, "matricula": 133, "computadores": 0, "labs": 1, "inversion_millones_cop": 46 },
-        { "municipio": "ARBOLEDA", "sedes": 1, "matricula": 202, "computadores": 0, "labs": 1, "inversion_millones_cop": 32 },
-        { "municipio": "BARBACOAS", "sedes": 10, "matricula": 3867, "computadores": 142, "labs": 4, "inversion_millones_cop": 305 },
-        { "municipio": "BUESACO", "sedes": 2, "matricula": 0, "computadores": 2, "labs": 0, "inversion_millones_cop": 2 },
-        { "municipio": "CHACHAGÜÍ", "sedes": 2, "matricula": 254, "computadores": 1, "labs": 1, "inversion_millones_cop": 33 },
-        { "municipio": "COLÓN", "sedes": 2, "matricula": 318, "computadores": 0, "labs": 2, "inversion_millones_cop": 64 },
-        { "municipio": "CONSACÁ", "sedes": 1, "matricula": 454, "computadores": 0, "labs": 1, "inversion_millones_cop": 46 },
-        { "municipio": "CONTADERO", "sedes": 1, "matricula": 264, "computadores": 1, "labs": 1, "inversion_millones_cop": 33 },
-        { "municipio": "CÓRDOBA", "sedes": 3, "matricula": 111, "computadores": 2, "labs": 1, "inversion_millones_cop": 49 },
-        { "municipio": "CUASPUD CARLOSAMA", "sedes": 1, "matricula": 433, "computadores": 0, "labs": 1, "inversion_millones_cop": 46 },
-        { "municipio": "CUMBAL", "sedes": 3, "matricula": 466, "computadores": 2, "labs": 1, "inversion_millones_cop": 49 },
-        { "municipio": "CUMBITARA", "sedes": 5, "matricula": 533, "computadores": 35, "labs": 2, "inversion_millones_cop": 106 },
-        { "municipio": "EL CHARCO", "sedes": 8, "matricula": 1764, "computadores": 161, "labs": 2, "inversion_millones_cop": 258 },
-        { "municipio": "EL PEÑOL", "sedes": 3, "matricula": 250, "computadores": 0, "labs": 3, "inversion_millones_cop": 125 },
-        { "municipio": "EL ROSARIO", "sedes": 2, "matricula": 207, "computadores": 22, "labs": 0, "inversion_millones_cop": 24 },
-        { "municipio": "EL TABLÓN DE GÓMEZ", "sedes": 1, "matricula": 0, "computadores": 1, "labs": 0, "inversion_millones_cop": 1 },
-        { "municipio": "EL TAMBO", "sedes": 3, "matricula": 668, "computadores": 11, "labs": 2, "inversion_millones_cop": 90 },
-        { "municipio": "FRANCISCO PIZARRO", "sedes": 2, "matricula": 922, "computadores": 80, "labs": 1, "inversion_millones_cop": 144 },
-        { "municipio": "FUNES", "sedes": 2, "matricula": 405, "computadores": 0, "labs": 2, "inversion_millones_cop": 88 },
-        { "municipio": "GUACHUCAL", "sedes": 3, "matricula": 20, "computadores": 3, "labs": 1, "inversion_millones_cop": 50 },
-        { "municipio": "GUALMATÁN", "sedes": 1, "matricula": 0, "computadores": 1, "labs": 0, "inversion_millones_cop": 1 },
-        { "municipio": "ILES", "sedes": 1, "matricula": 0, "computadores": 1, "labs": 0, "inversion_millones_cop": 1 },
-        { "municipio": "IPIALES", "sedes": 12, "matricula": 10059, "computadores": 14, "labs": 8, "inversion_millones_cop": 382 },
-        { "municipio": "LA CRUZ", "sedes": 5, "matricula": 1223, "computadores": 6, "labs": 4, "inversion_millones_cop": 178 },
-        { "municipio": "LA FLORIDA", "sedes": 1, "matricula": 0, "computadores": 1, "labs": 0, "inversion_millones_cop": 1 },
-        { "municipio": "LA TOLA", "sedes": 2, "matricula": 616, "computadores": 81, "labs": 0, "inversion_millones_cop": 89 },
-        { "municipio": "LA UNIÓN", "sedes": 6, "matricula": 3582, "computadores": 153, "labs": 6, "inversion_millones_cop": 446 },
-        { "municipio": "LEIVA", "sedes": 4, "matricula": 755, "computadores": 40, "labs": 1, "inversion_millones_cop": 90 },
-        { "municipio": "LINARES", "sedes": 4, "matricula": 328, "computadores": 1, "labs": 3, "inversion_millones_cop": 140 },
-        { "municipio": "LOS ANDES", "sedes": 3, "matricula": 828, "computadores": 20, "labs": 2, "inversion_millones_cop": 101 },
-        { "municipio": "MAGÜÍ", "sedes": 2, "matricula": 998, "computadores": 100, "labs": 0, "inversion_millones_cop": 110 },
-        { "municipio": "MALLAMA", "sedes": 2, "matricula": 433, "computadores": 2, "labs": 2, "inversion_millones_cop": 95 },
-        { "municipio": "MOSQUERA", "sedes": 3, "matricula": 1698, "computadores": 81, "labs": 0, "inversion_millones_cop": 89 },
-        { "municipio": "OLAYA HERRERA", "sedes": 7, "matricula": 1250, "computadores": 142, "labs": 0, "inversion_millones_cop": 156 },
-        { "municipio": "PASTO", "sedes": 49, "matricula": 26501, "computadores": 1237, "labs": 31, "inversion_millones_cop": 2772 },
-        { "municipio": "POLICARPA", "sedes": 8, "matricula": 1122, "computadores": 108, "labs": 2, "inversion_millones_cop": 210 },
-        { "municipio": "POTOSÍ", "sedes": 1, "matricula": 161, "computadores": 2, "labs": 1, "inversion_millones_cop": 49 },
-        { "municipio": "PUPIALES", "sedes": 2, "matricula": 255, "computadores": 1, "labs": 1, "inversion_millones_cop": 57 },
-        { "municipio": "RICAURTE", "sedes": 11, "matricula": 1068, "computadores": 172, "labs": 2, "inversion_millones_cop": 280 },
-        { "municipio": "ROBERTO PAYÁN", "sedes": 6, "matricula": 1430, "computadores": 181, "labs": 2, "inversion_millones_cop": 287 },
-        { "municipio": "SAMANIEGO", "sedes": 2, "matricula": 0, "computadores": 2, "labs": 0, "inversion_millones_cop": 2 },
-        { "municipio": "SAN ANDRÉS DE TUMACO", "sedes": 32, "matricula": 21293, "computadores": 3081, "labs": 10, "inversion_millones_cop": 3962 },
-        { "municipio": "SAN BERNARDO", "sedes": 1, "matricula": 427, "computadores": 1, "labs": 1, "inversion_millones_cop": 33 },
-        { "municipio": "SAN PEDRO DE CARTAGO", "sedes": 1, "matricula": 127, "computadores": 0, "labs": 1, "inversion_millones_cop": 32 },
-        { "municipio": "SANDONÁ", "sedes": 1, "matricula": 194, "computadores": 3, "labs": 1, "inversion_millones_cop": 50 },
-        { "municipio": "SANTA BÁRBARA", "sedes": 3, "matricula": 646, "computadores": 100, "labs": 0, "inversion_millones_cop": 110 },
-        { "municipio": "SAPUYES", "sedes": 1, "matricula": 65, "computadores": 0, "labs": 1, "inversion_millones_cop": 46 },
-        { "municipio": "TAMINANGO", "sedes": 4, "matricula": 578, "computadores": 1, "labs": 3, "inversion_millones_cop": 140 },
-        { "municipio": "TANGUA", "sedes": 2, "matricula": 332, "computadores": 0, "labs": 2, "inversion_millones_cop": 79 },
-        { "municipio": "TÚQUERRES", "sedes": 4, "matricula": 339, "computadores": 2, "labs": 2, "inversion_millones_cop": 90 },
-        { "municipio": "YACUANQUER", "sedes": 1, "matricula": 205, "computadores": 0, "labs": 1, "inversion_millones_cop": 46 }
-      ]
+        {
+          "municipio": "ALBÁN",
+          "sedes": 2,
+          "matricula": 364,
+          "computadores": 1,
+          "labs": 1,
+          "inversion_millones_cop": 36
+        },
+        {
+          "municipio": "ALDANA",
+          "sedes": 2,
+          "matricula": 484,
+          "computadores": 0,
+          "labs": 2,
+          "inversion_millones_cop": 79
+        },
+        {
+          "municipio": "ANCUYA",
+          "sedes": 1,
+          "matricula": 133,
+          "computadores": 0,
+          "labs": 1,
+          "inversion_millones_cop": 46
+        },
+        {
+          "municipio": "ARBOLEDA",
+          "sedes": 1,
+          "matricula": 202,
+          "computadores": 0,
+          "labs": 1,
+          "inversion_millones_cop": 32
+        },
+        {
+          "municipio": "BARBACOAS",
+          "sedes": 10,
+          "matricula": 3867,
+          "computadores": 142,
+          "labs": 4,
+          "inversion_millones_cop": 305
+        },
+        {
+          "municipio": "BUESACO",
+          "sedes": 2,
+          "matricula": 0,
+          "computadores": 2,
+          "labs": 0,
+          "inversion_millones_cop": 2
+        },
+        {
+          "municipio": "CHACHAGÜÍ",
+          "sedes": 2,
+          "matricula": 254,
+          "computadores": 1,
+          "labs": 1,
+          "inversion_millones_cop": 33
+        },
+        {
+          "municipio": "COLÓN",
+          "sedes": 2,
+          "matricula": 318,
+          "computadores": 0,
+          "labs": 2,
+          "inversion_millones_cop": 64
+        },
+        {
+          "municipio": "CONSACÁ",
+          "sedes": 1,
+          "matricula": 454,
+          "computadores": 0,
+          "labs": 1,
+          "inversion_millones_cop": 46
+        },
+        {
+          "municipio": "CONTADERO",
+          "sedes": 1,
+          "matricula": 264,
+          "computadores": 1,
+          "labs": 1,
+          "inversion_millones_cop": 33
+        },
+        {
+          "municipio": "CÓRDOBA",
+          "sedes": 3,
+          "matricula": 111,
+          "computadores": 2,
+          "labs": 1,
+          "inversion_millones_cop": 49
+        },
+        {
+          "municipio": "CUASPUD CARLOSAMA",
+          "sedes": 1,
+          "matricula": 433,
+          "computadores": 0,
+          "labs": 1,
+          "inversion_millones_cop": 46
+        },
+        {
+          "municipio": "CUMBAL",
+          "sedes": 3,
+          "matricula": 466,
+          "computadores": 2,
+          "labs": 1,
+          "inversion_millones_cop": 49
+        },
+        {
+          "municipio": "CUMBITARA",
+          "sedes": 5,
+          "matricula": 533,
+          "computadores": 35,
+          "labs": 2,
+          "inversion_millones_cop": 106
+        },
+        {
+          "municipio": "EL CHARCO",
+          "sedes": 8,
+          "matricula": 1764,
+          "computadores": 161,
+          "labs": 2,
+          "inversion_millones_cop": 258
+        },
+        {
+          "municipio": "EL PEÑOL",
+          "sedes": 3,
+          "matricula": 250,
+          "computadores": 0,
+          "labs": 3,
+          "inversion_millones_cop": 125
+        },
+        {
+          "municipio": "EL ROSARIO",
+          "sedes": 2,
+          "matricula": 207,
+          "computadores": 22,
+          "labs": 0,
+          "inversion_millones_cop": 24
+        },
+        {
+          "municipio": "EL TABLÓN DE GÓMEZ",
+          "sedes": 1,
+          "matricula": 0,
+          "computadores": 1,
+          "labs": 0,
+          "inversion_millones_cop": 1
+        },
+        {
+          "municipio": "EL TAMBO",
+          "sedes": 3,
+          "matricula": 668,
+          "computadores": 11,
+          "labs": 2,
+          "inversion_millones_cop": 90
+        },
+        {
+          "municipio": "FRANCISCO PIZARRO",
+          "sedes": 2,
+          "matricula": 922,
+          "computadores": 80,
+          "labs": 1,
+          "inversion_millones_cop": 144
+        },
+        {
+          "municipio": "FUNES",
+          "sedes": 2,
+          "matricula": 405,
+          "computadores": 0,
+          "labs": 2,
+          "inversion_millones_cop": 88
+        },
+        {
+          "municipio": "GUACHUCAL",
+          "sedes": 3,
+          "matricula": 20,
+          "computadores": 3,
+          "labs": 1,
+          "inversion_millones_cop": 50
+        },
+        {
+          "municipio": "GUALMATÁN",
+          "sedes": 1,
+          "matricula": 0,
+          "computadores": 1,
+          "labs": 0,
+          "inversion_millones_cop": 1
+        },
+        {
+          "municipio": "ILES",
+          "sedes": 1,
+          "matricula": 0,
+          "computadores": 1,
+          "labs": 0,
+          "inversion_millones_cop": 1
+        },
+        {
+          "municipio": "IPIALES",
+          "sedes": 12,
+          "matricula": 10059,
+          "computadores": 14,
+          "labs": 8,
+          "inversion_millones_cop": 382
+        },
+        {
+          "municipio": "LA CRUZ",
+          "sedes": 5,
+          "matricula": 1223,
+          "computadores": 6,
+          "labs": 4,
+          "inversion_millones_cop": 178
+        },
+        {
+          "municipio": "LA FLORIDA",
+          "sedes": 1,
+          "matricula": 0,
+          "computadores": 1,
+          "labs": 0,
+          "inversion_millones_cop": 1
+        },
+        {
+          "municipio": "LA TOLA",
+          "sedes": 2,
+          "matricula": 616,
+          "computadores": 81,
+          "labs": 0,
+          "inversion_millones_cop": 89
+        },
+        {
+          "municipio": "LA UNIÓN",
+          "sedes": 6,
+          "matricula": 3582,
+          "computadores": 153,
+          "labs": 6,
+          "inversion_millones_cop": 446
+        },
+        {
+          "municipio": "LEIVA",
+          "sedes": 4,
+          "matricula": 755,
+          "computadores": 40,
+          "labs": 1,
+          "inversion_millones_cop": 90
+        },
+        {
+          "municipio": "LINARES",
+          "sedes": 4,
+          "matricula": 328,
+          "computadores": 1,
+          "labs": 3,
+          "inversion_millones_cop": 140
+        },
+        {
+          "municipio": "LOS ANDES",
+          "sedes": 3,
+          "matricula": 828,
+          "computadores": 20,
+          "labs": 2,
+          "inversion_millones_cop": 101
+        },
+        {
+          "municipio": "MAGÜÍ",
+          "sedes": 2,
+          "matricula": 998,
+          "computadores": 100,
+          "labs": 0,
+          "inversion_millones_cop": 110
+        },
+        {
+          "municipio": "MALLAMA",
+          "sedes": 2,
+          "matricula": 433,
+          "computadores": 2,
+          "labs": 2,
+          "inversion_millones_cop": 95
+        },
+        {
+          "municipio": "MOSQUERA",
+          "sedes": 3,
+          "matricula": 1698,
+          "computadores": 81,
+          "labs": 0,
+          "inversion_millones_cop": 89
+        },
+        {
+          "municipio": "OLAYA HERRERA",
+          "sedes": 7,
+          "matricula": 1250,
+          "computadores": 142,
+          "labs": 0,
+          "inversion_millones_cop": 156
+        },
+        {
+          "municipio": "PASTO",
+          "sedes": 49,
+          "matricula": 26501,
+          "computadores": 1237,
+          "labs": 31,
+          "inversion_millones_cop": 2772
+        },
+        {
+          "municipio": "POLICARPA",
+          "sedes": 8,
+          "matricula": 1122,
+          "computadores": 108,
+          "labs": 2,
+          "inversion_millones_cop": 210
+        },
+        {
+          "municipio": "POTOSÍ",
+          "sedes": 1,
+          "matricula": 161,
+          "computadores": 2,
+          "labs": 1,
+          "inversion_millones_cop": 49
+        },
+        {
+          "municipio": "PUPIALES",
+          "sedes": 2,
+          "matricula": 255,
+          "computadores": 1,
+          "labs": 1,
+          "inversion_millones_cop": 57
+        },
+        {
+          "municipio": "RICAURTE",
+          "sedes": 11,
+          "matricula": 1068,
+          "computadores": 172,
+          "labs": 2,
+          "inversion_millones_cop": 280
+        },
+        {
+          "municipio": "ROBERTO PAYÁN",
+          "sedes": 6,
+          "matricula": 1430,
+          "computadores": 181,
+          "labs": 2,
+          "inversion_millones_cop": 287
+        },
+        {
+          "municipio": "SAMANIEGO",
+          "sedes": 2,
+          "matricula": 0,
+          "computadores": 2,
+          "labs": 0,
+          "inversion_millones_cop": 2
+        },
+        {
+          "municipio": "SAN ANDRÉS DE TUMACO",
+          "sedes": 32,
+          "matricula": 21293,
+          "computadores": 3081,
+          "labs": 10,
+          "inversion_millones_cop": 3962
+        },
+        {
+          "municipio": "SAN BERNARDO",
+          "sedes": 1,
+          "matricula": 427,
+          "computadores": 1,
+          "labs": 1,
+          "inversion_millones_cop": 33
+        },
+        {
+          "municipio": "SAN PEDRO DE CARTAGO",
+          "sedes": 1,
+          "matricula": 127,
+          "computadores": 0,
+          "labs": 1,
+          "inversion_millones_cop": 32
+        },
+        {
+          "municipio": "SANDONÁ",
+          "sedes": 1,
+          "matricula": 194,
+          "computadores": 3,
+          "labs": 1,
+          "inversion_millones_cop": 50
+        },
+        {
+          "municipio": "SANTA BÁRBARA",
+          "sedes": 3,
+          "matricula": 646,
+          "computadores": 100,
+          "labs": 0,
+          "inversion_millones_cop": 110
+        },
+        {
+          "municipio": "SAPUYES",
+          "sedes": 1,
+          "matricula": 65,
+          "computadores": 0,
+          "labs": 1,
+          "inversion_millones_cop": 46
+        },
+        {
+          "municipio": "TAMINANGO",
+          "sedes": 4,
+          "matricula": 578,
+          "computadores": 1,
+          "labs": 3,
+          "inversion_millones_cop": 140
+        },
+        {
+          "municipio": "TANGUA",
+          "sedes": 2,
+          "matricula": 332,
+          "computadores": 0,
+          "labs": 2,
+          "inversion_millones_cop": 79
+        },
+        {
+          "municipio": "TÚQUERRES",
+          "sedes": 4,
+          "matricula": 339,
+          "computadores": 2,
+          "labs": 2,
+          "inversion_millones_cop": 90
+        },
+        {
+          "municipio": "YACUANQUER",
+          "sedes": 1,
+          "matricula": 205,
+          "computadores": 0,
+          "labs": 1,
+          "inversion_millones_cop": 46
+        }
+      ],
+      "fuente": "informe-2024"
     },
     "convenios": {
       "nombre": "Convenios Especiales",
@@ -499,7 +3963,45 @@
           "inversion_total_millones_cop": 2214,
           "aporte_mintic_millones_cop": 2013
         }
-      ]
+      ],
+      "fuente": "informe-2024"
     }
+  },
+  "inversion": {
+    "fuente": "informe-2024",
+    "unidad": "millones COP",
+    "nota": "Los oficios de 2026 no reportan inversión por programa para Nariño.",
+    "programas": [
+      {
+        "programa": "Centros Digitales",
+        "proyecto": "Centros Digitales",
+        "inversion": 147315
+      },
+      {
+        "programa": "Conectividad",
+        "proyecto": "Zonas Comunitarias para la Paz",
+        "inversion": 29205
+      },
+      {
+        "programa": "Conectividad",
+        "proyecto": "Escuelas Potencia 5G",
+        "inversion": 13894
+      },
+      {
+        "programa": "Educación Digital",
+        "proyecto": "Computadores para Educar",
+        "inversion": 11830
+      },
+      {
+        "programa": "Educación Digital",
+        "proyecto": "Talento Tech (Región 3)",
+        "inversion": 13700
+      },
+      {
+        "programa": "Educación Digital",
+        "proyecto": "Colombia Programa",
+        "inversion": 14900
+      }
+    ]
   }
 }

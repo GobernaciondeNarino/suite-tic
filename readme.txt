@@ -4,7 +4,7 @@ Tags: charts, d3plus, shortcode, dataviz, tic-suite
 Requires at least: 6.0
 Tested up to: 6.5
 Requires PHP: 7.4
-Stable tag: 1.9.0
+Stable tag: 1.10.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -38,6 +38,13 @@ TIC Suite · Gráficos convierte cualquier vista JSON registrada en un gráfico 
 * `uninstall.php` limpia las opciones al desinstalar.
 
 == Changelog ==
+
+= 1.10.0 =
+* Datos de Py Nación actualizados con los oficios MinTIC Rad. 262030528 (ene-2026) y Rad. 262178074 (oct-2026, corte sep-2026). La base `data/views/proyectos-tic.json` pasa a la versión 2, con fuente y corte por proyecto e histórico de lo reemplazado.
+* Centros Digitales: 923 en operación en los 64 municipios. ConectiVIDAd reemplaza "Conectividad hogares" (meta, instalados y operativos). Escuelas PotencIA 5G con estado y asignatario. Juntas de Internet con las 23 juntas del Acuerdo Específico No. 5. Centros PotencIA entra al índice de presencia, que sigue midiendo 12 programas.
+* Vista nueva `juntas_internet`; se retiran `juntas_prereg` y `juntas_diseno`.
+* El Dashboard TIC Nariño se genera de la misma base que las vistas (`scripts/regen-views.py`) y muestra el corte de los datos.
+* Inconsistencias de los oficios documentadas en `docs/NOTAS-DATOS.md`.
 
 = 1.9.0 =
 * d3plus actualizado de 3.0.x a 4.13.0 (bundle `d3plus-core.full.min.js`). Se desactivan las barras propias de v4 (guardar, buscar, tabla y zoom salvo en mapas) para no duplicar la barra del plugin, y la leyenda se oculta cuando tendría más de 12 elementos.

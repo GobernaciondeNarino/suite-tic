@@ -1,334 +1,529 @@
 {
   "vista": "escuelas_5g",
-  "titulo": "Escuelas Potencia 5G",
-  "descripcion": "Sedes educativas intervenidas bajo el programa Escuelas Potencia 5G en los 64 municipios de Nariño.",
+  "titulo": "Escuelas PotencIA 5G",
+  "descripcion": "Sedes educativas previstas por la subasta 5G y su estado: operación, instalación o planeación (MinTIC, corte 2026-01).",
   "tipo_grafico_sugerido": "bar",
   "total_municipios": 64,
   "municipios": [
     {
       "municipio": "ALBÁN",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "ALDANA",
       "escuelas_5g": 2,
+      "en_operacion": 2,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "ANCUYA",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "ARBOLEDA",
       "escuelas_5g": 8,
+      "en_operacion": 4,
+      "en_instalacion": 0,
+      "en_planeacion": 4,
       "pdet": false
     },
     {
       "municipio": "BARBACOAS",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": true
     },
     {
       "municipio": "BELÉN",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "BUESACO",
       "escuelas_5g": 9,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 9,
       "pdet": false
     },
     {
       "municipio": "CHACHAGÜÍ",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "COLÓN",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "CONSACÁ",
       "escuelas_5g": 4,
+      "en_operacion": 3,
+      "en_instalacion": 0,
+      "en_planeacion": 1,
       "pdet": false
     },
     {
       "municipio": "CONTADERO",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "CÓRDOBA",
       "escuelas_5g": 1,
+      "en_operacion": 0,
+      "en_instalacion": 1,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "CUASPUD CARLOSAMA",
       "escuelas_5g": 1,
+      "en_operacion": 1,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "CUMBAL",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "CUMBITARA",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": true
     },
     {
       "municipio": "EL CHARCO",
       "escuelas_5g": 1,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 1,
       "pdet": true
     },
     {
       "municipio": "EL PEÑOL",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "EL ROSARIO",
       "escuelas_5g": 1,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 1,
       "pdet": true
     },
     {
       "municipio": "EL TABLÓN DE GÓMEZ",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "EL TAMBO",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "FRANCISCO PIZARRO",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": true
     },
     {
       "municipio": "FUNES",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "GUACHUCAL",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "GUAITARILLA",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "GUALMATÁN",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "ILES",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "IMUÉS",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "IPIALES",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "LA CRUZ",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "LA FLORIDA",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "LA LLANADA",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "LA TOLA",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": true
     },
     {
       "municipio": "LA UNIÓN",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "LEIVA",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": true
     },
     {
       "municipio": "LINARES",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "LOS ANDES",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": true
     },
     {
       "municipio": "MAGÜÍ",
       "escuelas_5g": 1,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 1,
       "pdet": true
     },
     {
       "municipio": "MALLAMA",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "MOSQUERA",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": true
     },
     {
       "municipio": "NARIÑO",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "OLAYA HERRERA",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": true
     },
     {
       "municipio": "OSPINA",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "PASTO",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "POLICARPA",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": true
     },
     {
       "municipio": "POTOSÍ",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "PROVIDENCIA",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "PUERRES",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "PUPIALES",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "RICAURTE",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": true
     },
     {
       "municipio": "ROBERTO PAYÁN",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": true
     },
     {
       "municipio": "SAMANIEGO",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "SAN ANDRÉS DE TUMACO",
       "escuelas_5g": 12,
+      "en_operacion": 0,
+      "en_instalacion": 1,
+      "en_planeacion": 11,
       "pdet": true
     },
     {
       "municipio": "SAN BERNARDO",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "SAN LORENZO",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "SAN PABLO",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "SAN PEDRO DE CARTAGO",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "SANDONÁ",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "SANTA BÁRBARA",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": true
     },
     {
       "municipio": "SANTACRUZ",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "SAPUYES",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "TAMINANGO",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "TANGUA",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "TÚQUERRES",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     },
     {
       "municipio": "YACUANQUER",
       "escuelas_5g": 0,
+      "en_operacion": 0,
+      "en_instalacion": 0,
+      "en_planeacion": 0,
       "pdet": false
     }
   ],
   "totales": {
     "total_departamento": 40,
     "municipios_con_presencia": 10,
-    "municipios_sin_presencia": 54
+    "municipios_sin_presencia": 54,
+    "total_en_operacion": 10,
+    "total_en_instalacion": 2,
+    "total_en_planeacion": 28
   }
 }

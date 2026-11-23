@@ -1,7 +1,7 @@
 {
   "vista": "avanzatec",
   "titulo": "AvanzaTEC - Certificados",
-  "descripcion": "Personas certificadas en AvanzaTEC en los 64 municipios de Nariño.",
+  "descripcion": "Certificados AvanzaTEC por municipio (informe MinTIC 2024).",
   "tipo_grafico_sugerido": "bar",
   "total_municipios": 64,
   "municipios": [

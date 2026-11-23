@@ -1,8 +1,8 @@
 {
   "vista": "zcp_por_municipio",
   "titulo": "Zonas Comunitarias para la Paz - ZCP por Municipio",
-  "descripcion": "Zonas Comunitarias para la Paz (ZCP) asignadas a los 64 municipios de Nariño. Las ZCP se asignan a municipios PDET; el campo pdet identifica los que aplican.",
-  "tipo_grafico_sugerido": "bar_horizontal",
+  "descripcion": "ZCP en operación en los municipios PDET de Nariño (MinTIC, corte 2026-01).",
+  "tipo_grafico_sugerido": "bar",
   "total_municipios": 64,
   "municipios": [
     {

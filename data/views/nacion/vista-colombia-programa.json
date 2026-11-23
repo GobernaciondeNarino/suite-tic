@@ -1,7 +1,7 @@
 {
   "vista": "colombia_programa_ie",
   "titulo": "Colombia Programa - Instituciones Educativas",
-  "descripcion": "Instituciones Educativas vinculadas a Colombia Programa en los 64 municipios de Nariño.",
+  "descripcion": "Instituciones educativas seleccionadas en Colombia Programa (informe MinTIC 2024).",
   "tipo_grafico_sugerido": "bar",
   "total_municipios": 64,
   "municipios": [

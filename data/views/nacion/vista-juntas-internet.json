@@ -1,334 +1,399 @@
 {
-  "vista": "juntas_prereg",
-  "titulo": "Juntas - Preregistradas",
-  "descripcion": "Juntas de Internet preregistradas en los 64 municipios de Nariño.",
+  "vista": "juntas_internet",
+  "titulo": "Juntas de Internet - Comunidades de Conectividad",
+  "descripcion": "Juntas de Internet del Acuerdo Específico No. 5 y hogares rurales que prevén conectar (MinTIC, corte 2026-09).",
   "tipo_grafico_sugerido": "bar",
   "total_municipios": 64,
   "municipios": [
     {
       "municipio": "ALBÁN",
-      "juntas_preregistradas": 7,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": false
     },
     {
       "municipio": "ALDANA",
-      "juntas_preregistradas": 10,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": false
     },
     {
       "municipio": "ANCUYA",
-      "juntas_preregistradas": 58,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": false
     },
     {
       "municipio": "ARBOLEDA",
-      "juntas_preregistradas": 55,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": false
     },
     {
       "municipio": "BARBACOAS",
-      "juntas_preregistradas": 20,
+      "juntas": 1,
+      "hogares_previstos": 126,
       "pdet": true
     },
     {
       "municipio": "BELÉN",
-      "juntas_preregistradas": 27,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": false
     },
     {
       "municipio": "BUESACO",
-      "juntas_preregistradas": 2,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": false
     },
     {
       "municipio": "CHACHAGÜÍ",
-      "juntas_preregistradas": 25,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": false
     },
     {
       "municipio": "COLÓN",
-      "juntas_preregistradas": 20,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": false
     },
     {
       "municipio": "CONSACÁ",
-      "juntas_preregistradas": 38,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": false
     },
     {
       "municipio": "CONTADERO",
-      "juntas_preregistradas": 0,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": false
     },
     {
       "municipio": "CÓRDOBA",
-      "juntas_preregistradas": 11,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": false
     },
     {
       "municipio": "CUASPUD CARLOSAMA",
-      "juntas_preregistradas": 2,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": false
     },
     {
       "municipio": "CUMBAL",
-      "juntas_preregistradas": 28,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": false
     },
     {
       "municipio": "CUMBITARA",
-      "juntas_preregistradas": 11,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": true
     },
     {
       "municipio": "EL CHARCO",
-      "juntas_preregistradas": 22,
+      "juntas": 2,
+      "hogares_previstos": 243,
       "pdet": true
     },
     {
       "municipio": "EL PEÑOL",
-      "juntas_preregistradas": 14,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": false
     },
     {
       "municipio": "EL ROSARIO",
-      "juntas_preregistradas": 4,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": true
     },
     {
       "municipio": "EL TABLÓN DE GÓMEZ",
-      "juntas_preregistradas": 15,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": false
     },
     {
       "municipio": "EL TAMBO",
-      "juntas_preregistradas": 3,
+      "juntas": 5,
+      "hogares_previstos": 465,
       "pdet": false
     },
     {
       "municipio": "FRANCISCO PIZARRO",
-      "juntas_preregistradas": 0,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": true
     },
     {
       "municipio": "FUNES",
-      "juntas_preregistradas": 35,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": false
     },
     {
       "municipio": "GUACHUCAL",
-      "juntas_preregistradas": 16,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": false
     },
     {
       "municipio": "GUAITARILLA",
-      "juntas_preregistradas": 15,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": false
     },
     {
       "municipio": "GUALMATÁN",
-      "juntas_preregistradas": 10,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": false
     },
     {
       "municipio": "ILES",
-      "juntas_preregistradas": 8,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": false
     },
     {
       "municipio": "IMUÉS",
-      "juntas_preregistradas": 6,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": false
     },
     {
       "municipio": "IPIALES",
-      "juntas_preregistradas": 38,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": false
     },
     {
       "municipio": "LA CRUZ",
-      "juntas_preregistradas": 59,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": false
     },
     {
       "municipio": "LA FLORIDA",
-      "juntas_preregistradas": 43,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": false
     },
     {
       "municipio": "LA LLANADA",
-      "juntas_preregistradas": 15,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": false
     },
     {
       "municipio": "LA TOLA",
-      "juntas_preregistradas": 4,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": true
     },
     {
       "municipio": "LA UNIÓN",
-      "juntas_preregistradas": 2,
+      "juntas": 1,
+      "hogares_previstos": 150,
       "pdet": false
     },
     {
       "municipio": "LEIVA",
-      "juntas_preregistradas": 2,
+      "juntas": 2,
+      "hogares_previstos": 104,
       "pdet": true
     },
     {
       "municipio": "LINARES",
-      "juntas_preregistradas": 51,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": false
     },
     {
       "municipio": "LOS ANDES",
-      "juntas_preregistradas": 38,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": true
     },
     {
       "municipio": "MAGÜÍ",
-      "juntas_preregistradas": 11,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": true
     },
     {
       "municipio": "MALLAMA",
-      "juntas_preregistradas": 17,
+      "juntas": 1,
+      "hogares_previstos": 56,
       "pdet": false
     },
     {
       "municipio": "MOSQUERA",
-      "juntas_preregistradas": 10,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": true
     },
     {
       "municipio": "NARIÑO",
-      "juntas_preregistradas": 7,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": false
     },
     {
       "municipio": "OLAYA HERRERA",
-      "juntas_preregistradas": 3,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": true
     },
     {
       "municipio": "OSPINA",
-      "juntas_preregistradas": 17,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": false
     },
     {
       "municipio": "PASTO",
-      "juntas_preregistradas": 401,
+      "juntas": 2,
+      "hogares_previstos": 146,
       "pdet": false
     },
     {
       "municipio": "POLICARPA",
-      "juntas_preregistradas": 90,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": true
     },
     {
       "municipio": "POTOSÍ",
-      "juntas_preregistradas": 30,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": false
     },
     {
       "municipio": "PROVIDENCIA",
-      "juntas_preregistradas": 31,
+      "juntas": 1,
+      "hogares_previstos": 100,
       "pdet": false
     },
     {
       "municipio": "PUERRES",
-      "juntas_preregistradas": 72,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": false
     },
     {
       "municipio": "PUPIALES",
-      "juntas_preregistradas": 6,
+      "juntas": 1,
+      "hogares_previstos": 71,
       "pdet": false
     },
     {
       "municipio": "RICAURTE",
-      "juntas_preregistradas": 7,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": true
     },
     {
       "municipio": "ROBERTO PAYÁN",
-      "juntas_preregistradas": 33,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": true
     },
     {
       "municipio": "SAMANIEGO",
-      "juntas_preregistradas": 11,
+      "juntas": 1,
+      "hogares_previstos": 70,
       "pdet": false
     },
     {
       "municipio": "SAN ANDRÉS DE TUMACO",
-      "juntas_preregistradas": 60,
+      "juntas": 2,
+      "hogares_previstos": 200,
       "pdet": true
     },
     {
       "municipio": "SAN BERNARDO",
-      "juntas_preregistradas": 3,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": false
     },
     {
       "municipio": "SAN LORENZO",
-      "juntas_preregistradas": 48,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": false
     },
     {
       "municipio": "SAN PABLO",
-      "juntas_preregistradas": 30,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": false
     },
     {
       "municipio": "SAN PEDRO DE CARTAGO",
-      "juntas_preregistradas": 57,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": false
     },
     {
       "municipio": "SANDONÁ",
-      "juntas_preregistradas": 7,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": false
     },
     {
       "municipio": "SANTA BÁRBARA",
-      "juntas_preregistradas": 1,
+      "juntas": 1,
+      "hogares_previstos": 45,
       "pdet": true
     },
     {
       "municipio": "SANTACRUZ",
-      "juntas_preregistradas": 0,
+      "juntas": 1,
+      "hogares_previstos": 43,
       "pdet": false
     },
     {
       "municipio": "SAPUYES",
-      "juntas_preregistradas": 2,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": false
     },
     {
       "municipio": "TAMINANGO",
-      "juntas_preregistradas": 8,
+      "juntas": 1,
+      "hogares_previstos": 40,
       "pdet": false
     },
     {
       "municipio": "TANGUA",
-      "juntas_preregistradas": 83,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": false
     },
     {
       "municipio": "TÚQUERRES",
-      "juntas_preregistradas": 83,
+      "juntas": 0,
+      "hogares_previstos": 0,
       "pdet": false
     },
     {
       "municipio": "YACUANQUER",
-      "juntas_preregistradas": 18,
+      "juntas": 1,
+      "hogares_previstos": 76,
       "pdet": false
     }
   ],
   "totales": {
-    "total_departamento": 1860,
-    "municipios_con_presencia": 61,
-    "municipios_sin_presencia": 3
+    "total_departamento": 23,
+    "municipios_con_presencia": 15,
+    "municipios_sin_presencia": 49,
+    "total_hogares_previstos": 1935
   }
 }

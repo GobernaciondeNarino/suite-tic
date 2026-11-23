@@ -1,36 +1,36 @@
 {
   "vista": "indice_presencia",
   "titulo": "Índice de Presencia TIC (0-12)",
-  "descripcion": "Índice compuesto de presencia de los proyectos TIC en los 64 municipios de Nariño. 0 = sin presencia, 12 = presencia completa.",
+  "descripcion": "Número de los 12 programas MinTIC con presencia en cada uno de los 64 municipios de Nariño (corte 2026-09). 0 = sin presencia, 12 = presencia completa.",
   "tipo_grafico_sugerido": "bar",
   "total_municipios": 64,
   "municipios": [
     {
       "municipio": "ALBÁN",
-      "indice_presencia": 6,
+      "indice_presencia": 4,
       "max_posible": 12,
-      "categoria_cobertura": "media_alta",
+      "categoria_cobertura": "media",
       "pdet": false
     },
     {
       "municipio": "ALDANA",
-      "indice_presencia": 6,
+      "indice_presencia": 4,
       "max_posible": 12,
-      "categoria_cobertura": "media_alta",
+      "categoria_cobertura": "media",
       "pdet": false
     },
     {
       "municipio": "ANCUYA",
-      "indice_presencia": 5,
+      "indice_presencia": 3,
       "max_posible": 12,
-      "categoria_cobertura": "media",
+      "categoria_cobertura": "baja",
       "pdet": false
     },
     {
       "municipio": "ARBOLEDA",
-      "indice_presencia": 5,
+      "indice_presencia": 3,
       "max_posible": 12,
-      "categoria_cobertura": "media",
+      "categoria_cobertura": "baja",
       "pdet": false
     },
     {
@@ -42,156 +42,156 @@
     },
     {
       "municipio": "BELÉN",
+      "indice_presencia": 3,
+      "max_posible": 12,
+      "categoria_cobertura": "baja",
+      "pdet": false
+    },
+    {
+      "municipio": "BUESACO",
+      "indice_presencia": 7,
+      "max_posible": 12,
+      "categoria_cobertura": "media_alta",
+      "pdet": false
+    },
+    {
+      "municipio": "CHACHAGÜÍ",
       "indice_presencia": 5,
       "max_posible": 12,
       "categoria_cobertura": "media",
       "pdet": false
     },
     {
-      "municipio": "BUESACO",
-      "indice_presencia": 9,
-      "max_posible": 12,
-      "categoria_cobertura": "alta",
-      "pdet": false
-    },
-    {
-      "municipio": "CHACHAGÜÍ",
-      "indice_presencia": 7,
-      "max_posible": 12,
-      "categoria_cobertura": "media_alta",
-      "pdet": false
-    },
-    {
       "municipio": "COLÓN",
-      "indice_presencia": 7,
-      "max_posible": 12,
-      "categoria_cobertura": "media_alta",
-      "pdet": false
-    },
-    {
-      "municipio": "CONSACÁ",
-      "indice_presencia": 7,
-      "max_posible": 12,
-      "categoria_cobertura": "media_alta",
-      "pdet": false
-    },
-    {
-      "municipio": "CONTADERO",
       "indice_presencia": 4,
       "max_posible": 12,
       "categoria_cobertura": "media",
       "pdet": false
     },
     {
+      "municipio": "CONSACÁ",
+      "indice_presencia": 5,
+      "max_posible": 12,
+      "categoria_cobertura": "media",
+      "pdet": false
+    },
+    {
+      "municipio": "CONTADERO",
+      "indice_presencia": 3,
+      "max_posible": 12,
+      "categoria_cobertura": "baja",
+      "pdet": false
+    },
+    {
       "municipio": "CÓRDOBA",
-      "indice_presencia": 7,
+      "indice_presencia": 6,
       "max_posible": 12,
       "categoria_cobertura": "media_alta",
       "pdet": false
     },
     {
       "municipio": "CUASPUD CARLOSAMA",
-      "indice_presencia": 6,
+      "indice_presencia": 4,
       "max_posible": 12,
-      "categoria_cobertura": "media_alta",
+      "categoria_cobertura": "media",
       "pdet": false
     },
     {
       "municipio": "CUMBAL",
-      "indice_presencia": 8,
+      "indice_presencia": 6,
       "max_posible": 12,
       "categoria_cobertura": "media_alta",
       "pdet": false
     },
     {
       "municipio": "CUMBITARA",
-      "indice_presencia": 5,
+      "indice_presencia": 4,
       "max_posible": 12,
       "categoria_cobertura": "media",
       "pdet": true
     },
     {
       "municipio": "EL CHARCO",
-      "indice_presencia": 8,
+      "indice_presencia": 7,
       "max_posible": 12,
       "categoria_cobertura": "media_alta",
       "pdet": true
     },
     {
       "municipio": "EL PEÑOL",
-      "indice_presencia": 5,
+      "indice_presencia": 4,
       "max_posible": 12,
       "categoria_cobertura": "media",
       "pdet": false
     },
     {
       "municipio": "EL ROSARIO",
-      "indice_presencia": 6,
+      "indice_presencia": 5,
       "max_posible": 12,
-      "categoria_cobertura": "media_alta",
+      "categoria_cobertura": "media",
       "pdet": true
     },
     {
       "municipio": "EL TABLÓN DE GÓMEZ",
-      "indice_presencia": 6,
+      "indice_presencia": 4,
       "max_posible": 12,
-      "categoria_cobertura": "media_alta",
+      "categoria_cobertura": "media",
       "pdet": false
     },
     {
       "municipio": "EL TAMBO",
-      "indice_presencia": 7,
+      "indice_presencia": 6,
       "max_posible": 12,
       "categoria_cobertura": "media_alta",
       "pdet": false
     },
     {
       "municipio": "FRANCISCO PIZARRO",
-      "indice_presencia": 7,
+      "indice_presencia": 5,
       "max_posible": 12,
-      "categoria_cobertura": "media_alta",
+      "categoria_cobertura": "media",
       "pdet": true
     },
     {
       "municipio": "FUNES",
-      "indice_presencia": 5,
+      "indice_presencia": 3,
+      "max_posible": 12,
+      "categoria_cobertura": "baja",
+      "pdet": false
+    },
+    {
+      "municipio": "GUACHUCAL",
+      "indice_presencia": 4,
       "max_posible": 12,
       "categoria_cobertura": "media",
       "pdet": false
     },
     {
-      "municipio": "GUACHUCAL",
-      "indice_presencia": 6,
-      "max_posible": 12,
-      "categoria_cobertura": "media_alta",
-      "pdet": false
-    },
-    {
       "municipio": "GUAITARILLA",
-      "indice_presencia": 6,
+      "indice_presencia": 4,
       "max_posible": 12,
-      "categoria_cobertura": "media_alta",
+      "categoria_cobertura": "media",
       "pdet": false
     },
     {
       "municipio": "GUALMATÁN",
-      "indice_presencia": 5,
+      "indice_presencia": 4,
       "max_posible": 12,
       "categoria_cobertura": "media",
       "pdet": false
     },
     {
       "municipio": "ILES",
-      "indice_presencia": 5,
+      "indice_presencia": 4,
       "max_posible": 12,
       "categoria_cobertura": "media",
       "pdet": false
     },
     {
       "municipio": "IMUÉS",
-      "indice_presencia": 4,
+      "indice_presencia": 3,
       "max_posible": 12,
-      "categoria_cobertura": "media",
+      "categoria_cobertura": "baja",
       "pdet": false
     },
     {
@@ -203,98 +203,98 @@
     },
     {
       "municipio": "LA CRUZ",
-      "indice_presencia": 5,
+      "indice_presencia": 4,
       "max_posible": 12,
       "categoria_cobertura": "media",
       "pdet": false
     },
     {
       "municipio": "LA FLORIDA",
-      "indice_presencia": 7,
-      "max_posible": 12,
-      "categoria_cobertura": "media_alta",
-      "pdet": false
-    },
-    {
-      "municipio": "LA LLANADA",
       "indice_presencia": 5,
       "max_posible": 12,
       "categoria_cobertura": "media",
       "pdet": false
     },
     {
-      "municipio": "LA TOLA",
-      "indice_presencia": 6,
+      "municipio": "LA LLANADA",
+      "indice_presencia": 3,
       "max_posible": 12,
-      "categoria_cobertura": "media_alta",
+      "categoria_cobertura": "baja",
+      "pdet": false
+    },
+    {
+      "municipio": "LA TOLA",
+      "indice_presencia": 4,
+      "max_posible": 12,
+      "categoria_cobertura": "media",
       "pdet": true
     },
     {
       "municipio": "LA UNIÓN",
-      "indice_presencia": 8,
+      "indice_presencia": 7,
       "max_posible": 12,
       "categoria_cobertura": "media_alta",
       "pdet": false
     },
     {
       "municipio": "LEIVA",
-      "indice_presencia": 7,
+      "indice_presencia": 6,
       "max_posible": 12,
       "categoria_cobertura": "media_alta",
       "pdet": true
     },
     {
       "municipio": "LINARES",
-      "indice_presencia": 5,
+      "indice_presencia": 3,
       "max_posible": 12,
-      "categoria_cobertura": "media",
+      "categoria_cobertura": "baja",
       "pdet": false
     },
     {
       "municipio": "LOS ANDES",
-      "indice_presencia": 7,
+      "indice_presencia": 6,
       "max_posible": 12,
       "categoria_cobertura": "media_alta",
       "pdet": true
     },
     {
       "municipio": "MAGÜÍ",
-      "indice_presencia": 7,
+      "indice_presencia": 5,
       "max_posible": 12,
-      "categoria_cobertura": "media_alta",
+      "categoria_cobertura": "media",
       "pdet": true
     },
     {
       "municipio": "MALLAMA",
-      "indice_presencia": 5,
+      "indice_presencia": 4,
       "max_posible": 12,
       "categoria_cobertura": "media",
       "pdet": false
     },
     {
       "municipio": "MOSQUERA",
-      "indice_presencia": 7,
-      "max_posible": 12,
-      "categoria_cobertura": "media_alta",
-      "pdet": true
-    },
-    {
-      "municipio": "NARIÑO",
-      "indice_presencia": 6,
-      "max_posible": 12,
-      "categoria_cobertura": "media_alta",
-      "pdet": false
-    },
-    {
-      "municipio": "OLAYA HERRERA",
       "indice_presencia": 5,
       "max_posible": 12,
       "categoria_cobertura": "media",
       "pdet": true
     },
     {
+      "municipio": "NARIÑO",
+      "indice_presencia": 4,
+      "max_posible": 12,
+      "categoria_cobertura": "media",
+      "pdet": false
+    },
+    {
+      "municipio": "OLAYA HERRERA",
+      "indice_presencia": 4,
+      "max_posible": 12,
+      "categoria_cobertura": "media",
+      "pdet": true
+    },
+    {
       "municipio": "OSPINA",
-      "indice_presencia": 3,
+      "indice_presencia": 2,
       "max_posible": 12,
       "categoria_cobertura": "baja",
       "pdet": false
@@ -308,30 +308,30 @@
     },
     {
       "municipio": "POLICARPA",
-      "indice_presencia": 6,
+      "indice_presencia": 5,
       "max_posible": 12,
-      "categoria_cobertura": "media_alta",
+      "categoria_cobertura": "media",
       "pdet": true
     },
     {
       "municipio": "POTOSÍ",
-      "indice_presencia": 5,
+      "indice_presencia": 4,
       "max_posible": 12,
       "categoria_cobertura": "media",
       "pdet": false
     },
     {
       "municipio": "PROVIDENCIA",
-      "indice_presencia": 4,
+      "indice_presencia": 3,
       "max_posible": 12,
-      "categoria_cobertura": "media",
+      "categoria_cobertura": "baja",
       "pdet": false
     },
     {
       "municipio": "PUERRES",
-      "indice_presencia": 4,
+      "indice_presencia": 2,
       "max_posible": 12,
-      "categoria_cobertura": "media",
+      "categoria_cobertura": "baja",
       "pdet": false
     },
     {
@@ -343,21 +343,21 @@
     },
     {
       "municipio": "RICAURTE",
-      "indice_presencia": 6,
+      "indice_presencia": 4,
       "max_posible": 12,
-      "categoria_cobertura": "media_alta",
+      "categoria_cobertura": "media",
       "pdet": true
     },
     {
       "municipio": "ROBERTO PAYÁN",
-      "indice_presencia": 7,
+      "indice_presencia": 5,
       "max_posible": 12,
-      "categoria_cobertura": "media_alta",
+      "categoria_cobertura": "media",
       "pdet": true
     },
     {
       "municipio": "SAMANIEGO",
-      "indice_presencia": 7,
+      "indice_presencia": 6,
       "max_posible": 12,
       "categoria_cobertura": "media_alta",
       "pdet": false
@@ -371,44 +371,44 @@
     },
     {
       "municipio": "SAN BERNARDO",
-      "indice_presencia": 5,
+      "indice_presencia": 4,
       "max_posible": 12,
       "categoria_cobertura": "media",
       "pdet": false
     },
     {
       "municipio": "SAN LORENZO",
-      "indice_presencia": 5,
+      "indice_presencia": 2,
       "max_posible": 12,
-      "categoria_cobertura": "media",
+      "categoria_cobertura": "baja",
       "pdet": false
     },
     {
       "municipio": "SAN PABLO",
-      "indice_presencia": 7,
-      "max_posible": 12,
-      "categoria_cobertura": "media_alta",
-      "pdet": false
-    },
-    {
-      "municipio": "SAN PEDRO DE CARTAGO",
-      "indice_presencia": 5,
+      "indice_presencia": 4,
       "max_posible": 12,
       "categoria_cobertura": "media",
       "pdet": false
     },
     {
-      "municipio": "SANDONÁ",
-      "indice_presencia": 6,
+      "municipio": "SAN PEDRO DE CARTAGO",
+      "indice_presencia": 3,
       "max_posible": 12,
-      "categoria_cobertura": "media_alta",
+      "categoria_cobertura": "baja",
+      "pdet": false
+    },
+    {
+      "municipio": "SANDONÁ",
+      "indice_presencia": 4,
+      "max_posible": 12,
+      "categoria_cobertura": "media",
       "pdet": false
     },
     {
       "municipio": "SANTA BÁRBARA",
-      "indice_presencia": 6,
+      "indice_presencia": 5,
       "max_posible": 12,
-      "categoria_cobertura": "media_alta",
+      "categoria_cobertura": "media",
       "pdet": true
     },
     {
@@ -420,49 +420,49 @@
     },
     {
       "municipio": "SAPUYES",
-      "indice_presencia": 4,
+      "indice_presencia": 2,
       "max_posible": 12,
-      "categoria_cobertura": "media",
+      "categoria_cobertura": "baja",
       "pdet": false
     },
     {
       "municipio": "TAMINANGO",
-      "indice_presencia": 6,
-      "max_posible": 12,
-      "categoria_cobertura": "media_alta",
-      "pdet": false
-    },
-    {
-      "municipio": "TANGUA",
       "indice_presencia": 5,
       "max_posible": 12,
       "categoria_cobertura": "media",
       "pdet": false
     },
     {
-      "municipio": "TÚQUERRES",
-      "indice_presencia": 6,
+      "municipio": "TANGUA",
+      "indice_presencia": 3,
       "max_posible": 12,
-      "categoria_cobertura": "media_alta",
+      "categoria_cobertura": "baja",
+      "pdet": false
+    },
+    {
+      "municipio": "TÚQUERRES",
+      "indice_presencia": 4,
+      "max_posible": 12,
+      "categoria_cobertura": "media",
       "pdet": false
     },
     {
       "municipio": "YACUANQUER",
-      "indice_presencia": 6,
+      "indice_presencia": 4,
       "max_posible": 12,
-      "categoria_cobertura": "media_alta",
+      "categoria_cobertura": "media",
       "pdet": false
     }
   ],
   "totales": {
-    "promedio": 5.98,
+    "promedio": 4.5,
     "maximo": 11,
-    "minimo": 3,
+    "minimo": 2,
     "por_categoria": {
-      "media_alta": 37,
-      "media": 23,
-      "alta": 2,
-      "baja": 2
+      "media": 34,
+      "baja": 16,
+      "media_alta": 13,
+      "alta": 1
     }
   }
 }

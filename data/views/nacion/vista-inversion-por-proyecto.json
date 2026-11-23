@@ -1,7 +1,7 @@
 {
   "vista": "inversion_por_proyecto",
   "titulo": "Inversión MinTIC por Programa – Nariño 2024",
-  "descripcion": "Distribución del presupuesto asignado a Nariño por cada programa MinTIC",
+  "descripcion": "Distribución del presupuesto asignado a Nariño por cada programa MinTIC (informe 2024; los oficios de 2026 no reportan inversión por programa).",
   "tipo_grafico_sugerido": "doughnut",
   "unidad": "millones COP",
   "datos": [

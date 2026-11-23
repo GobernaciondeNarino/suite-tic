@@ -1,334 +1,464 @@
 {
   "vista": "conectividad_hogares",
-  "titulo": "Conectividad - Hogares",
-  "descripcion": "Hogares beneficiados con conectividad en los 64 municipios de Nariño.",
+  "titulo": "ConectiVIDAd - Hogares conectados",
+  "descripcion": "Accesos de Internet fijo operativos en hogares de estratos 1 y 2 (ConectiVIDAd para Cambiar Vidas, acuerdos específicos 2 y 4; MinTIC, corte 2026-09).",
   "tipo_grafico_sugerido": "bar",
   "total_municipios": 64,
   "municipios": [
     {
       "municipio": "ALBÁN",
-      "hogares": 340,
+      "hogares": 305,
+      "meta_accesos": 305,
+      "accesos_instalados": 305,
       "pdet": false
     },
     {
       "municipio": "ALDANA",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": false
     },
     {
       "municipio": "ANCUYA",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": false
     },
     {
       "municipio": "ARBOLEDA",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": false
     },
     {
       "municipio": "BARBACOAS",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": true
     },
     {
       "municipio": "BELÉN",
-      "hogares": 693,
+      "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": false
     },
     {
       "municipio": "BUESACO",
       "hogares": 674,
+      "meta_accesos": 674,
+      "accesos_instalados": 674,
       "pdet": false
     },
     {
       "municipio": "CHACHAGÜÍ",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": false
     },
     {
       "municipio": "COLÓN",
-      "hogares": 109,
+      "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": false
     },
     {
       "municipio": "CONSACÁ",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": false
     },
     {
       "municipio": "CONTADERO",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": false
     },
     {
       "municipio": "CÓRDOBA",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": false
     },
     {
       "municipio": "CUASPUD CARLOSAMA",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": false
     },
     {
       "municipio": "CUMBAL",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": false
     },
     {
       "municipio": "CUMBITARA",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": true
     },
     {
       "municipio": "EL CHARCO",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": true
     },
     {
       "municipio": "EL PEÑOL",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": false
     },
     {
       "municipio": "EL ROSARIO",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": true
     },
     {
       "municipio": "EL TABLÓN DE GÓMEZ",
       "hogares": 62,
+      "meta_accesos": 62,
+      "accesos_instalados": 62,
       "pdet": false
     },
     {
       "municipio": "EL TAMBO",
-      "hogares": 276,
+      "hogares": 138,
+      "meta_accesos": 138,
+      "accesos_instalados": 138,
       "pdet": false
     },
     {
       "municipio": "FRANCISCO PIZARRO",
-      "hogares": 1713,
+      "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": true
     },
     {
       "municipio": "FUNES",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": false
     },
     {
       "municipio": "GUACHUCAL",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": false
     },
     {
       "municipio": "GUAITARILLA",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": false
     },
     {
       "municipio": "GUALMATÁN",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": false
     },
     {
       "municipio": "ILES",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": false
     },
     {
       "municipio": "IMUÉS",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": false
     },
     {
       "municipio": "IPIALES",
-      "hogares": 0,
+      "hogares": 128,
+      "meta_accesos": 128,
+      "accesos_instalados": 128,
       "pdet": false
     },
     {
       "municipio": "LA CRUZ",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": false
     },
     {
       "municipio": "LA FLORIDA",
-      "hogares": 210,
+      "hogares": 175,
+      "meta_accesos": 175,
+      "accesos_instalados": 175,
       "pdet": false
     },
     {
       "municipio": "LA LLANADA",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": false
     },
     {
       "municipio": "LA TOLA",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": true
     },
     {
       "municipio": "LA UNIÓN",
-      "hogares": 2716,
+      "hogares": 1400,
+      "meta_accesos": 1400,
+      "accesos_instalados": 1400,
       "pdet": false
     },
     {
       "municipio": "LEIVA",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": true
     },
     {
       "municipio": "LINARES",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": false
     },
     {
       "municipio": "LOS ANDES",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": true
     },
     {
       "municipio": "MAGÜÍ",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": true
     },
     {
       "municipio": "MALLAMA",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": false
     },
     {
       "municipio": "MOSQUERA",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": true
     },
     {
       "municipio": "NARIÑO",
-      "hogares": 387,
+      "hogares": 194,
+      "meta_accesos": 194,
+      "accesos_instalados": 194,
       "pdet": false
     },
     {
       "municipio": "OLAYA HERRERA",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": true
     },
     {
       "municipio": "OSPINA",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": false
     },
     {
       "municipio": "PASTO",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": false
     },
     {
       "municipio": "POLICARPA",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": true
     },
     {
       "municipio": "POTOSÍ",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": false
     },
     {
       "municipio": "PROVIDENCIA",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": false
     },
     {
       "municipio": "PUERRES",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": false
     },
     {
       "municipio": "PUPIALES",
-      "hogares": 0,
+      "hogares": 580,
+      "meta_accesos": 580,
+      "accesos_instalados": 580,
       "pdet": false
     },
     {
       "municipio": "RICAURTE",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": true
     },
     {
       "municipio": "ROBERTO PAYÁN",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": true
     },
     {
       "municipio": "SAMANIEGO",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": false
     },
     {
       "municipio": "SAN ANDRÉS DE TUMACO",
-      "hogares": 24470,
+      "hogares": 1657,
+      "meta_accesos": 7450,
+      "accesos_instalados": 1657,
       "pdet": true
     },
     {
       "municipio": "SAN BERNARDO",
-      "hogares": 279,
+      "hogares": 231,
+      "meta_accesos": 231,
+      "accesos_instalados": 231,
       "pdet": false
     },
     {
       "municipio": "SAN LORENZO",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": false
     },
     {
       "municipio": "SAN PABLO",
-      "hogares": 519,
+      "hogares": 230,
+      "meta_accesos": 230,
+      "accesos_instalados": 230,
       "pdet": false
     },
     {
       "municipio": "SAN PEDRO DE CARTAGO",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": false
     },
     {
       "municipio": "SANDONÁ",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": false
     },
     {
       "municipio": "SANTA BÁRBARA",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": true
     },
     {
       "municipio": "SANTACRUZ",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": false
     },
     {
       "municipio": "SAPUYES",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": false
     },
     {
       "municipio": "TAMINANGO",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": false
     },
     {
       "municipio": "TANGUA",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": false
     },
     {
       "municipio": "TÚQUERRES",
       "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": false
     },
     {
       "municipio": "YACUANQUER",
-      "hogares": 428,
+      "hogares": 0,
+      "meta_accesos": 0,
+      "accesos_instalados": 0,
       "pdet": false
     }
   ],
   "totales": {
-    "total_departamento": 32876,
-    "municipios_con_presencia": 14,
-    "municipios_sin_presencia": 50
+    "total_departamento": 5774,
+    "municipios_con_presencia": 12,
+    "municipios_sin_presencia": 52,
+    "total_meta_accesos": 11567,
+    "total_accesos_instalados": 5774
   }
 }

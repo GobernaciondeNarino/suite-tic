@@ -110,6 +110,12 @@ Estos skills aportan guías de diseño que se aplican cuando Claude escribe CSS/
 
 ## Changelog
 
+### 1.10.0
+- **Datos actualizados** con los oficios MinTIC de enero y octubre de 2026 (corte septiembre 2026). Base `data/views/proyectos-tic.json` v2: fuente y corte por proyecto, históricos conservados.
+- **Un solo insumo**: `python3 scripts/regen-views.py` genera la analítica municipal, las vistas de los shortcodes y el dataset del Dashboard.
+- Vista nueva `juntas_internet` (reemplaza `juntas_prereg` y `juntas_diseno`); ConectiVIDAd, Escuelas 5G y Centros Digitales con su nueva estructura.
+- Decisiones e inconsistencias de las fuentes: `docs/NOTAS-DATOS.md`.
+
 ### 1.9.0
 - **d3plus 4.13.0** (antes 3.0.x), cargado desde el bundle `full` de `@d3plus/core`.
 - **Módulo Dashboard**: `[tsg_dashboard id="tic-narino" height="820"]`, REST `GET /tic-suite/v1/dashboard/{id}` y submenú *TIC Suite → Dashboard*.

@@ -1,7 +1,7 @@
 {
   "vista": "talento_tech_inscritos",
   "titulo": "Talento Tech - Inscritos por Municipio",
-  "descripcion": "Inscritos en Talento Tech (Bootcamp TIC) en los 64 municipios de Nariño.",
+  "descripcion": "Inscritos en Talento Tech (bootcamps TIC) en los 64 municipios de Nariño (informe MinTIC 2024).",
   "tipo_grafico_sugerido": "bar",
   "total_municipios": 64,
   "municipios": [
@@ -392,7 +392,7 @@
   ],
   "totales": {
     "inscritos_narino": 5899,
-    "meta_certificados": 5000,
-    "avance_pct": 117.98
+    "meta_certificados": 3898,
+    "avance_pct": 151.33
   }
 }

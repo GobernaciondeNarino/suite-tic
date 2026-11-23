@@ -70,6 +70,7 @@
 
 	function build( root, $, D, TOPO ) {
 		const DATA = D.data, SUBREGIONES = D.subregiones, PROGRAMAS = D.programas, INDICES = D.indices, INVERSION = D.inversion, TIPOS = D.tipos;
+		if ( D.meta && D.meta.etiqueta && $( 'etiqueta' ) ) { $( 'etiqueta' ).textContent = D.meta.etiqueta; }
 		const METRICA = {};
 		[ ...INDICES, ...PROGRAMAS ].forEach( ( m ) => { METRICA[ m.k ] = m; } );
 
@@ -86,7 +87,7 @@
 			const vals = DATA.map( ( r ) => r[ p.k ] );
 			DATA.forEach( ( r ) => { r.p[ p.k ] = vals.filter( ( v ) => v < r[ p.k ] ).length / ( DATA.length - 1 ) * 100; } );
 		} );
-		const P_CON = PROGRAMAS.filter( ( p ) => p.g === 'con' ), P_EDU = PROGRAMAS.filter( ( p ) => p.g === 'edu' );
+		const P_CON = PROGRAMAS.filter( ( p ) => p.g === 'con' ), P_EDU = PROGRAMAS.filter( ( p ) => p.g === 'edu' ), NPROG = PROGRAMAS.length;
 		DATA.forEach( ( r ) => { r.ic = r1( sum( P_CON.map( ( p ) => r.p[ p.k ] ) ) / P_CON.length ); r.ie = r1( sum( P_EDU.map( ( p ) => r.p[ p.k ] ) ) / P_EDU.length ); } );
 		const MED_C = median( DATA.map( ( r ) => r.ic ) ), MED_E = median( DATA.map( ( r ) => r.ie ) );
 		DATA.forEach( ( r ) => { r.tipo = r.ic >= MED_C ? ( r.ie >= MED_E ? 'A' : 'B' ) : ( r.ie >= MED_E ? 'C' : 'D' ); } );
@@ -213,7 +214,7 @@
 					const r = filaDe( d );
 					if ( ! r ) { return ''; }
 					return '<div class="tt-s">' + esc( r.sub ) + ' · ' + esc( TIPOS[ r.tipo ].n ) + '</div>' +
-						ttRow( M.c, fmt( r[ k ], M.dec ) ) + ttRow( 'Puesto', rankOf( r, k ) + ' de ' + DATA.length ) + ttRow( 'Índice de presencia', r.ip + '/12' );
+						ttRow( M.c, fmt( r[ k ], M.dec ) ) + ttRow( 'Puesto', rankOf( r, k ) + ' de ' + DATA.length ) + ttRow( 'Índice de presencia', r.ip + '/' + NPROG );
 				}
 			) );
 			// Passing fitFilter: undefined breaks the projection fit, so only set it when filtering.
@@ -277,7 +278,7 @@
 				chips = ( r.pdet ? '<span class="chip">PDET</span>' : '' ) + '<span class="chip">' + esc( r.sub ) + '</span><span class="chip"><i style="background:' + TM.tipo[ r.tipo ] + '"></i>' + esc( TIPOS[ r.tipo ].n ) + '</span>';
 				t = tile( 'Centros Digitales', fmt( r.centros_digitales ), r.cd_operacion + ' en operación' ) +
 					tile( 'Talento Tech', fmt( r.talento_tech ), 'puesto ' + rankOf( r, 'talento_tech' ) + ' de ' + DATA.length ) +
-					tile( 'Índice de presencia', r.ip + '/12', 'puesto ' + rankOf( r, 'ip' ) + ' de ' + DATA.length ) +
+					tile( 'Índice de presencia', r.ip + '/' + NPROG, 'puesto ' + rankOf( r, 'ip' ) + ' de ' + DATA.length ) +
 					tile( 'Conectividad', fmt( r.ic, 1 ), 'mediana dptal. ' + fmt( MED_C, 1 ) ) +
 					tile( 'Educación digital', fmt( r.ie, 1 ), 'mediana dptal. ' + fmt( MED_E, 1 ) ) +
 					tile( 'Inv. Centros Digitales', '$' + fmt( r.inv_cd ) + ' M', 'millones COP' );
@@ -289,7 +290,7 @@
 					tile( 'Centros Digitales', fmt( cd ), fmt( op ) + ' en operación' ) +
 					tile( 'Talento Tech', fmt( sum( rows.map( ( r ) => r.talento_tech ) ) ), 'inscritos' ) +
 					tile( 'Zonas de Paz', fmt( sum( rows.map( ( r ) => r.zonas_paz ) ) ), rows.filter( ( r ) => r.zonas_paz > 0 ).length + ' municipios' ) +
-					tile( 'Índice de presencia', fmt( prom( rows, 'ip' ), 1 ), 'promedio sobre 12' ) +
+					tile( 'Índice de presencia', fmt( prom( rows, 'ip' ), 1 ), 'promedio sobre ' + NPROG ) +
 					( selSub ? tile( 'Inv. Centros Digitales', '$' + fmt( sum( rows.map( ( r ) => r.inv_cd ) ) ) + ' M', 'millones COP' )
 						: tile( 'Inversión MinTIC', '$' + fmt( sum( INVERSION.map( ( i ) => i.v ) ) ) + ' M', INVERSION.length + ' programas' ) );
 			}
@@ -337,7 +338,9 @@
 				[ 'Concentración', esc( tt.nom ) + ' reúne el ' + fmt( cuota( 'talento_tech' ) ) + ' % de los inscritos en Talento Tech. ' + esc( hg.nom ) + ' tiene el ' + fmt( cuota( 'conectividad_hogares' ) ) + ' % de los hogares conectados' + ( cp.id === hg.id ? ' y el ' + fmt( cuota( 'computadores' ) ) + ' % de los computadores.' : '; ' + esc( cp.nom ) + ', el ' + fmt( cuota( 'computadores' ) ) + ' % de los computadores.' ) ],
 				[ 'Brecha PDET', 'Los ' + P.length + ' municipios PDET promedian ' + fmt( prom( P, 'ip' ), 1 ) + ' programas con presencia frente a ' + fmt( prom( Q, 'ip' ), 1 ) + ' del resto. En Talento Tech su mediana es de ' + fmtN( median( P.map( ( r ) => r.talento_tech ) ) ) + ' inscritos frente a ' + fmtN( median( Q.map( ( r ) => r.talento_tech ) ) ) + '.' ],
 				[ 'Rezago', Dd.length + ' municipios quedan bajo la mediana departamental en conectividad y en educación digital. Las subregiones con menor índice de presencia promedio son ' + esc( subs[ 0 ].s ) + ' (' + fmt( subs[ 0 ].v, 1 ) + ') y ' + esc( subs[ 1 ].s ) + ' (' + fmt( subs[ 1 ].v, 1 ) + ').' ],
-				[ 'Centros Digitales', fmt( op ) + ' de ' + fmt( cd ) + ' están en operación (' + fmt( op / cd * 100, 1 ) + ' %). Quedan ' + fmt( inst ) + ' por instalar en ' + pend.length + ' municipios' + ( pend.length > 1 ? '; los mayores pendientes son ' + esc( pend[ 0 ].nom ) + ' (' + pend[ 0 ].cd_instalacion + ') y ' + esc( pend[ 1 ].nom ) + ' (' + pend[ 1 ].cd_instalacion + ').' : '.' ) ],
+				[ 'Centros Digitales', inst
+					? fmt( op ) + ' de ' + fmt( cd ) + ' están en operación (' + fmt( op / cd * 100, 1 ) + ' %). Quedan ' + fmt( inst ) + ' por instalar en ' + pend.length + ' municipios' + ( pend.length > 1 ? '; los mayores pendientes son ' + esc( pend[ 0 ].nom ) + ' (' + pend[ 0 ].cd_instalacion + ') y ' + esc( pend[ 1 ].nom ) + ' (' + pend[ 1 ].cd_instalacion + ').' : '.' )
+					: 'Los ' + fmt( cd ) + ' centros asignados están en operación, en ' + DATA.filter( ( r ) => r.centros_digitales > 0 ).length + ' municipios. Los que más tienen son ' + esc( top( 'centros_digitales' ).nom ) + ' (' + top( 'centros_digitales' ).centros_digitales + ') y ' + esc( [ ...DATA ].sort( ( a, b ) => b.centros_digitales - a.centros_digitales )[ 1 ].nom ) + ' (' + [ ...DATA ].sort( ( a, b ) => b.centros_digitales - a.centros_digitales )[ 1 ].centros_digitales + ').' ],
 				[ 'Cobertura', ( univ.length ? esc( univ.join( ' y ' ) ) + ( univ.length > 1 ? ' llegan' : ' llega' ) + ' a los ' + DATA.length + ' municipios; ' : '' ) + esc( cobs[ 0 ].p.n ) + ' solo a ' + cobs[ 0 ].c + ' y ' + esc( cobs[ 1 ].p.n ) + ' a ' + cobs[ 1 ].c + '.' ],
 			];
 			$( 'hallazgos' ).innerHTML = h.map( ( x ) => '<li><div><b>' + x[ 0 ] + '</b>' + x[ 1 ] + '</div></li>' ).join( '' );
@@ -418,7 +421,8 @@
 				data: items.map( ( it, i ) => Object.assign( { _o: i }, it ) ),
 				groupBy: 'lbl', discrete: 'y', x: 'v', y: 'lbl',
 				ySort: ( a, b ) => b._o - a._o,
-				xConfig: ejeNum( opts.x || {} ),
+				xConfig: ejeNum( Object.assign( { title: '' }, opts.x || {} ) ),
+				yConfig: { title: '' },
 				shapeConfig: { Bar: { fill: opts.fill || TM.brand, label: false } },
 				on: opts.click ? { 'click.shape': ( d ) => { if ( d ) { setTimeout( () => opts.click( d ), 0 ); } } } : {},
 			}, tooltip( opts.ttTitle || ( ( d ) => d.lbl ), opts.ttBody ), opts.extra || {} ) );
@@ -455,7 +459,8 @@
 			nuevo( 'pdet', d3plus.BarChart, Object.assign( {
 				data, groupBy: 'serie', discrete: 'y', x: 'v', y: 'prog',
 				ySort: ( a, b ) => b._o - a._o,
-				xConfig: ejeNum( { domain: [ 0, 100 ], tickFormat: ( v ) => v + ' %' } ),
+				xConfig: ejeNum( { domain: [ 0, 100 ], tickFormat: ( v ) => v + ' %', title: '' } ),
+				yConfig: { title: '' },
 				shapeConfig: { Bar: { fill: ( d ) => d.serie === 'PDET' ? TM.brand : TM.deemph, label: false } },
 			}, tooltip( ( d ) => d.nombre, ( d ) => ttRow( d.serie, fmt( d.v ) + ' % de sus municipios' ) ) ) );
 		}
@@ -470,7 +475,7 @@
 				data: items, groupBy: 'lbl', discrete: 'x', x: 'lbl', y: 'v',
 				xSort: ( a, b ) => a.ip - b.ip,
 				xConfig: { title: 'Programas con presencia (de 12)' },
-				yConfig: ejeNum( { tickFormat: ( v ) => Number.isInteger( v ) ? fmt( v ) : '' } ),
+				yConfig: ejeNum( { tickFormat: ( v ) => Number.isInteger( v ) ? fmt( v ) : '', title: '' } ),
 				shapeConfig: { Bar: { fill: enfasis( ( x ) => selMun && x.ip === selMun.ip, !! selMun ), label: ( x ) => x.v ? String( x.v ) : '' } },
 			}, tooltip( ( x ) => x.lbl + ' programas', ( x ) => ttRow( 'Municipios', x.v ) ) ) );
 		}
@@ -483,7 +488,23 @@
 			$( 's-cd' ).textContent = inst ? fmt( inst ) + ' por instalar en ' + pend.length + ' municipios · ' + fmt( cd ? op / cd * 100 : 0, 1 ) + ' % en operación' + ( pend.length > 10 ? ' · se muestran los 10 mayores' : '' )
 				: 'Todos los centros de este alcance están en operación';
 			TABLAS.cd = { head: [ 'Municipio', 'Por instalar', 'En operación', 'Total' ], rows: pend.map( ( r ) => [ r.nom, r.cd_instalacion, r.cd_operacion, r.centros_digitales ] ) };
-			if ( ! top.length ) { const el = $( 'c-cd' ); delete pendientes.cd; delete redibujar.cd; if ( el ) { el.innerHTML = '<div class="empty">Sin centros pendientes</div>'; } return; }
+			if ( ! inst ) {
+				// Nothing pending (corte 2026: every center operates) — show where they are instead.
+				const conCd = rows.filter( ( r ) => r.centros_digitales > 0 ).sort( ( a, b ) => b.centros_digitales - a.centros_digitales || a.nom.localeCompare( b.nom, 'es' ) );
+				$( 't-cd' ).textContent = 'Centros Digitales por municipio';
+				$( 's-cd' ).textContent = fmt( cd ) + ' centros, todos en operación, en ' + conCd.length + ' municipios' + ( conCd.length > 10 ? ' · se muestran los 10 con más centros' : '' );
+				TABLAS.cd = { head: [ 'Municipio', 'Centros', 'En operación' ], rows: conCd.map( ( r ) => [ r.nom, r.centros_digitales, r.cd_operacion ] ) };
+				const top10 = conCd.slice( 0, 10 );
+				if ( ! top10.length ) { const el = $( 'c-cd' ); delete pendientes.cd; delete redibujar.cd; if ( el ) { el.innerHTML = '<div class="empty">Sin Centros Digitales</div>'; } return; }
+				barrasH( 'cd', top10.map( ( r ) => ( { lbl: r.nom, id: r.id, v: r.centros_digitales, op: r.cd_operacion } ) ), {
+					fill: enfasis( ( x ) => selMun && x.id === selMun.id, !! ( selMun && top10.some( ( r ) => r.id === selMun.id ) ) ),
+					x: { tickFormat: ( v ) => Number.isInteger( v ) ? fmt( v ) : '' },
+					click: ( x ) => seleccionar( x.id ),
+					ttBody: ( x ) => ttRow( 'Centros', x.v ) + ttRow( 'En operación', x.op ),
+				} );
+				return;
+			}
+			$( 't-cd' ).textContent = 'Centros Digitales por instalar';
 			const enTop = !! ( selMun && top.some( ( r ) => r.id === selMun.id ) );
 			barrasH( 'cd', top.map( ( r ) => ( { lbl: r.nom, id: r.id, v: r.cd_instalacion, op: r.cd_operacion } ) ), {
 				fill: enfasis( ( x ) => selMun && x.id === selMun.id, enTop ),
@@ -546,8 +567,7 @@
 			$( 'lecturaMun' ).innerHTML = li.map( ( x ) => '<li><div>' + x[ 0 ] + x[ 1 ] + '</div></li>' ).join( '' );
 			const fila = ( p ) => '<tr><td>' + esc( p.n ) + '</td><td>' + fmt( r[ p.k ] ) + '</td><td>' + ( r[ p.k ] > 0 ? rankOf( r, p.k ) + 'º' : '—' ) + '</td></tr>';
 			$( 'tablaMun' ).innerHTML = '<table class="tv"><thead><tr><th>Conectividad</th><th>Valor</th><th>Puesto</th></tr></thead><tbody>' + P_CON.map( fila ).join( '' ) +
-				'<tr><td>Centros en operación / por instalar</td><td>' + r.cd_operacion + ' / ' + r.cd_instalacion + '</td><td></td></tr>' +
-				'<tr><td>Centro Potencia</td><td>' + ( r.centro_potencia > 0 ? 'Sí' : 'No' ) + '</td><td></td></tr></tbody>' +
+				'<tr><td>Centros Digitales en operación / por instalar</td><td>' + r.cd_operacion + ' / ' + r.cd_instalacion + '</td><td></td></tr></tbody>' +
 				'<thead><tr><th>Educación digital</th><th>Valor</th><th>Puesto</th></tr></thead><tbody>' + P_EDU.map( fila ).join( '' ) + '</tbody>' +
 				'<thead><tr><th>Inversión</th><th>Millones COP</th><th></th></tr></thead><tbody><tr><td>Centros Digitales</td><td>$' + fmt( r.inv_cd ) + '</td><td></td></tr></tbody></table>';
 			grafPerfil();
@@ -555,14 +575,15 @@
 
 		/* ══════════ CSV ══════════ */
 		function exportarCsv() {
-			const campos = [ 'municipio', 'subregion', 'pdet', 'tipologia', 'indice_presencia', 'subindice_conectividad', 'subindice_educacion_digital',
-				'conectividad_hogares', 'zonas_paz', 'desplige_5g', 'escuelas_5g', 'juntas_preregistradas', 'juntas_diseno', 'centros_digitales', 'cd_operacion', 'cd_instalacion',
-				'centro_potencia', 'talento_tech', 'senatic', 'colombia_programa', 'avanzatech', 'computadores', 'inv_cd' ];
+			// Every program column plus the detail fields the dataset carries.
+			const base = [ 'municipio', 'subregion', 'pdet', 'tipologia', 'indice_presencia', 'subindice_conectividad', 'subindice_educacion_digital' ];
+			const detalle = Object.keys( DATA[ 0 ] ).filter( ( c ) => ! base.includes( c ) && ! [ 'id', 'gid', 'nom', 'sub', 'ip', 'p', 'ic', 'ie', 'tipo' ].includes( c ) && ! PROGRAMAS.some( ( p ) => p.k === c ) );
+			const campos = base.concat( PROGRAMAS.map( ( p ) => p.k ), detalle );
 			const extra = ( r ) => ( { subregion: r.sub, tipologia: TIPOS[ r.tipo ].n, indice_presencia: r.ip, subindice_conectividad: r.ic, subindice_educacion_digital: r.ie } );
 			const filas = [ ...DATA ].sort( ( a, b ) => a.nom.localeCompare( b.nom, 'es' ) ).map( ( r ) => { const x = extra( r ); return campos.map( ( c ) => JSON.stringify( c in x ? x[ c ] : ( r[ c ] ?? 0 ) ) ).join( ',' ); } );
 			const a = document.createElement( 'a' );
 			a.href = URL.createObjectURL( new Blob( [ '﻿' + [ campos.join( ',' ), ...filas ].join( '\n' ) ], { type: 'text/csv;charset=utf-8;' } ) );
-			a.download = 'tic-narino-2024.csv'; document.body.appendChild( a ); a.click(); a.remove();
+			a.download = 'tic-narino-' + ( ( D.meta && D.meta.corte ) || 'datos' ) + '.csv'; document.body.appendChild( a ); a.click(); a.remove();
 			setTimeout( () => URL.revokeObjectURL( a.href ), 1000 );
 		}
 
