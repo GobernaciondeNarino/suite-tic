@@ -76,10 +76,24 @@
 			try {
 				const viz = new Ctor();
 
+				// A legend with dozens of entries (e.g. one per municipio)
+				// eats the plot area and repeats the axis labels; skip it.
+				const showLegend = Boolean( opts.legend ) && this.legendGroupCount( payload ) <= 12;
+
 				viz
 					.select( '#' + containerId )
 					.detectResize( true )
-					.legend( Boolean( opts.legend ) );
+					.legend( showLegend );
+
+				// d3plus v4 adds its own download/search/table/zoom buttons
+				// to every chart; the plugin toolbar already covers them.
+				// Zoom stays on the map only, as in v3.
+				this.safeCall( viz, 'saveControl', false );
+				this.safeCall( viz, 'search', false );
+				this.safeCall( viz, 'tableView', false );
+				if ( payload.chart.key !== 'geomap' ) {
+					this.safeCall( viz, 'zoom', false );
+				}
 
 				// Always anchor the legend at the bottom.
 				if ( typeof viz.legendPosition === 'function' ) {
@@ -89,7 +103,7 @@
 				// "Icons" mode: keep d3plus native legend (with its
 				// interactivity — click to highlight/hide) but hide the
 				// text labels so only the colored shapes show.
-				if ( opts.legend && opts.legendStyle === 'icons' && typeof viz.legendConfig === 'function' ) {
+				if ( showLegend && opts.legendStyle === 'icons' && typeof viz.legendConfig === 'function' ) {
 					viz.legendConfig( {
 						label: () => '',
 						shapeConfig: {
@@ -445,6 +459,25 @@
 		/**
 		 * Extract year numbers from measure names matching `*_YYYY` pattern.
 		 */
+		/**
+		 * Number of entries the color legend would show. Geomap uses a
+		 * color scale, graphs label their nodes, and stacked charts are
+		 * colored by their few metrics, so those always count as 0.
+		 */
+		legendGroupCount( payload ) {
+			const key      = payload.chart.key;
+			const dims     = payload.view.dimensions || [];
+			const measures = payload.view.measures || [];
+			if ( [ 'geomap', 'sankey', 'network', 'rings', 'stacked_bar', 'stacked_area' ].includes( key ) ) {
+				return 0;
+			}
+			const rows  = this.filterMeaningful( payload.data, key, measures );
+			const field = ( key === 'line' || key === 'area' ) && this.detectYears( measures ).length < 2
+				? ( dims[ 1 ] || dims[ 0 ] )
+				: dims[ 0 ];
+			return new Set( ( rows || [] ).map( ( r ) => r[ field ] ) ).size;
+		},
+
 		detectYears( measures ) {
 			const years = new Set();
 			( measures || [] ).forEach( ( m ) => {
@@ -530,8 +563,9 @@
 				);
 			}
 
+			// No fontFamily: d3plus v4 measures text on a canvas, which
+			// rejects CSS keywords such as "inherit".
 			const titleConfig = {
-				fontFamily: () => 'inherit',
 				fontSize:   () => 13,
 				fontWeight: () => 600,
 				fontColor:  () => '#0f172a',

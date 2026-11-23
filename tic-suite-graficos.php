@@ -52,11 +52,11 @@ if ( defined( 'TSG_VERSION' ) ) {
 // Plugin constants.
 // -----------------------------------------------------------------------------
 define( 'TSG_VERSION', '1.8.1' );
-define( 'TSG_D3PLUS_VERSION', '3.1.4' );
-// NOTE: must use the /full/ bundle — /umd/d3plus-core.js expects 30+
-// peer deps to already be on window and fails silently with window.d3plus
-// set to an empty object. The /full/ build embeds every dependency.
-define( 'TSG_D3PLUS_URL', 'https://cdn.jsdelivr.net/npm/@d3plus/core@' . TSG_D3PLUS_VERSION . '/umd/d3plus-core.full.js' );
+define( 'TSG_D3PLUS_VERSION', '4.13.0' );
+// NOTE: must use the /full/ bundle — /umd/d3plus-core*.js expects its peer
+// deps to already be on window and fails silently with window.d3plus set to
+// an empty object. The /full/ build embeds every dependency.
+define( 'TSG_D3PLUS_URL', 'https://cdn.jsdelivr.net/npm/@d3plus/core@' . TSG_D3PLUS_VERSION . '/umd/d3plus-core.full.min.js' );
 define( 'TSG_PLUGIN_FILE', __FILE__ );
 define( 'TSG_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'TSG_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
